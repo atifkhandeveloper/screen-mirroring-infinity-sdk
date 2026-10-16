@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/main"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/banner1">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/apps_activity_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/back_apps_icon"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:padding="@dimen/_8sdp"
+                android:src="@drawable/back"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="92dp"
+                android:fontFamily="@font/nexa"
+                android:text="@string/screen_mirroring"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_20sdp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/back_apps_icon"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:id="@+id/youtube_google_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_70sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/apps_activity_toolbar">
+
+            <RelativeLayout
+                android:id="@+id/apps_youtube_layout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/small_rectangular">
+
+                <ImageView
+                    android:id="@+id/apps_youtube"
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_7sdp"
+                    android:background="@drawable/custom_ripple"
+                    android:padding="@dimen/_4sdp"
+                    android:src="@drawable/youtube" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="@dimen/_6sdp"
+                    android:layout_toEndOf="@+id/apps_youtube"
+                    android:fontFamily="@font/nexa"
+                    android:text="@string/youtube"
+                    android:textColor="#aaaaac"
+                    android:textSize="@dimen/_13sdp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/apps_google_layout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_weight="1"
+                android:background="@drawable/small_rectangular">
+
+                <ImageView
+                    android:id="@+id/apps_google"
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_7sdp"
+                    android:background="@drawable/custom_ripple"
+                    android:padding="@dimen/_4sdp"
+                    android:src="@drawable/google" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="@dimen/_6sdp"
+                    android:layout_toEndOf="@+id/apps_google"
+                    android:fontFamily="@font/nexa"
+                    android:text="@string/google"
+                    android:textColor="#aaaaac"
+                    android:textSize="@dimen/_13sdp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/facebook_twitch_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_70sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/youtube_google_layout">
+
+            <RelativeLayout
+                android:id="@+id/apps_netflix_layout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/small_rectangular">
+
+                <ImageView
+                    android:id="@+id/apps_netflix"
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_7sdp"
+                    android:background="@drawable/custom_ripple"
+                    android:padding="@dimen/_1sdp"
+                    android:src="@drawable/netflix" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/_6sdp"
+                    android:layout_toEndOf="@+id/apps_netflix"
+                    android:fontFamily="@font/nexa"
+                    android:text="@string/netflix"
+                    android:textColor="#aaaaac"
+                    android:textSize="@dimen/_13sdp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/apps_facebook_layout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_weight="1"
+                android:background="@drawable/small_rectangular">
+
+                <ImageView
+                    android:id="@+id/apps_facebook"
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_7sdp"
+                    android:background="@drawable/custom_ripple"
+                    android:padding="@dimen/_4sdp"
+                    android:src="@drawable/facebook" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@+id/apps_facebook"
+                    android:fontFamily="@font/nexa"
+                    android:text="@string/facebook"
+                    android:textColor="#aaaaac"
+                    android:textSize="@dimen/_13sdp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/vimeo_amazon_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_70sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/facebook_twitch_layout">
+
+            <RelativeLayout
+                android:id="@+id/apps_vimeo_layout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/small_rectangular">
+
+                <ImageView
+                    android:id="@+id/apps_vimeo"
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_7sdp"
+                    android:background="@drawable/custom_ripple"
+                    android:padding="@dimen/_4sdp"
+                    android:src="@drawable/vimeo" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/_6sdp"
+                    android:layout_toEndOf="@+id/apps_vimeo"
+                    android:fontFamily="@font/nexa"
+                    android:text="@string/vimeo"
+                    android:textColor="#aaaaac"
+                    android:textSize="@dimen/_13sdp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/apps_amazon_layout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_weight="1"
+                android:background="@drawable/small_rectangular">
+
+                <ImageView
+                    android:id="@+id/apps_amazon"
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_7sdp"
+                    android:background="@drawable/custom_ripple"
+                    android:padding="@dimen/_4sdp"
+                    android:src="@drawable/amazon" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/_6sdp"
+                    android:layout_toEndOf="@+id/apps_amazon"
+                    android:fontFamily="@font/nexa"
+                    android:text="@string/amazon"
+                    android:textColor="#aaaaac"
+                    android:textSize="@dimen/_13sdp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_70sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/vimeo_amazon_layout">
+
+            <RelativeLayout
+                android:id="@+id/apps_dm_layout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/small_rectangular">
+
+                <ImageView
+                    android:id="@+id/apps_dailymotion"
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_7sdp"
+                    android:background="@drawable/custom_ripple"
+                    android:padding="@dimen/_4sdp"
+                    android:src="@drawable/dailymotion" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/_6sdp"
+                    android:layout_toEndOf="@+id/apps_dailymotion"
+                    android:fontFamily="@font/nexa"
+                    android:text="@string/dailymotion"
+                    android:textColor="#aaaaac"
+                    android:textSize="@dimen/_12sdp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/apps_twitch_layout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_weight="1"
+                android:background="@drawable/small_rectangular">
+
+                <ImageView
+                    android:id="@+id/twitch"
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_7sdp"
+                    android:background="@drawable/custom_ripple"
+                    android:padding="@dimen/_4sdp"
+                    android:src="@drawable/twitch" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/_6sdp"
+                    android:layout_toEndOf="@+id/twitch"
+                    android:fontFamily="@font/nexa"
+                    android:text="@string/twitch"
+                    android:textColor="#aaaaac"
+                    android:textSize="@dimen/_13sdp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <RelativeLayout
+        android:id="@+id/banner1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:gravity="center" />
+
+    </RelativeLayout>
+</RelativeLayout>

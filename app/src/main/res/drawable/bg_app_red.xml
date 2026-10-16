@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- bg_app_red.xml : light red background for YouTube tile -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="#FEE2E2" />
+    <corners android:radius="16dp" />
+</shape>

@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mainLayout">
+
+    <RelativeLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp">
+
+            <ImageView
+                android:id="@+id/crossBtn"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="match_parent"
+                android:padding="@dimen/_9sdp"
+                android:tint="@color/black"
+                android:src="@drawable/cross_icon" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/search_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_3sdp"
+                android:layout_marginEnd="@dimen/_3sdp"
+                android:layout_toStartOf="@+id/mirrorCast"
+                android:layout_toEndOf="@+id/crossBtn"
+                app:cardCornerRadius="@dimen/_8sdp"
+                app:cardElevation="0dp">
+
+                <EditText
+                    android:id="@+id/searchEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_1sdp"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/nexa"
+                    android:hint="@string/paste_your_url_here"
+                    android:imeOptions="actionSend"
+                    android:inputType="textUri"
+                    android:maxLines="1"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10sdp" />
+            </androidx.cardview.widget.CardView>
+
+            <ImageView
+                android:id="@+id/mirrorCast"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:padding="@dimen/_7sdp"
+                android:tint="@color/black"
+                android:src="@drawable/cast"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mainView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomLayout"
+        android:layout_below="@+id/headerLayout">
+
+        <WebView
+            android:id="@+id/webView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+        <LinearLayout
+            android:id="@+id/browserHomeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_40sdp"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <TextView
+                    android:id="@+id/browserGoogleBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:fontFamily="@font/nexa"
+                    android:gravity="center"
+                    android:text="@string/google"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10sdp"
+                    app:drawableTopCompat="@drawable/google_icon" />
+
+                <TextView
+                    android:id="@+id/browserYoutubeBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:fontFamily="@font/nexa"
+                    android:gravity="center"
+                    android:text="@string/youtube"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10sdp"
+                    app:drawableTopCompat="@drawable/youtube_icon" />
+
+                <TextView
+                    android:id="@+id/browserYahooBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:fontFamily="@font/nexa"
+                    android:gravity="center"
+                    android:text="@string/yahoo"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10sdp"
+                    app:drawableTopCompat="@drawable/yahoo_icon" />
+
+                <TextView
+                    android:id="@+id/browserSoundcloudBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:fontFamily="@font/nexa"
+                    android:gravity="center"
+                    android:text="@string/soundcloud"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10sdp"
+                    app:drawableTopCompat="@drawable/sound_cloud_icon" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <TextView
+                    android:id="@+id/browserBingBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:fontFamily="@font/nexa"
+                    android:gravity="center"
+                    android:text="@string/bing"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10sdp"
+                    app:drawableTopCompat="@drawable/bing_icon" />
+
+                <TextView
+                    android:id="@+id/browserTwitchBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:fontFamily="@font/nexa"
+                    android:gravity="center"
+                    android:text="@string/twitch"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10sdp"
+                    app:drawableTopCompat="@drawable/twitch_icon" />
+
+                <TextView
+                    android:id="@+id/browserIMDbBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:fontFamily="@font/nexa"
+                    android:gravity="center"
+                    android:text="@string/imdb"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10sdp"
+                    app:drawableTopCompat="@drawable/imbd_icon" />
+
+                <TextView
+                    android:id="@+id/browserFoxBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:fontFamily="@font/nexa"
+                    android:gravity="center"
+                    android:text="@string/fox"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10sdp"
+                    app:drawableTopCompat="@drawable/fox_icon" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/browser_bottom_nav"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <ImageView
+                android:id="@+id/webViewBack"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_ripple"
+                android:padding="@dimen/_9sdp"
+                android:src="@drawable/back_browser" />
+
+            <ImageView
+                android:id="@+id/webViewForward"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_ripple"
+                android:padding="@dimen/_9sdp"
+                android:src="@drawable/forward_browser_icon" />
+
+            <ImageView
+                android:id="@+id/webViewHome"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_ripple"
+                android:padding="@dimen/_9sdp"
+                android:src="@drawable/home_icon" />
+
+            <ImageView
+                android:id="@+id/webViewHistory"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_ripple"
+                android:padding="@dimen/_9sdp"
+                android:src="@drawable/history_icon" />
+
+            <ImageView
+                android:id="@+id/webViewReload"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_ripple"
+                android:padding="@dimen/_9sdp"
+                android:src="@drawable/reload_icon" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- bg_app_blue.xml : light blue background for Facebook tile -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="#DBEAFE" />
+    <corners android:radius="16dp" />
+</shape>

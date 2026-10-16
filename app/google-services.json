@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "959156587699",
+    "project_id": "ph-xp-1-tv-cast",
+    "storage_bucket": "ph-xp-1-tv-cast.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:959156587699:android:afa22c352ba7a8ef5174c6",
+        "android_client_info": {
+          "package_name": "com.ezcast.screen.mirroring.totv"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjNpPlA3LXOXj7toIS9eEo6qiBdBr4Om8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,768 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <LinearLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/changeable_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0">
+
+        <RelativeLayout
+            android:id="@+id/plus_layout"
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:background="@drawable/circle_btn_bg"
+            app:layout_constraintBottom_toTopOf="@+id/changeable_layout"
+            app:layout_constraintEnd_toStartOf="@+id/numpad_layout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/plus_btn"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:background="@drawable/custom_ripple"
+                android:padding="@dimen/_9sdp"
+                android:src="@drawable/plus" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/numpad_layout"
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/circle_btn_bg"
+            app:layout_constraintBottom_toTopOf="@+id/changeable_layout"
+            app:layout_constraintEnd_toStartOf="@+id/touchpad_layout"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/numpad_btn"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:background="@drawable/custom_ripple"
+                android:padding="@dimen/_9sdp"
+                android:src="@drawable/number_pad" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/touchpad_layout"
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="38dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/circle_btn_bg"
+            app:layout_constraintBottom_toTopOf="@+id/changeable_layout"
+            app:layout_constraintEnd_toStartOf="@+id/apps_layout"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/toucpad_btn"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:background="@drawable/custom_ripple"
+                android:padding="@dimen/_8sdp"
+                android:src="@drawable/touch_pad" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/apps_layout"
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:background="@drawable/circle_btn_bg">
+
+            <ImageView
+                android:id="@+id/apps_btn"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:background="@drawable/custom_ripple"
+                android:padding="@dimen/_4sdp"
+                android:src="@drawable/app" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/powerOnOff_layout"
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:background="@drawable/circle_btn_bg"
+            app:layout_constraintBottom_toTopOf="@+id/changeable_layout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/powerOnOff_btn"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:background="@drawable/custom_ripple"
+                android:padding="@dimen/_9sdp"
+                android:src="@drawable/off" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/changeable_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_240sdp"
+        app:layout_constraintBottom_toTopOf="@+id/vol_chnl_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top_layout">
+
+        <RelativeLayout
+            android:id="@+id/d_pad_layout"
+            android:layout_width="@dimen/_180sdp"
+            android:layout_height="@dimen/_180sdp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/vector"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0">
+
+            <ImageView
+                android:id="@+id/left_d_pad_btn"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/custom_ripple"
+                android:padding="@dimen/_5sdp"
+                android:src="@drawable/ic_baseline_arrow_left_24" />
+
+            <ImageView
+                android:id="@+id/forward_d_pad_btn"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:background="@drawable/custom_ripple"
+                android:padding="@dimen/_5sdp"
+                android:src="@drawable/ic_baseline_arrow_drop_up_24" />
+
+            <ImageView
+                android:id="@+id/right_d_pad_btn"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/_2sdp"
+                android:background="@drawable/custom_ripple"
+                android:padding="@dimen/_5sdp"
+                android:src="@drawable/ic_baseline_arrow_right_24" />
+
+            <ImageView
+                android:id="@+id/backward_d_pad_btn"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/_2sdp"
+                android:background="@drawable/custom_ripple"
+                android:padding="@dimen/_5sdp"
+                android:src="@drawable/ic_baseline_arrow_drop_down_24" />
+
+            <ImageView
+                android:id="@+id/ok_btn"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ok" />
+        </RelativeLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/numeric_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0">
+
+            <RelativeLayout
+                android:id="@+id/one_layout"
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="@dimen/_50sdp"
+                android:layout_marginEnd="@dimen/_50sdp"
+                android:layout_marginBottom="19dp"
+                android:background="@drawable/circle_btn_bg"
+                app:layout_constraintBottom_toTopOf="@+id/four_layout"
+                app:layout_constraintEnd_toStartOf="@+id/two_layout"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0">
+
+                <TextView
+                    android:id="@+id/numpad_1"
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/custom_ripple"
+                    android:gravity="center"
+                    android:src="@drawable/plus"
+                    android:text="@string/one"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_20sdp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/two_layout"
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="@dimen/_50sdp"
+                android:layout_marginBottom="19dp"
+                android:layout_toRightOf="@+id/one_layout"
+                android:background="@drawable/circle_btn_bg"
+                app:layout_constraintBottom_toTopOf="@+id/five_layout"
+                app:layout_constraintEnd_toStartOf="@+id/three_layout"
+                app:layout_constraintStart_toEndOf="@+id/one_layout"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0">
+
+                <TextView
+                    android:id="@+id/numpad_2"
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/custom_ripple"
+                    android:gravity="center"
+                    android:src="@drawable/plus"
+                    android:text="@string/two"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_20sdp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/three_layout"
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="@dimen/_45sdp"
+                android:layout_marginBottom="19dp"
+                android:layout_toRightOf="@+id/two_layout"
+                android:background="@drawable/circle_btn_bg"
+                app:layout_constraintBottom_toTopOf="@+id/six_layout"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/two_layout"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/numpad_3"
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/custom_ripple"
+                    android:gravity="center"
+                    android:src="@drawable/plus"
+                    android:text="@string/three"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_20sdp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/four_layout"
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_below="@+id/one_layout"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="@dimen/_50sdp"
+                android:layout_marginEnd="@dimen/_50sdp"
+                android:background="@drawable/circle_btn_bg"
+                app:layout_constraintBottom_toTopOf="@+id/seven_layout"
+                app:layout_constraintEnd_toStartOf="@+id/five_layout"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/one_layout">
+
+                <TextView
+                    android:id="@+id/numpad_4"
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/custom_ripple"
+                    android:gravity="center"
+                    android:src="@drawable/plus"
+                    android:text="@string/four"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_20sdp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/five_layout"
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_below="@+id/two_layout"
+                android:layout_marginEnd="@dimen/_50sdp"
+                android:layout_marginBottom="18dp"
+                android:layout_toRightOf="@+id/four_layout"
+                android:background="@drawable/circle_btn_bg"
+                app:layout_constraintBottom_toTopOf="@+id/eight_layout"
+                app:layout_constraintEnd_toStartOf="@+id/six_layout"
+                app:layout_constraintStart_toEndOf="@+id/four_layout"
+                app:layout_constraintTop_toBottomOf="@+id/two_layout">
+
+                <TextView
+                    android:id="@+id/numpad_5"
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/custom_ripple"
+                    android:gravity="center"
+                    android:src="@drawable/plus"
+                    android:text="@string/five"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_20sdp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/seven_layout"
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_below="@+id/four_layout"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="69dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="@dimen/_50sdp"
+                android:layout_marginBottom="85dp"
+                android:background="@drawable/circle_btn_bg"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/eight_layout"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/four_layout">
+
+                <TextView
+                    android:id="@+id/numpad_7"
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/custom_ripple"
+                    android:gravity="center"
+                    android:src="@drawable/plus"
+                    android:text="@string/seven"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_20sdp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/eight_layout"
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_below="@+id/five_layout"
+                android:layout_marginEnd="@dimen/_50sdp"
+                android:layout_toRightOf="@+id/seven_layout"
+                android:background="@drawable/circle_btn_bg"
+                app:layout_constraintBottom_toTopOf="@+id/zero_layout"
+                app:layout_constraintEnd_toStartOf="@+id/nine_layout"
+                app:layout_constraintStart_toEndOf="@+id/seven_layout"
+                app:layout_constraintTop_toBottomOf="@+id/five_layout">
+
+                <TextView
+                    android:id="@+id/numpad_8"
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/custom_ripple"
+                    android:gravity="center"
+                    android:src="@drawable/plus"
+                    android:text="@string/eight"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_20sdp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/nine_layout"
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_below="@+id/six_layout"
+                android:layout_marginEnd="63dp"
+                android:layout_marginBottom="97dp"
+                android:layout_toRightOf="@+id/eight_layout"
+                android:background="@drawable/circle_btn_bg"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/eight_layout"
+                app:layout_constraintTop_toBottomOf="@+id/six_layout">
+
+                <TextView
+                    android:id="@+id/numpad_9"
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/custom_ripple"
+                    android:gravity="center"
+                    android:src="@drawable/plus"
+                    android:text="@string/nine"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_20sdp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/zero_layout"
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_below="@+id/eight_layout"
+                android:layout_marginStart="150dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="150dp"
+                android:layout_marginBottom="3dp"
+                android:layout_toRightOf="@+id/seven_layout"
+                android:background="@drawable/circle_btn_bg"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.61"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/eight_layout"
+                app:layout_constraintVertical_bias="0">
+
+                <TextView
+                    android:id="@+id/numpad_0"
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/custom_ripple"
+                    android:gravity="center"
+                    android:src="@drawable/plus"
+                    android:text="@string/zero"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_20sdp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/six_layout"
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_below="@+id/three_layout"
+                android:layout_marginEnd="@dimen/_45sdp"
+                android:layout_marginBottom="19dp"
+                android:layout_toRightOf="@+id/five_layout"
+                android:background="@drawable/circle_btn_bg"
+                app:layout_constraintBottom_toTopOf="@+id/nine_layout"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/five_layout"
+                app:layout_constraintTop_toBottomOf="@+id/three_layout">
+
+                <TextView
+                    android:id="@+id/numpad_6"
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/custom_ripple"
+                    android:gravity="center"
+                    android:src="@drawable/plus"
+                    android:text="@string/six"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_20sdp" />
+            </RelativeLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <RelativeLayout
+            android:id="@+id/touch_area"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_180sdp"
+            android:layout_margin="@dimen/_20sdp"
+            android:background="@drawable/large_rectangular"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints,NotSibling" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/vol_chnl_parent"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_150sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/changeable_layout">
+
+        <RelativeLayout
+            android:id="@+id/vol_up_down_layout"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_toStartOf="@+id/vol_chnl_parent"
+            android:background="@drawable/vol_btn_bg"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/botm_six_pad_layout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/vol_up_btn"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/custom_ripple"
+                android:padding="@dimen/_10sdp"
+                android:src="@drawable/plus" />
+
+            <ImageView
+                android:id="@+id/vol_down_btn"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:background="@drawable/custom_ripple"
+                android:padding="@dimen/_10sdp"
+                android:src="@drawable/minus" />
+        </RelativeLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/botm_six_pad_layout"
+            android:layout_width="@dimen/_140sdp"
+            android:layout_height="@dimen/_150sdp"
+            android:layout_toRightOf="@+id/vol_up_down_layout"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/Chanel_Layout"
+            app:layout_constraintStart_toEndOf="@+id/vol_up_down_layout"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0">
+
+            <RelativeLayout
+                android:id="@+id/home_layout"
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:background="@drawable/circle_btn_bg"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/home_btn"
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:background="@drawable/custom_ripple"
+                    android:padding="@dimen/_10sdp"
+                    android:src="@drawable/home" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view5"
+                android:layout_width="@dimen/_10sdp"
+                android:layout_height="@dimen/_10sdp"
+                app:layout_constraintEnd_toStartOf="@+id/refresh_layout"
+                app:layout_constraintStart_toEndOf="@+id/home_layout"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <RelativeLayout
+                android:id="@+id/refresh_layout"
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="@dimen/_45sdp"
+                android:background="@drawable/circle_btn_bg"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/view5"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/refresh_btn"
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:background="@drawable/custom_ripple"
+                    android:padding="@dimen/_10sdp"
+                    android:src="@drawable/refresh" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/back_layout"
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:background="@drawable/circle_btn_bg"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/home_layout">
+
+                <ImageView
+                    android:id="@+id/back_btn"
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:background="@drawable/custom_ripple"
+                    android:padding="@dimen/_10sdp"
+                    android:src="@drawable/back" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view6"
+                android:layout_width="@dimen/_10sdp"
+                android:layout_height="@dimen/_5sdp"
+                android:layout_marginTop="67dp"
+                app:layout_constraintStart_toEndOf="@+id/back_layout"
+                app:layout_constraintTop_toBottomOf="@+id/view5" />
+
+            <RelativeLayout
+                android:id="@+id/keyboard_layout"
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:layout_marginEnd="9dp"
+                android:layout_marginBottom="9dp"
+                android:background="@drawable/circle_btn_bg"
+                app:layout_constraintBottom_toTopOf="@+id/jump_layout"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/view6"
+                app:layout_constraintTop_toBottomOf="@+id/refresh_layout">
+
+                <ImageView
+                    android:id="@+id/keyBoard_btn"
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:background="@drawable/custom_ripple"
+                    android:padding="@dimen/_10sdp"
+                    android:src="@drawable/keyboard" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/mute_layout"
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:background="@drawable/circle_btn_bg"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/back_layout">
+
+                <ImageView
+                    android:id="@+id/mute_btn"
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:background="@drawable/custom_ripple"
+                    android:padding="@dimen/_10sdp"
+                    android:src="@drawable/mute" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view7"
+                android:layout_width="@dimen/_10sdp"
+                android:layout_height="@dimen/_5sdp"
+                android:layout_marginTop="67dp"
+                app:layout_constraintStart_toEndOf="@+id/mute_layout"
+                app:layout_constraintTop_toBottomOf="@+id/view6" />
+
+            <RelativeLayout
+                android:id="@+id/jump_layout"
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:background="@drawable/circle_btn_bg"
+                app:layout_constraintStart_toEndOf="@+id/view7"
+                app:layout_constraintTop_toBottomOf="@+id/keyboard_layout">
+
+                <ImageView
+                    android:id="@+id/jump_btn"
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:background="@drawable/custom_ripple"
+                    android:padding="@dimen/_10sdp"
+                    android:src="@drawable/jump" />
+            </RelativeLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <RelativeLayout
+            android:id="@+id/Chanel_Layout"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/botm_six_pad_layout"
+            android:background="@drawable/ch_btn_bg"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toEndOf="@+id/botm_six_pad_layout"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0">
+
+            <ImageView
+                android:id="@+id/channel_up"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/custom_ripple"
+                android:padding="@dimen/_10sdp"
+                android:src="@drawable/plus" />
+
+            <ImageView
+                android:id="@+id/channel_down"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:background="@drawable/custom_ripple"
+                android:padding="@dimen/_10sdp"
+                android:src="@drawable/minus" />
+        </RelativeLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

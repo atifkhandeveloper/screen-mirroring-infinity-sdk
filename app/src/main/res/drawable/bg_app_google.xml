@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- bg_app_google.xml : light gray background for Google tile -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="#F1F3F4" />
+    <corners android:radius="16dp" />
+</shape>

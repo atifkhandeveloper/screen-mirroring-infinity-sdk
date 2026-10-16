@@ -1,0 +1,143 @@
+<resources>
+    <string name="control_your_smart_tv_using_your_mobile_device_as_a_remote_control_">Mirror your phone screen to your TV in high quality with ultra-low latency.</string>
+    <string name="browse_and_access_content_on_your_smart_tv_while_mirroring_or_casting_the_screen_">Experience your photos and videos on the big screen in stunning 4k.</string>
+    <string name="conform_delete">Are you sure to want to delete history?</string>
+    <string name="imdb">IMDB</string>
+    <string name="amazon">Amazon</string>
+    <string name="app_name">Screen Mirroring</string>
+    <string name="audio">Audio</string>
+    <string name="audios">Audios</string>
+    <string name="bing">Bing</string>
+    <string name="choose_language">Languages</string>
+    <string name="choose_preferred_language">Choose your preferred Languages</string>
+    <string name="connected">Connected</string>
+    <string name="dailymotion">Dailymotion</string>
+    <string name="delete_history">Delete History</string>
+    <string name="disconnected">Disconnected</string>
+    <string name="dummy">Dummy</string>
+    <string name="eight">8</string>
+    <string name="english">English</string>
+    <string name="google">Google</string>
+   <string name="facebook">Facebook</string>
+    <string name="five">5</string>
+    <string name="four">4</string>
+    <string name="fox">Fox</string>
+   <string name="history">History</string>
+    <string name="mirroring_and_casting">Smart Screen Mirroring</string>
+    <string name="netflix">Netflix</string>
+    <string name="network_connection_not_found">Network connection not found</string>
+    <string name="nine">9</string>
+    <string name="no_folder_found">No folder found</string>
+    <string name="no_item_found">No item found</string>
+    <string name="not_in_the_list">Not in the list</string>
+    <string name="one">1</string>
+    <string name="our_screen_mirroring_app_will_help_you_stream_phone_to_tv_screen_in_high_quality_fast_simple_share_screen_and_cast_to_tv_or_other_devices">Our Screen Mirroring app will help you stream phone to TV screen in high quality. Fast and Simple! Share screen and Cast to TV or other devices!</string>
+    <string name="paste_your_url_here">Paste your url here</string>
+    <string name="permission_not_granted">Permission not granted</string>
+    <string name="photos">Photos</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="screen_browsing">Cast Your Media</string>
+    <string name="screen_mirroring">Screen Mirroring</string>
+    <string name="search_by_google_or_enter_your_url">Search by Google or enter your URL</string>
+    <string name="select">Select</string>
+    <string name="settings">Settings</string>
+    <string name="seven">7</string>
+    <string name="show_devices">Show Devices</string>
+    <string name="six">6</string>
+    <string name="skip">Next</string>
+    <string name="soundcloud">Soundcloud</string>
+    <string name="three">3</string>
+    <string name="twitch">Twitch</string>
+    <string name="two">2</string>
+    <string name="universal_remote">Screen Mirroring</string>
+    <string name="videos">Videos</string>
+    <string name="vimeo">Vimeo</string>
+    <string name="wirelessly_transmit_your_media_files_content_from_your_mobile_device_to_smart_tv_">Full-featured control for all your smart devices in one place.</string>
+    <string name="yahoo">Yahoo</string>
+    <string name="youtube">Youtube</string>
+    <string name="zero">0</string>
+    <string name="app_settings">App Settings</string>
+
+
+
+    <string name="other">Other</string>
+    <string name="help_support">How to Connect?</string>
+    <string name="share_with_friends">Share with Friends</string>
+    <string name="rate_us">Rate Us</string>
+    <string name="mirroring">Mirroring</string>
+    <string name="high_quality_experience">High Quality Experience</string>
+
+
+    <string name="paste">PASTE</string>
+    <string name="media_cast">Media Cast</string>
+    <string name="images">Images</string>
+
+
+    <string name="how_to_connect_q">How to Connect ?</string>
+    <string name="how_to_connect">How to connect?</string>
+    <string name="back">Back</string>
+    <string name="start_mirroring">Start Mirroring</string>
+
+    <string name="step_1_text">Make sure your TV and phone are connected to the same Wi-Fi network.</string>
+    <string name="step_2_text">Enable \'Wireless Display\' or \'Screen Mirroring\' on your TV settings.</string>
+    <string name="step_3_text">Tap the \'Start Mirroring\' button below to find your device.</string>
+
+
+
+
+        <string name="language" translatable="false">Language</string>
+        <string name="ads_are_about_to_be_shown">Ads are about to be shown...</string>
+        <string name="please_select_language">Please select language</string>
+        <string name="press_back_again_to_exit">Press back again to exit</string>
+        <string name="get_started">Get Started</string>
+        <string name="next">next</string>
+        <string name="txt_continue">Continue</string>
+        <string name="txt_request_record_permission">Recording is the permission required for the app to work</string>
+        <string name="txt_denie">To use this feature, you need permission</string>
+        <string name="txt_thanks_you_for_rating">Thanks you for rating!</string>
+        <string name="txt_later" translatable="false"><u>Later</u></string>
+        <string name="txt_rate_5_star" translatable="false">If you like this app, please rate our app 5 stars in store!</string>
+        <string name="txt_do_you_like_our_app" translatable="false">Do you like our app?</string>
+        <string name="onboarding_title_1">Title onboarding 1</string>
+        <string name="onboarding_des_1">Description onboarding 1</string>
+        <string name="onboarding_title_2">Title onboarding 2</string>
+        <string name="onboarding_des_2">Description onboarding 2</string>
+        <string name="onboarding_title_3">Title onboarding 3</string>
+        <string name="onboarding_des_3">Description onboarding 3</string>
+        <string name="onboarding_title_4">Title onboarding 4</string>
+        <string name="onboarding_des_4">Description onboarding 4</string>
+
+        <string name="applying_selected_language" translatable="false">Applying selected language...</string>
+        <string name="text_restart_app">Restart App</string>
+        <string name="crash_info_title">Crash Information</string>
+        <string name="close">Close</string>
+        <string name="ad_config_invalid_message">Invalid ad configuration. Please verify ad_config.json.</string>
+        <!--    Uninstall-->
+        <string name="content_confirm_uninstall">Why remvove the app</string>
+        <string name="try_again">Try Again</string>
+        <string name="still_want_to_uninstall">Still want to uninstall</string>
+        <string name="issues_encountered_during_usage">Issues encountered during usage</string>
+        <string name="txt_cancel">Cancel</string>
+        <string name="txt_uninstall">Uninstall</string>
+        <string name="survey_1">Feature does not working</string>
+        <string name="survey_2">Too many ads</string>
+        <string name="survey_3">I don’t need it</string>
+        <string name="survey_4">Other</string>
+        <string name="loading_label">Loading</string>
+        <string name="no_internet_title">No Internet Connection</string>
+        <string name="no_internet_message">Please check your network settings to continue using the app.</string>
+        <string name="open_settings">Open Settings</string>
+        <string name="force_update_message">A new version is available. Please update to continue using the app.</string>
+        <string name="update_now">Update Now</string>
+        <string name="update_later">Maybe Later</string>
+        <string name="setting">Setting</string>
+        <string name="rate">Rate</string>
+        <string name="feedback">Feedback</string>
+        <string name="share_with_friend">Share with friend</string>
+        <string name="let_me_recommend">Let me recommend</string>
+        <string name="share_to">Share to</string>
+        <string name="we_re_better_than_ever">We’re better than ever</string>
+        <string name="well_comeback">Welcome back!</string>
+        <string name="start">Start</string>
+
+</resources>

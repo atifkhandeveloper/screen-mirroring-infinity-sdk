@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/long_click_history_layout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_50sdp"
+    android:layout_marginStart="@dimen/_10sdp">
+
+    <View
+        android:id="@+id/line_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_1sdp"
+        android:layout_toEndOf="@+id/searchDateTime" />
+
+    <LinearLayout
+        android:id="@+id/searchDateTime"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/searching_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nexa"
+            android:gravity="center"
+            android:text="@string/dummy"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_10sdp" />
+
+        <TextView
+            android:id="@+id/searching_Time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nexa"
+            android:gravity="center"
+            android:text="@string/dummy"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_10sdp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/searching_Url"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_toStartOf="@+id/history_option_Btn"
+        android:layout_toEndOf="@+id/searchDateTime"
+        android:ellipsize="end"
+        android:fontFamily="@font/nexa"
+        android:gravity="start|center_vertical"
+        android:maxLines="1"
+        android:text="@string/dummy"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_11sdp" />
+
+    <ImageView
+        android:id="@+id/history_option_Btn"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:padding="@dimen/_12sdp"
+        android:src="@drawable/option_icon" />
+</RelativeLayout>
