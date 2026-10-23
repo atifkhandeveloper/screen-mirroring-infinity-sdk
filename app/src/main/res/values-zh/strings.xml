@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="control_your_smart_tv_using_your_mobile_device_as_a_remote_control_">以超低延迟将手机屏幕高清投射到电视上。</string>
+    <string name="browse_and_access_content_on_your_smart_tv_while_mirroring_or_casting_the_screen_">在大屏幕上以惊艳的4K画质欣赏您的照片和视频。</string>
+    <string name="conform_delete">确定要删除历史记录吗？</string>
+    <string name="imdb">IMDB</string>
+    <string name="amazon">Amazon</string>
+    <string name="app_name">屏幕镜像</string>
+    <string name="audio">音频</string>
+    <string name="audios">音频</string>
+    <string name="bing">Bing</string>
+    <string name="choose_language">语言</string>
+    <string name="choose_preferred_language">选择您偏好的语言</string>
+    <string name="connected">已连接</string>
+    <string name="dailymotion">Dailymotion</string>
+    <string name="delete_history">删除历史记录</string>
+    <string name="disconnected">已断开连接</string>
+    <string name="dummy">占位</string>
+    <string name="eight">8</string>
+    <string name="english">英语</string>
+    <string name="google">Google</string>
+    <string name="facebook">Facebook</string>
+    <string name="five">5</string>
+    <string name="four">4</string>
+    <string name="fox">Fox</string>
+    <string name="history">历史记录</string>
+    <string name="mirroring_and_casting">智能屏幕镜像</string>
+    <string name="netflix">Netflix</string>
+    <string name="network_connection_not_found">未找到网络连接</string>
+    <string name="nine">9</string>
+    <string name="no_folder_found">未找到文件夹</string>
+    <string name="no_item_found">未找到项目</string>
+    <string name="not_in_the_list">不在列表中</string>
+    <string name="one">1</string>
+    <string name="our_screen_mirroring_app_will_help_you_stream_phone_to_tv_screen_in_high_quality_fast_simple_share_screen_and_cast_to_tv_or_other_devices">我们的屏幕镜像应用将帮助您以高清画质将手机投屏到电视屏幕。快速简便！分享屏幕并投射到电视或其他设备！</string>
+    <string name="paste_your_url_here">在此粘贴您的URL</string>
+    <string name="permission_not_granted">未授予权限</string>
+    <string name="photos">照片</string>
+    <string name="privacy_policy">隐私政策</string>
+    <string name="screen_browsing">投射您的媒体</string>
+    <string name="screen_mirroring">屏幕镜像</string>
+    <string name="search_by_google_or_enter_your_url">通过Google搜索或输入您的URL</string>
+    <string name="select">选择</string>
+    <string name="settings">设置</string>
+    <string name="seven">7</string>
+    <string name="show_devices">显示设备</string>
+    <string name="six">6</string>
+    <string name="skip">下一步</string>
+    <string name="soundcloud">Soundcloud</string>
+    <string name="three">3</string>
+    <string name="twitch">Twitch</string>
+    <string name="two">2</string>
+    <string name="universal_remote">屏幕镜像</string>
+    <string name="videos">视频</string>
+    <string name="vimeo">Vimeo</string>
+    <string name="wirelessly_transmit_your_media_files_content_from_your_mobile_device_to_smart_tv_">在一处全面控制您的所有智能设备。</string>
+    <string name="yahoo">Yahoo</string>
+    <string name="youtube">Youtube</string>
+    <string name="zero">0</string>
+    <string name="app_settings">应用设置</string>
+
+    <string name="other">其他</string>
+    <string name="help_support">如何连接？</string>
+    <string name="share_with_friends">与朋友分享</string>
+    <string name="rate_us">评价我们</string>
+    <string name="mirroring">镜像</string>
+    <string name="high_quality_experience">高品质体验</string>
+
+    <string name="paste">粘贴</string>
+    <string name="media_cast">媒体投射</string>
+    <string name="images">图片</string>
+
+    <string name="how_to_connect_q">如何连接？</string>
+    <string name="how_to_connect">如何连接？</string>
+    <string name="back">返回</string>
+    <string name="start_mirroring">开始镜像</string>
+
+    <string name="step_1_text">确保您的电视和手机连接到同一个Wi-Fi网络。</string>
+    <string name="step_2_text">在电视设置中启用“无线显示”或“屏幕镜像”。</string>
+    <string name="step_3_text">点击下方的“开始镜像”按钮以查找您的设备。</string>
+
+    <string name="language" translatable="false">语言</string>
+    <string name="ads_are_about_to_be_shown">广告即将展示...</string>
+    <string name="please_select_language">请选择语言</string>
+    <string name="press_back_again_to_exit">再次按返回键退出</string>
+    <string name="get_started">开始使用</string>
+    <string name="next">下一步</string>
+    <string name="txt_continue">继续</string>
+    <string name="txt_request_record_permission">录制是应用正常运行所需的权限</string>
+    <string name="txt_denie">要使用此功能，您需要授予权限</string>
+    <string name="txt_thanks_you_for_rating">感谢您的评价！</string>
+    <string name="txt_later" translatable="false"><u>稍后</u></string>
+    <string name="txt_rate_5_star" translatable="false">如果您喜欢这个应用，请在商店给我们五星好评！</string>
+    <string name="txt_do_you_like_our_app" translatable="false">您喜欢我们的应用吗？</string>
+
+    <string name="applying_selected_language" translatable="false">正在应用所选语言...</string>
+    <string name="text_restart_app">重启应用</string>
+    <string name="crash_info_title">崩溃信息</string>
+    <string name="close">关闭</string>
+    <string name="ad_config_invalid_message">广告配置无效。请验证 ad_config.json。</string>
+    <!--    Uninstall-->
+    <string name="content_confirm_uninstall">为什么要移除应用</string>
+    <string name="try_again">重试</string>
+    <string name="still_want_to_uninstall">仍然要卸载</string>
+    <string name="issues_encountered_during_usage">使用过程中遇到的问题</string>
+    <string name="txt_cancel">取消</string>
+    <string name="txt_uninstall">卸载</string>
+    <string name="survey_1">功能无法使用</string>
+    <string name="survey_2">广告太多</string>
+    <string name="survey_3">我不需要它</string>
+    <string name="survey_4">其他</string>
+    <string name="loading_label">加载中</string>
+    <string name="no_internet_title">无网络连接</string>
+    <string name="no_internet_message">请检查您的网络设置以继续使用应用。</string>
+    <string name="open_settings">打开设置</string>
+    <string name="force_update_message">有新版本可用。请更新以继续使用应用。</string>
+    <string name="update_now">立即更新</string>
+    <string name="update_later">稍后再说</string>
+    <string name="setting">设置</string>
+    <string name="rate">评价</string>
+    <string name="feedback">反馈</string>
+    <string name="share_with_friend">与朋友分享</string>
+    <string name="let_me_recommend">让我推荐</string>
+    <string name="share_to">分享到</string>
+    <string name="we_re_better_than_ever">我们比以往更好</string>
+    <string name="well_comeback">欢迎回来！</string>
+    <string name="start">开始</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_title_1">屏幕镜像</string>
+    <string name="onboarding_des_1">以超低延迟将手机屏幕高清投射到电视上。</string>
+
+    <string name="onboarding_title_2">智能屏幕镜像</string>
+    <string name="onboarding_des_2">在一处全面控制您的所有智能设备。</string>
+
+    <string name="onboarding_title_3">投射您的媒体</string>
+    <string name="onboarding_des_3">在大屏幕上以惊艳的4K画质欣赏您的照片和视频。</string>
+</resources>

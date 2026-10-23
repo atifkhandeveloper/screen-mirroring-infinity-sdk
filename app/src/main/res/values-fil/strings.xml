@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="control_your_smart_tv_using_your_mobile_device_as_a_remote_control_">I-mirror ang screen ng iyong telepono sa iyong TV nang may mataas na kalidad at napakababang latency.</string>
+    <string name="browse_and_access_content_on_your_smart_tv_while_mirroring_or_casting_the_screen_">Makita ang iyong mga larawan at video sa malaking screen sa kamangha-manghang 4K.</string>
+    <string name="conform_delete">Sigurado ka bang gusto mong tanggalin ang history?</string>
+    <string name="imdb">IMDB</string>
+    <string name="amazon">Amazon</string>
+    <string name="app_name">Screen Mirroring</string>
+    <string name="audio">Audio</string>
+    <string name="audios">Mga Audio</string>
+    <string name="bing">Bing</string>
+    <string name="choose_language">Mga Wika</string>
+    <string name="choose_preferred_language">Piliin ang iyong gustong wika</string>
+    <string name="connected">Nakakonekta</string>
+    <string name="dailymotion">Dailymotion</string>
+    <string name="delete_history">Tanggalin ang History</string>
+    <string name="disconnected">Nadiskonekta</string>
+    <string name="dummy">Dummy</string>
+    <string name="eight">8</string>
+    <string name="english">Ingles</string>
+    <string name="google">Google</string>
+    <string name="facebook">Facebook</string>
+    <string name="five">5</string>
+    <string name="four">4</string>
+    <string name="fox">Fox</string>
+    <string name="history">History</string>
+    <string name="mirroring_and_casting">Smart Screen Mirroring</string>
+    <string name="netflix">Netflix</string>
+    <string name="network_connection_not_found">Hindi mahanap ang koneksyon sa network</string>
+    <string name="nine">9</string>
+    <string name="no_folder_found">Walang nahanap na folder</string>
+    <string name="no_item_found">Walang nahanap na item</string>
+    <string name="not_in_the_list">Wala sa listahan</string>
+    <string name="one">1</string>
+    <string name="our_screen_mirroring_app_will_help_you_stream_phone_to_tv_screen_in_high_quality_fast_simple_share_screen_and_cast_to_tv_or_other_devices">Tutulungan ka ng aming Screen Mirroring app na i-stream ang telepono sa TV screen nang may mataas na kalidad. Mabilis at Simple! I-share ang screen at i-cast sa TV o iba pang device!</string>
+    <string name="paste_your_url_here">I-paste ang iyong URL dito</string>
+    <string name="permission_not_granted">Hindi ibinigay ang pahintulot</string>
+    <string name="photos">Mga Larawan</string>
+    <string name="privacy_policy">Patakaran sa Privacy</string>
+    <string name="screen_browsing">I-cast ang Iyong Media</string>
+    <string name="screen_mirroring">Screen Mirroring</string>
+    <string name="search_by_google_or_enter_your_url">Maghanap sa Google o ilagay ang iyong URL</string>
+    <string name="select">Pumili</string>
+    <string name="settings">Mga Setting</string>
+    <string name="seven">7</string>
+    <string name="show_devices">Ipakita ang mga Device</string>
+    <string name="six">6</string>
+    <string name="skip">Susunod</string>
+    <string name="soundcloud">Soundcloud</string>
+    <string name="three">3</string>
+    <string name="twitch">Twitch</string>
+    <string name="two">2</string>
+    <string name="universal_remote">Screen Mirroring</string>
+    <string name="videos">Mga Video</string>
+    <string name="vimeo">Vimeo</string>
+    <string name="wirelessly_transmit_your_media_files_content_from_your_mobile_device_to_smart_tv_">Buong kontrol para sa lahat ng iyong smart device sa isang lugar.</string>
+    <string name="yahoo">Yahoo</string>
+    <string name="youtube">Youtube</string>
+    <string name="zero">0</string>
+    <string name="app_settings">Mga Setting ng App</string>
+
+    <string name="other">Iba pa</string>
+    <string name="help_support">Paano Kumonekta?</string>
+    <string name="share_with_friends">I-share sa mga Kaibigan</string>
+    <string name="rate_us">I-rate Kami</string>
+    <string name="mirroring">Mirroring</string>
+    <string name="high_quality_experience">Karanasang May Mataas na Kalidad</string>
+
+    <string name="paste">I-PASTE</string>
+    <string name="media_cast">Media Cast</string>
+    <string name="images">Mga Larawan</string>
+
+    <string name="how_to_connect_q">Paano Kumonekta?</string>
+    <string name="how_to_connect">Paano kumonekta?</string>
+    <string name="back">Bumalik</string>
+    <string name="start_mirroring">Simulan ang Mirroring</string>
+
+    <string name="step_1_text">Siguraduhing ang iyong TV at telepono ay nakakonekta sa parehong Wi-Fi network.</string>
+    <string name="step_2_text">I-enable ang \'Wireless Display\' o \'Screen Mirroring\' sa mga setting ng iyong TV.</string>
+    <string name="step_3_text">I-tap ang \'Simulan ang Mirroring\' na button sa ibaba para mahanap ang iyong device.</string>
+
+    <string name="language" translatable="false">Wika</string>
+    <string name="ads_are_about_to_be_shown">Malapit nang ipakita ang mga ad...</string>
+    <string name="please_select_language">Mangyaring pumili ng wika</string>
+    <string name="press_back_again_to_exit">Pindutin muli ang back para lumabas</string>
+    <string name="get_started">Magsimula</string>
+    <string name="next">susunod</string>
+    <string name="txt_continue">Magpatuloy</string>
+    <string name="txt_request_record_permission">Ang pag-record ay ang pahintulot na kailangan para gumana ang app</string>
+    <string name="txt_denie">Para magamit ang feature na ito, kailangan mo ng pahintulot</string>
+    <string name="txt_thanks_you_for_rating">Salamat sa iyong pag-rate!</string>
+    <string name="txt_later" translatable="false"><u>Mamaya</u></string>
+    <string name="txt_rate_5_star" translatable="false">Kung gusto mo ang app na ito, mangyaring i-rate ang aming app ng 5 bituin sa store!</string>
+    <string name="txt_do_you_like_our_app" translatable="false">Gusto mo ba ang aming app?</string>
+
+    <string name="applying_selected_language" translatable="false">Inilalapat ang napiling wika...</string>
+    <string name="text_restart_app">I-restart ang App</string>
+    <string name="crash_info_title">Impormasyon sa Pag-crash</string>
+    <string name="close">Isara</string>
+    <string name="ad_config_invalid_message">Invalid na configuration ng ad. Mangyaring i-verify ang ad_config.json.</string>
+    <!--    Uninstall-->
+    <string name="content_confirm_uninstall">Bakit aalisin ang app</string>
+    <string name="try_again">Subukan Muli</string>
+    <string name="still_want_to_uninstall">Gusto pa ring i-uninstall</string>
+    <string name="issues_encountered_during_usage">Mga problemang naranasan habang ginagamit</string>
+    <string name="txt_cancel">Kanselahin</string>
+    <string name="txt_uninstall">I-uninstall</string>
+    <string name="survey_1">Hindi gumagana ang feature</string>
+    <string name="survey_2">Masyadong maraming ad</string>
+    <string name="survey_3">Hindi ko ito kailangan</string>
+    <string name="survey_4">Iba pa</string>
+    <string name="loading_label">Naglo-load</string>
+    <string name="no_internet_title">Walang Koneksyon sa Internet</string>
+    <string name="no_internet_message">Mangyaring suriin ang iyong mga setting ng network para magpatuloy sa paggamit ng app.</string>
+    <string name="open_settings">Buksan ang Settings</string>
+    <string name="force_update_message">May bagong version na available. Mangyaring mag-update para magpatuloy sa paggamit ng app.</string>
+    <string name="update_now">Mag-update Ngayon</string>
+    <string name="update_later">Baka Mamaya</string>
+    <string name="setting">Setting</string>
+    <string name="rate">I-rate</string>
+    <string name="feedback">Feedback</string>
+    <string name="share_with_friend">I-share sa kaibigan</string>
+    <string name="let_me_recommend">Hayaan mo akong magrekomenda</string>
+    <string name="share_to">I-share sa</string>
+    <string name="we_re_better_than_ever">Mas mahusay kami kaysa dati</string>
+    <string name="well_comeback">Maligayang pagbabalik!</string>
+    <string name="start">Simula</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_title_1">Screen Mirroring</string>
+    <string name="onboarding_des_1">I-mirror ang screen ng iyong telepono sa iyong TV nang may mataas na kalidad at napakababang latency.</string>
+
+    <string name="onboarding_title_2">Smart Screen Mirroring</string>
+    <string name="onboarding_des_2">Buong kontrol para sa lahat ng iyong smart device sa isang lugar.</string>
+
+    <string name="onboarding_title_3">I-cast ang Iyong Media</string>
+    <string name="onboarding_des_3">Makita ang iyong mga larawan at video sa malaking screen sa kamangha-manghang 4K.</string>
+</resources>

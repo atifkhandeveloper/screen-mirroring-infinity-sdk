@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="control_your_smart_tv_using_your_mobile_device_as_a_remote_control_">Prikazujte ekran svog telefona na TV-u u visokom kvalitetu sa ultra-niskom latencijom.</string>
+    <string name="browse_and_access_content_on_your_smart_tv_while_mirroring_or_casting_the_screen_">Uživajte u svojim fotografijama i video zapisima na velikom ekranu u zadivljujućem 4K.</string>
+    <string name="conform_delete">Da li ste sigurni da želite da obrišete istoriju?</string>
+    <string name="imdb">IMDB</string>
+    <string name="amazon">Amazon</string>
+    <string name="app_name">Prikazivanje ekrana</string>
+    <string name="audio">Audio</string>
+    <string name="audios">Audio zapisi</string>
+    <string name="bing">Bing</string>
+    <string name="choose_language">Jezici</string>
+    <string name="choose_preferred_language">Izaberite željeni jezik</string>
+    <string name="connected">Povezano</string>
+    <string name="dailymotion">Dailymotion</string>
+    <string name="delete_history">Obriši istoriju</string>
+    <string name="disconnected">Prekinuta veza</string>
+    <string name="dummy">Lažni</string>
+    <string name="eight">8</string>
+    <string name="english">Engleski</string>
+    <string name="google">Google</string>
+    <string name="facebook">Facebook</string>
+    <string name="five">5</string>
+    <string name="four">4</string>
+    <string name="fox">Fox</string>
+    <string name="history">Istorija</string>
+    <string name="mirroring_and_casting">Pametno prikazivanje ekrana</string>
+    <string name="netflix">Netflix</string>
+    <string name="network_connection_not_found">Mrežna veza nije pronađena</string>
+    <string name="nine">9</string>
+    <string name="no_folder_found">Nije pronađena nijedna fascikla</string>
+    <string name="no_item_found">Nije pronađena nijedna stavka</string>
+    <string name="not_in_the_list">Nije na listi</string>
+    <string name="one">1</string>
+    <string name="our_screen_mirroring_app_will_help_you_stream_phone_to_tv_screen_in_high_quality_fast_simple_share_screen_and_cast_to_tv_or_other_devices">Naša aplikacija za prikazivanje ekrana pomoći će vam da strimujete telefon na TV ekran u visokom kvalitetu. Brzo i jednostavno! Delite ekran i emitujte na TV ili druge uređaje!</string>
+    <string name="paste_your_url_here">Nalepite svoj URL ovde</string>
+    <string name="permission_not_granted">Dozvola nije odobrena</string>
+    <string name="photos">Fotografije</string>
+    <string name="privacy_policy">Politika privatnosti</string>
+    <string name="screen_browsing">Emitujte svoje medije</string>
+    <string name="screen_mirroring">Prikazivanje ekrana</string>
+    <string name="search_by_google_or_enter_your_url">Pretražite putem Google-a ili unesite svoj URL</string>
+    <string name="select">Izaberi</string>
+    <string name="settings">Podešavanja</string>
+    <string name="seven">7</string>
+    <string name="show_devices">Prikaži uređaje</string>
+    <string name="six">6</string>
+    <string name="skip">Dalje</string>
+    <string name="soundcloud">Soundcloud</string>
+    <string name="three">3</string>
+    <string name="twitch">Twitch</string>
+    <string name="two">2</string>
+    <string name="universal_remote">Prikazivanje ekrana</string>
+    <string name="videos">Video zapisi</string>
+    <string name="vimeo">Vimeo</string>
+    <string name="wirelessly_transmit_your_media_files_content_from_your_mobile_device_to_smart_tv_">Potpuna kontrola za sve vaše pametne uređaje na jednom mestu.</string>
+    <string name="yahoo">Yahoo</string>
+    <string name="youtube">Youtube</string>
+    <string name="zero">0</string>
+    <string name="app_settings">Podešavanja aplikacije</string>
+
+    <string name="other">Ostalo</string>
+    <string name="help_support">Kako se povezati?</string>
+    <string name="share_with_friends">Podeli sa prijateljima</string>
+    <string name="rate_us">Ocenite nas</string>
+    <string name="mirroring">Prikazivanje</string>
+    <string name="high_quality_experience">Iskustvo visokog kvaliteta</string>
+
+    <string name="paste">NALEPI</string>
+    <string name="media_cast">Emitovanje medija</string>
+    <string name="images">Slike</string>
+
+    <string name="how_to_connect_q">Kako se povezati?</string>
+    <string name="how_to_connect">Kako se povezati?</string>
+    <string name="back">Nazad</string>
+    <string name="start_mirroring">Pokreni prikazivanje</string>
+
+    <string name="step_1_text">Uverite se da su vaš TV i telefon povezani na istu Wi-Fi mrežu.</string>
+    <string name="step_2_text">Omogućite \'Bežični ekran\' ili \'Prikazivanje ekrana\' u podešavanjima vašeg TV-a.</string>
+    <string name="step_3_text">Dodirnite dugme \'Pokreni prikazivanje\' ispod da biste pronašli svoj uređaj.</string>
+
+    <string name="language" translatable="false">Jezik</string>
+    <string name="ads_are_about_to_be_shown">Oglasi će uskoro biti prikazani...</string>
+    <string name="please_select_language">Molimo izaberite jezik</string>
+    <string name="press_back_again_to_exit">Ponovo pritisnite nazad za izlaz</string>
+    <string name="get_started">Započni</string>
+    <string name="next">dalje</string>
+    <string name="txt_continue">Nastavi</string>
+    <string name="txt_request_record_permission">Snimanje je dozvola potrebna da bi aplikacija radila</string>
+    <string name="txt_denie">Za korišćenje ove funkcije potrebna vam je dozvola</string>
+    <string name="txt_thanks_you_for_rating">Hvala vam na oceni!</string>
+    <string name="txt_later" translatable="false"><u>Kasnije</u></string>
+    <string name="txt_rate_5_star" translatable="false">Ako vam se sviđa ova aplikacija, ocenite našu aplikaciju sa 5 zvezdica u prodavnici!</string>
+    <string name="txt_do_you_like_our_app" translatable="false">Da li vam se sviđa naša aplikacija?</string>
+
+    <string name="applying_selected_language" translatable="false">Primenjuje se izabrani jezik...</string>
+    <string name="text_restart_app">Ponovo pokreni aplikaciju</string>
+    <string name="crash_info_title">Informacije o rušenju</string>
+    <string name="close">Zatvori</string>
+    <string name="ad_config_invalid_message">Nevažeća konfiguracija oglasa. Molimo proverite ad_config.json.</string>
+    <!--    Uninstall-->
+    <string name="content_confirm_uninstall">Zašto ukloniti aplikaciju</string>
+    <string name="try_again">Pokušaj ponovo</string>
+    <string name="still_want_to_uninstall">Ipak želim da deinstaliram</string>
+    <string name="issues_encountered_during_usage">Problemi na koje ste naišli tokom korišćenja</string>
+    <string name="txt_cancel">Otkaži</string>
+    <string name="txt_uninstall">Deinstaliraj</string>
+    <string name="survey_1">Funkcija ne radi</string>
+    <string name="survey_2">Previše oglasa</string>
+    <string name="survey_3">Ne treba mi</string>
+    <string name="survey_4">Ostalo</string>
+    <string name="loading_label">Učitavanje</string>
+    <string name="no_internet_title">Nema internet veze</string>
+    <string name="no_internet_message">Molimo proverite podešavanja mreže da biste nastavili da koristite aplikaciju.</string>
+    <string name="open_settings">Otvori podešavanja</string>
+    <string name="force_update_message">Dostupna je nova verzija. Molimo ažurirajte da biste nastavili da koristite aplikaciju.</string>
+    <string name="update_now">Ažuriraj sada</string>
+    <string name="update_later">Možda kasnije</string>
+    <string name="setting">Podešavanje</string>
+    <string name="rate">Oceni</string>
+    <string name="feedback">Povratne informacije</string>
+    <string name="share_with_friend">Podeli sa prijateljem</string>
+    <string name="let_me_recommend">Dozvolite mi da preporučim</string>
+    <string name="share_to">Podeli na</string>
+    <string name="we_re_better_than_ever">Bolji smo nego ikada</string>
+    <string name="well_comeback">Dobro došli nazad!</string>
+    <string name="start">Početak</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_title_1">Prikazivanje ekrana</string>
+    <string name="onboarding_des_1">Prikazujte ekran svog telefona na TV-u u visokom kvalitetu sa ultra-niskom latencijom.</string>
+
+    <string name="onboarding_title_2">Pametno prikazivanje ekrana</string>
+    <string name="onboarding_des_2">Potpuna kontrola za sve vaše pametne uređaje na jednom mestu.</string>
+
+    <string name="onboarding_title_3">Emitujte svoje medije</string>
+    <string name="onboarding_des_3">Uživajte u svojim fotografijama i video zapisima na velikom ekranu u zadivljujućem 4K.</string>
+</resources>

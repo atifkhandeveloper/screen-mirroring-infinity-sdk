@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="control_your_smart_tv_using_your_mobile_device_as_a_remote_control_">Telefon ekranınızı ultra düşük gecikmeyle yüksek kalitede TV\'nize yansıtın.</string>
+    <string name="browse_and_access_content_on_your_smart_tv_while_mirroring_or_casting_the_screen_">Fotoğraflarınızın ve videolarınızın keyfini çarpıcı 4K kalitede büyük ekranda çıkarın.</string>
+    <string name="conform_delete">Geçmişi silmek istediğinizden emin misiniz?</string>
+    <string name="imdb">IMDB</string>
+    <string name="amazon">Amazon</string>
+    <string name="app_name">Ekran Yansıtma</string>
+    <string name="audio">Ses</string>
+    <string name="audios">Ses Dosyaları</string>
+    <string name="bing">Bing</string>
+    <string name="choose_language">Diller</string>
+    <string name="choose_preferred_language">Tercih ettiğiniz dili seçin</string>
+    <string name="connected">Bağlandı</string>
+    <string name="dailymotion">Dailymotion</string>
+    <string name="delete_history">Geçmişi Sil</string>
+    <string name="disconnected">Bağlantı Kesildi</string>
+    <string name="dummy">Yer Tutucu</string>
+    <string name="eight">8</string>
+    <string name="english">İngilizce</string>
+    <string name="google">Google</string>
+    <string name="facebook">Facebook</string>
+    <string name="five">5</string>
+    <string name="four">4</string>
+    <string name="fox">Fox</string>
+    <string name="history">Geçmiş</string>
+    <string name="mirroring_and_casting">Akıllı Ekran Yansıtma</string>
+    <string name="netflix">Netflix</string>
+    <string name="network_connection_not_found">Ağ bağlantısı bulunamadı</string>
+    <string name="nine">9</string>
+    <string name="no_folder_found">Klasör bulunamadı</string>
+    <string name="no_item_found">Öğe bulunamadı</string>
+    <string name="not_in_the_list">Listede yok</string>
+    <string name="one">1</string>
+    <string name="our_screen_mirroring_app_will_help_you_stream_phone_to_tv_screen_in_high_quality_fast_simple_share_screen_and_cast_to_tv_or_other_devices">Ekran Yansıtma uygulamamız, telefonunuzu TV ekranına yüksek kalitede yayınlamanıza yardımcı olur. Hızlı ve Basit! Ekranı paylaşın ve TV\'ye veya diğer cihazlara yayınlayın!</string>
+    <string name="paste_your_url_here">URL\'nizi buraya yapıştırın</string>
+    <string name="permission_not_granted">İzin verilmedi</string>
+    <string name="photos">Fotoğraflar</string>
+    <string name="privacy_policy">Gizlilik Politikası</string>
+    <string name="screen_browsing">Medyanızı Yayınlayın</string>
+    <string name="screen_mirroring">Ekran Yansıtma</string>
+    <string name="search_by_google_or_enter_your_url">Google ile arayın veya URL\'nizi girin</string>
+    <string name="select">Seç</string>
+    <string name="settings">Ayarlar</string>
+    <string name="seven">7</string>
+    <string name="show_devices">Cihazları Göster</string>
+    <string name="six">6</string>
+    <string name="skip">Sonraki</string>
+    <string name="soundcloud">Soundcloud</string>
+    <string name="three">3</string>
+    <string name="twitch">Twitch</string>
+    <string name="two">2</string>
+    <string name="universal_remote">Ekran Yansıtma</string>
+    <string name="videos">Videolar</string>
+    <string name="vimeo">Vimeo</string>
+    <string name="wirelessly_transmit_your_media_files_content_from_your_mobile_device_to_smart_tv_">Tüm akıllı cihazlarınız için tek bir yerde tam kontrol.</string>
+    <string name="yahoo">Yahoo</string>
+    <string name="youtube">Youtube</string>
+    <string name="zero">0</string>
+    <string name="app_settings">Uygulama Ayarları</string>
+
+    <string name="other">Diğer</string>
+    <string name="help_support">Nasıl Bağlanılır?</string>
+    <string name="share_with_friends">Arkadaşlarla Paylaş</string>
+    <string name="rate_us">Bizi Değerlendirin</string>
+    <string name="mirroring">Yansıtma</string>
+    <string name="high_quality_experience">Yüksek Kaliteli Deneyim</string>
+
+    <string name="paste">YAPIŞTIR</string>
+    <string name="media_cast">Medya Yayını</string>
+    <string name="images">Görseller</string>
+
+    <string name="how_to_connect_q">Nasıl Bağlanılır?</string>
+    <string name="how_to_connect">Nasıl bağlanılır?</string>
+    <string name="back">Geri</string>
+    <string name="start_mirroring">Yansıtmayı Başlat</string>
+
+    <string name="step_1_text">TV\'nizin ve telefonunuzun aynı Wi-Fi ağına bağlı olduğundan emin olun.</string>
+    <string name="step_2_text">TV ayarlarınızda \'Kablosuz Ekran\' veya \'Ekran Yansıtma\'yı etkinleştirin.</string>
+    <string name="step_3_text">Cihazınızı bulmak için aşağıdaki \'Yansıtmayı Başlat\' düğmesine dokunun.</string>
+
+    <string name="language" translatable="false">Dil</string>
+    <string name="ads_are_about_to_be_shown">Reklamlar gösterilmek üzere...</string>
+    <string name="please_select_language">Lütfen dil seçin</string>
+    <string name="press_back_again_to_exit">Çıkmak için tekrar geri basın</string>
+    <string name="get_started">Başla</string>
+    <string name="next">sonraki</string>
+    <string name="txt_continue">Devam Et</string>
+    <string name="txt_request_record_permission">Kayıt, uygulamanın çalışması için gereken izindir</string>
+    <string name="txt_denie">Bu özelliği kullanmak için izniniz olması gerekir</string>
+    <string name="txt_thanks_you_for_rating">Değerlendirmeniz için teşekkürler!</string>
+    <string name="txt_later" translatable="false"><u>Daha sonra</u></string>
+    <string name="txt_rate_5_star" translatable="false">Bu uygulamayı beğendiyseniz, lütfen mağazada uygulamamıza 5 yıldız verin!</string>
+    <string name="txt_do_you_like_our_app" translatable="false">Uygulamamızı beğendiniz mi?</string>
+
+    <string name="applying_selected_language" translatable="false">Seçilen dil uygulanıyor...</string>
+    <string name="text_restart_app">Uygulamayı Yeniden Başlat</string>
+    <string name="crash_info_title">Çökme Bilgileri</string>
+    <string name="close">Kapat</string>
+    <string name="ad_config_invalid_message">Geçersiz reklam yapılandırması. Lütfen ad_config.json dosyasını doğrulayın.</string>
+    <!--    Uninstall-->
+    <string name="content_confirm_uninstall">Uygulamayı neden kaldırmak istiyorsunuz</string>
+    <string name="try_again">Tekrar Dene</string>
+    <string name="still_want_to_uninstall">Yine de kaldırmak istiyorum</string>
+    <string name="issues_encountered_during_usage">Kullanım sırasında karşılaşılan sorunlar</string>
+    <string name="txt_cancel">İptal</string>
+    <string name="txt_uninstall">Kaldır</string>
+    <string name="survey_1">Özellik çalışmıyor</string>
+    <string name="survey_2">Çok fazla reklam</string>
+    <string name="survey_3">İhtiyacım yok</string>
+    <string name="survey_4">Diğer</string>
+    <string name="loading_label">Yükleniyor</string>
+    <string name="no_internet_title">İnternet Bağlantısı Yok</string>
+    <string name="no_internet_message">Uygulamayı kullanmaya devam etmek için lütfen ağ ayarlarınızı kontrol edin.</string>
+    <string name="open_settings">Ayarları Aç</string>
+    <string name="force_update_message">Yeni bir sürüm mevcut. Uygulamayı kullanmaya devam etmek için lütfen güncelleyin.</string>
+    <string name="update_now">Şimdi Güncelle</string>
+    <string name="update_later">Belki Daha Sonra</string>
+    <string name="setting">Ayar</string>
+    <string name="rate">Değerlendir</string>
+    <string name="feedback">Geri Bildirim</string>
+    <string name="share_with_friend">Arkadaşla paylaş</string>
+    <string name="let_me_recommend">Tavsiye edeyim</string>
+    <string name="share_to">Şuraya paylaş</string>
+    <string name="we_re_better_than_ever">Her zamankinden daha iyiyiz</string>
+    <string name="well_comeback">Tekrar hoş geldiniz!</string>
+    <string name="start">Başlat</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_title_1">Ekran Yansıtma</string>
+    <string name="onboarding_des_1">Telefon ekranınızı ultra düşük gecikmeyle yüksek kalitede TV\'nize yansıtın.</string>
+
+    <string name="onboarding_title_2">Akıllı Ekran Yansıtma</string>
+    <string name="onboarding_des_2">Tüm akıllı cihazlarınız için tek bir yerde tam kontrol.</string>
+
+    <string name="onboarding_title_3">Medyanızı Yayınlayın</string>
+    <string name="onboarding_des_3">Fotoğraflarınızın ve videolarınızın keyfini çarpıcı 4K kalitede büyük ekranda çıkarın.</string>
+</resources>

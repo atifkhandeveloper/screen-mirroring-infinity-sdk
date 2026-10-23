@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="control_your_smart_tv_using_your_mobile_device_as_a_remote_control_">اعكس شاشة هاتفك على تلفازك بجودة عالية وبأقل تأخير ممكن.</string>
+    <string name="browse_and_access_content_on_your_smart_tv_while_mirroring_or_casting_the_screen_">استمتع بصورك ومقاطع الفيديو الخاصة بك على الشاشة الكبيرة بدقة 4K مذهلة.</string>
+    <string name="conform_delete">هل أنت متأكد من أنك تريد حذف السجل؟</string>
+    <string name="imdb">IMDB</string>
+    <string name="amazon">Amazon</string>
+    <string name="app_name">انعكاس الشاشة</string>
+    <string name="audio">الصوت</string>
+    <string name="audios">ملفات صوتية</string>
+    <string name="bing">Bing</string>
+    <string name="choose_language">اللغات</string>
+    <string name="choose_preferred_language">اختر لغتك المفضلة</string>
+    <string name="connected">متصل</string>
+    <string name="dailymotion">Dailymotion</string>
+    <string name="delete_history">حذف السجل</string>
+    <string name="disconnected">غير متصل</string>
+    <string name="dummy">تجريبي</string>
+    <string name="eight">8</string>
+    <string name="english">الإنجليزية</string>
+    <string name="google">Google</string>
+    <string name="facebook">Facebook</string>
+    <string name="five">5</string>
+    <string name="four">4</string>
+    <string name="fox">Fox</string>
+    <string name="history">السجل</string>
+    <string name="mirroring_and_casting">انعكاس الشاشة الذكي</string>
+    <string name="netflix">Netflix</string>
+    <string name="network_connection_not_found">لم يتم العثور على اتصال بالشبكة</string>
+    <string name="nine">9</string>
+    <string name="no_folder_found">لم يتم العثور على مجلد</string>
+    <string name="no_item_found">لم يتم العثور على عنصر</string>
+    <string name="not_in_the_list">غير موجود في القائمة</string>
+    <string name="one">1</string>
+    <string name="our_screen_mirroring_app_will_help_you_stream_phone_to_tv_screen_in_high_quality_fast_simple_share_screen_and_cast_to_tv_or_other_devices">سيساعدك تطبيق انعكاس الشاشة الخاص بنا على بث هاتفك إلى شاشة التلفاز بجودة عالية. سريع وبسيط! شارك الشاشة واعرضها على التلفاز أو الأجهزة الأخرى!</string>
+    <string name="paste_your_url_here">الصق رابطك هنا</string>
+    <string name="permission_not_granted">لم يتم منح الإذن</string>
+    <string name="photos">الصور</string>
+    <string name="privacy_policy">سياسة الخصوصية</string>
+    <string name="screen_browsing">اعرض وسائطك</string>
+    <string name="screen_mirroring">انعكاس الشاشة</string>
+    <string name="search_by_google_or_enter_your_url">ابحث عبر Google أو أدخل رابطك</string>
+    <string name="select">اختر</string>
+    <string name="settings">الإعدادات</string>
+    <string name="seven">7</string>
+    <string name="show_devices">إظهار الأجهزة</string>
+    <string name="six">6</string>
+    <string name="skip">التالي</string>
+    <string name="soundcloud">Soundcloud</string>
+    <string name="three">3</string>
+    <string name="twitch">Twitch</string>
+    <string name="two">2</string>
+    <string name="universal_remote">انعكاس الشاشة</string>
+    <string name="videos">مقاطع الفيديو</string>
+    <string name="vimeo">Vimeo</string>
+    <string name="wirelessly_transmit_your_media_files_content_from_your_mobile_device_to_smart_tv_">تحكم كامل لجميع أجهزتك الذكية في مكان واحد.</string>
+    <string name="yahoo">Yahoo</string>
+    <string name="youtube">Youtube</string>
+    <string name="zero">0</string>
+    <string name="app_settings">إعدادات التطبيق</string>
+
+    <string name="other">أخرى</string>
+    <string name="help_support">كيفية الاتصال؟</string>
+    <string name="share_with_friends">شارك مع الأصدقاء</string>
+    <string name="rate_us">قيّمنا</string>
+    <string name="mirroring">الانعكاس</string>
+    <string name="high_quality_experience">تجربة عالية الجودة</string>
+
+    <string name="paste">لصق</string>
+    <string name="media_cast">عرض الوسائط</string>
+    <string name="images">صور</string>
+
+    <string name="how_to_connect_q">كيفية الاتصال؟</string>
+    <string name="how_to_connect">كيفية الاتصال؟</string>
+    <string name="back">رجوع</string>
+    <string name="start_mirroring">بدء الانعكاس</string>
+
+    <string name="step_1_text">تأكد من أن تلفازك وهاتفك متصلان بنفس شبكة Wi-Fi.</string>
+    <string name="step_2_text">قم بتمكين \'العرض اللاسلكي\' أو \'انعكاس الشاشة\' في إعدادات تلفازك.</string>
+    <string name="step_3_text">اضغط على زر \'بدء الانعكاس\' أدناه للعثور على جهازك.</string>
+
+    <string name="language" translatable="false">اللغة</string>
+    <string name="ads_are_about_to_be_shown">سيتم عرض الإعلانات...</string>
+    <string name="please_select_language">يرجى اختيار اللغة</string>
+    <string name="press_back_again_to_exit">اضغط على رجوع مرة أخرى للخروج</string>
+    <string name="get_started">ابدأ الآن</string>
+    <string name="next">التالي</string>
+    <string name="txt_continue">متابعة</string>
+    <string name="txt_request_record_permission">التسجيل هو الإذن المطلوب لكي يعمل التطبيق</string>
+    <string name="txt_denie">لاستخدام هذه الميزة، تحتاج إلى إذن</string>
+    <string name="txt_thanks_you_for_rating">شكرًا لك على التقييم!</string>
+    <string name="txt_later" translatable="false"><u>لاحقًا</u></string>
+    <string name="txt_rate_5_star" translatable="false">إذا أعجبك هذا التطبيق، يرجى تقييم تطبيقنا بـ 5 نجوم في المتجر!</string>
+    <string name="txt_do_you_like_our_app" translatable="false">هل يعجبك تطبيقنا؟</string>
+
+    <string name="applying_selected_language" translatable="false">جارٍ تطبيق اللغة المحددة...</string>
+    <string name="text_restart_app">إعادة تشغيل التطبيق</string>
+    <string name="crash_info_title">معلومات الأعطال</string>
+    <string name="close">إغلاق</string>
+    <string name="ad_config_invalid_message">تكوين إعلاني غير صالح. يرجى التحقق من ad_config.json.</string>
+    <!--    Uninstall-->
+    <string name="content_confirm_uninstall">لماذا تريد إزالة التطبيق</string>
+    <string name="try_again">حاول مرة أخرى</string>
+    <string name="still_want_to_uninstall">ما زلت تريد إلغاء التثبيت</string>
+    <string name="issues_encountered_during_usage">مشكلات واجهتها أثناء الاستخدام</string>
+    <string name="txt_cancel">إلغاء</string>
+    <string name="txt_uninstall">إلغاء التثبيت</string>
+    <string name="survey_1">الميزة لا تعمل</string>
+    <string name="survey_2">إعلانات كثيرة جدًا</string>
+    <string name="survey_3">لا أحتاج إليه</string>
+    <string name="survey_4">أخرى</string>
+    <string name="loading_label">جارٍ التحميل</string>
+    <string name="no_internet_title">لا يوجد اتصال بالإنترنت</string>
+    <string name="no_internet_message">يرجى التحقق من إعدادات الشبكة لديك لمتابعة استخدام التطبيق.</string>
+    <string name="open_settings">فتح الإعدادات</string>
+    <string name="force_update_message">يتوفر إصدار جديد. يرجى التحديث لمتابعة استخدام التطبيق.</string>
+    <string name="update_now">حدّث الآن</string>
+    <string name="update_later">ربما لاحقًا</string>
+    <string name="setting">الإعداد</string>
+    <string name="rate">تقييم</string>
+    <string name="feedback">الملاحظات</string>
+    <string name="share_with_friend">شارك مع صديق</string>
+    <string name="let_me_recommend">دعني أوصي به</string>
+    <string name="share_to">شارك إلى</string>
+    <string name="we_re_better_than_ever">نحن أفضل من أي وقت مضى</string>
+    <string name="well_comeback">مرحبًا بعودتك!</string>
+    <string name="start">ابدأ</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_title_1">انعكاس الشاشة</string>
+    <string name="onboarding_des_1">اعكس شاشة هاتفك على تلفازك بجودة عالية وبأقل تأخير ممكن.</string>
+
+    <string name="onboarding_title_2">انعكاس الشاشة الذكي</string>
+    <string name="onboarding_des_2">تحكم كامل لجميع أجهزتك الذكية في مكان واحد.</string>
+
+    <string name="onboarding_title_3">اعرض وسائطك</string>
+    <string name="onboarding_des_3">استمتع بصورك ومقاطع الفيديو الخاصة بك على الشاشة الكبيرة بدقة 4K مذهلة.</string>
+</resources>

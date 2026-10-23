@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="control_your_smart_tv_using_your_mobile_device_as_a_remote_control_">Rifletti lo schermo del tuo telefono sulla TV in alta qualità con latenza ultrabassa.</string>
+    <string name="browse_and_access_content_on_your_smart_tv_while_mirroring_or_casting_the_screen_">Goditi le tue foto e i tuoi video sul grande schermo in uno splendido 4K.</string>
+    <string name="conform_delete">Sei sicuro di voler eliminare la cronologia?</string>
+    <string name="imdb">IMDB</string>
+    <string name="amazon">Amazon</string>
+    <string name="app_name">Mirroring dello schermo</string>
+    <string name="audio">Audio</string>
+    <string name="audios">File audio</string>
+    <string name="bing">Bing</string>
+    <string name="choose_language">Lingue</string>
+    <string name="choose_preferred_language">Scegli la tua lingua preferita</string>
+    <string name="connected">Connesso</string>
+    <string name="dailymotion">Dailymotion</string>
+    <string name="delete_history">Elimina cronologia</string>
+    <string name="disconnected">Disconnesso</string>
+    <string name="dummy">Segnaposto</string>
+    <string name="eight">8</string>
+    <string name="english">Inglese</string>
+    <string name="google">Google</string>
+    <string name="facebook">Facebook</string>
+    <string name="five">5</string>
+    <string name="four">4</string>
+    <string name="fox">Fox</string>
+    <string name="history">Cronologia</string>
+    <string name="mirroring_and_casting">Mirroring dello schermo intelligente</string>
+    <string name="netflix">Netflix</string>
+    <string name="network_connection_not_found">Connessione di rete non trovata</string>
+    <string name="nine">9</string>
+    <string name="no_folder_found">Nessuna cartella trovata</string>
+    <string name="no_item_found">Nessun elemento trovato</string>
+    <string name="not_in_the_list">Non presente nell\'elenco</string>
+    <string name="one">1</string>
+    <string name="our_screen_mirroring_app_will_help_you_stream_phone_to_tv_screen_in_high_quality_fast_simple_share_screen_and_cast_to_tv_or_other_devices">La nostra app di mirroring dello schermo ti aiuterà a trasmettere il telefono sullo schermo della TV in alta qualità. Veloce e semplice! Condividi lo schermo e trasmetti su TV o altri dispositivi!</string>
+    <string name="paste_your_url_here">Incolla qui il tuo URL</string>
+    <string name="permission_not_granted">Autorizzazione non concessa</string>
+    <string name="photos">Foto</string>
+    <string name="privacy_policy">Informativa sulla privacy</string>
+    <string name="screen_browsing">Trasmetti i tuoi media</string>
+    <string name="screen_mirroring">Mirroring dello schermo</string>
+    <string name="search_by_google_or_enter_your_url">Cerca con Google o inserisci il tuo URL</string>
+    <string name="select">Seleziona</string>
+    <string name="settings">Impostazioni</string>
+    <string name="seven">7</string>
+    <string name="show_devices">Mostra dispositivi</string>
+    <string name="six">6</string>
+    <string name="skip">Avanti</string>
+    <string name="soundcloud">Soundcloud</string>
+    <string name="three">3</string>
+    <string name="twitch">Twitch</string>
+    <string name="two">2</string>
+    <string name="universal_remote">Mirroring dello schermo</string>
+    <string name="videos">Video</string>
+    <string name="vimeo">Vimeo</string>
+    <string name="wirelessly_transmit_your_media_files_content_from_your_mobile_device_to_smart_tv_">Controllo completo per tutti i tuoi dispositivi intelligenti in un unico posto.</string>
+    <string name="yahoo">Yahoo</string>
+    <string name="youtube">Youtube</string>
+    <string name="zero">0</string>
+    <string name="app_settings">Impostazioni dell\'app</string>
+
+    <string name="other">Altro</string>
+    <string name="help_support">Come connettersi?</string>
+    <string name="share_with_friends">Condividi con gli amici</string>
+    <string name="rate_us">Valutaci</string>
+    <string name="mirroring">Mirroring</string>
+    <string name="high_quality_experience">Esperienza di alta qualità</string>
+
+    <string name="paste">INCOLLA</string>
+    <string name="media_cast">Trasmissione media</string>
+    <string name="images">Immagini</string>
+
+    <string name="how_to_connect_q">Come connettersi?</string>
+    <string name="how_to_connect">Come connettersi?</string>
+    <string name="back">Indietro</string>
+    <string name="start_mirroring">Avvia mirroring</string>
+
+    <string name="step_1_text">Assicurati che la TV e il telefono siano connessi alla stessa rete Wi-Fi.</string>
+    <string name="step_2_text">Attiva \'Visualizzazione wireless\' o \'Mirroring dello schermo\' nelle impostazioni della TV.</string>
+    <string name="step_3_text">Tocca il pulsante \'Avvia mirroring\' qui sotto per trovare il tuo dispositivo.</string>
+
+    <string name="language" translatable="false">Lingua</string>
+    <string name="ads_are_about_to_be_shown">Gli annunci stanno per essere mostrati...</string>
+    <string name="please_select_language">Seleziona una lingua</string>
+    <string name="press_back_again_to_exit">Premi di nuovo indietro per uscire</string>
+    <string name="get_started">Inizia</string>
+    <string name="next">avanti</string>
+    <string name="txt_continue">Continua</string>
+    <string name="txt_request_record_permission">La registrazione è l\'autorizzazione necessaria per il funzionamento dell\'app</string>
+    <string name="txt_denie">Per utilizzare questa funzione, hai bisogno dell\'autorizzazione</string>
+    <string name="txt_thanks_you_for_rating">Grazie per la tua valutazione!</string>
+    <string name="txt_later" translatable="false"><u>Più tardi</u></string>
+    <string name="txt_rate_5_star" translatable="false">Se ti piace questa app, valuta la nostra app con 5 stelle nello store!</string>
+    <string name="txt_do_you_like_our_app" translatable="false">Ti piace la nostra app?</string>
+
+    <string name="applying_selected_language" translatable="false">Applicazione della lingua selezionata...</string>
+    <string name="text_restart_app">Riavvia l\'app</string>
+    <string name="crash_info_title">Informazioni sull\'arresto anomalo</string>
+    <string name="close">Chiudi</string>
+    <string name="ad_config_invalid_message">Configurazione degli annunci non valida. Verifica ad_config.json.</string>
+    <!--    Uninstall-->
+    <string name="content_confirm_uninstall">Perché rimuovere l\'app</string>
+    <string name="try_again">Riprova</string>
+    <string name="still_want_to_uninstall">Voglio comunque disinstallare</string>
+    <string name="issues_encountered_during_usage">Problemi riscontrati durante l\'utilizzo</string>
+    <string name="txt_cancel">Annulla</string>
+    <string name="txt_uninstall">Disinstalla</string>
+    <string name="survey_1">La funzione non funziona</string>
+    <string name="survey_2">Troppi annunci</string>
+    <string name="survey_3">Non ne ho bisogno</string>
+    <string name="survey_4">Altro</string>
+    <string name="loading_label">Caricamento</string>
+    <string name="no_internet_title">Nessuna connessione Internet</string>
+    <string name="no_internet_message">Controlla le impostazioni di rete per continuare a utilizzare l\'app.</string>
+    <string name="open_settings">Apri impostazioni</string>
+    <string name="force_update_message">È disponibile una nuova versione. Aggiorna per continuare a utilizzare l\'app.</string>
+    <string name="update_now">Aggiorna ora</string>
+    <string name="update_later">Forse più tardi</string>
+    <string name="setting">Impostazione</string>
+    <string name="rate">Valuta</string>
+    <string name="feedback">Feedback</string>
+    <string name="share_with_friend">Condividi con un amico</string>
+    <string name="let_me_recommend">Lascia che ti consigli</string>
+    <string name="share_to">Condividi su</string>
+    <string name="we_re_better_than_ever">Siamo migliori che mai</string>
+    <string name="well_comeback">Bentornato!</string>
+    <string name="start">Inizia</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_title_1">Mirroring dello schermo</string>
+    <string name="onboarding_des_1">Rifletti lo schermo del tuo telefono sulla TV in alta qualità con latenza ultrabassa.</string>
+
+    <string name="onboarding_title_2">Mirroring dello schermo intelligente</string>
+    <string name="onboarding_des_2">Controllo completo per tutti i tuoi dispositivi intelligenti in un unico posto.</string>
+
+    <string name="onboarding_title_3">Trasmetti i tuoi media</string>
+    <string name="onboarding_des_3">Goditi le tue foto e i tuoi video sul grande schermo in uno splendido 4K.</string>
+</resources>

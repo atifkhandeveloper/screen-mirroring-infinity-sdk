@@ -98,14 +98,6 @@
         <string name="txt_later" translatable="false"><u>Later</u></string>
         <string name="txt_rate_5_star" translatable="false">If you like this app, please rate our app 5 stars in store!</string>
         <string name="txt_do_you_like_our_app" translatable="false">Do you like our app?</string>
-        <string name="onboarding_title_1">Title onboarding 1</string>
-        <string name="onboarding_des_1">Description onboarding 1</string>
-        <string name="onboarding_title_2">Title onboarding 2</string>
-        <string name="onboarding_des_2">Description onboarding 2</string>
-        <string name="onboarding_title_3">Title onboarding 3</string>
-        <string name="onboarding_des_3">Description onboarding 3</string>
-        <string name="onboarding_title_4">Title onboarding 4</string>
-        <string name="onboarding_des_4">Description onboarding 4</string>
 
         <string name="applying_selected_language" translatable="false">Applying selected language...</string>
         <string name="text_restart_app">Restart App</string>
@@ -139,5 +131,15 @@
         <string name="we_re_better_than_ever">We’re better than ever</string>
         <string name="well_comeback">Welcome back!</string>
         <string name="start">Start</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_title_1">Screen Mirroring</string>
+    <string name="onboarding_des_1">Mirror your phone screen to your TV in high quality with ultra-low latency.</string>
+
+    <string name="onboarding_title_2">Smart Screen Mirroring</string>
+    <string name="onboarding_des_2">Full-featured control for all your smart devices in one place.</string>
+
+    <string name="onboarding_title_3">Cast Your Media </string>
+    <string name="onboarding_des_3">Experience your photos and videos on the big screen in stunning 4K.</string>
 
 </resources>

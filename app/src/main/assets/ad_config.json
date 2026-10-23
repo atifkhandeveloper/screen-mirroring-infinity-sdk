@@ -163,6 +163,12 @@
     "reloadIntervalSeconds": 30,
     "enable_ua_check": false
   },
+  "banner_all": {
+    "id": "ca-app-pub-3940256099942544/9214589741",
+    "isEnable": true,
+    "reloadIntervalSeconds": 30,
+    "enable_ua_check": false
+  },
   "native_survey": {
     "id": "ca-app-pub-7208941695689653/9849017274",
     "isEnable": true,
@@ -191,7 +197,17 @@
     "enable_ua_check": false
   },
   "inter_welcome": {
-    "id": "ca-app-pub-7208941695689653/1200371069",
+    "id": "ca-app-pub-3940256099942544/1033173712",
+    "isEnable": false,
+    "enable_ua_check": false
+  },
+  "inter_home": {
+    "id": "ca-app-pub-3940256099942544/1033173712",
+    "isEnable": false,
+    "enable_ua_check": false
+  },
+  "inter_back": {
+    "id": "ca-app-pub-3940256099942544/1033173712",
     "isEnable": false,
     "enable_ua_check": false
   },

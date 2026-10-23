@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="control_your_smart_tv_using_your_mobile_device_as_a_remote_control_">Транслируйте экран телефона на телевизор в высоком качестве с ультранизкой задержкой.</string>
+    <string name="browse_and_access_content_on_your_smart_tv_while_mirroring_or_casting_the_screen_">Смотрите свои фото и видео на большом экране в потрясающем 4K.</string>
+    <string name="conform_delete">Вы уверены, что хотите удалить историю?</string>
+    <string name="imdb">IMDB</string>
+    <string name="amazon">Amazon</string>
+    <string name="app_name">Трансляция экрана</string>
+    <string name="audio">Аудио</string>
+    <string name="audios">Аудиофайлы</string>
+    <string name="bing">Bing</string>
+    <string name="choose_language">Языки</string>
+    <string name="choose_preferred_language">Выберите предпочитаемый язык</string>
+    <string name="connected">Подключено</string>
+    <string name="dailymotion">Dailymotion</string>
+    <string name="delete_history">Удалить историю</string>
+    <string name="disconnected">Отключено</string>
+    <string name="dummy">Фиктивный</string>
+    <string name="eight">8</string>
+    <string name="english">Английский</string>
+    <string name="google">Google</string>
+    <string name="facebook">Facebook</string>
+    <string name="five">5</string>
+    <string name="four">4</string>
+    <string name="fox">Fox</string>
+    <string name="history">История</string>
+    <string name="mirroring_and_casting">Умная трансляция экрана</string>
+    <string name="netflix">Netflix</string>
+    <string name="network_connection_not_found">Сетевое подключение не найдено</string>
+    <string name="nine">9</string>
+    <string name="no_folder_found">Папка не найдена</string>
+    <string name="no_item_found">Элемент не найден</string>
+    <string name="not_in_the_list">Нет в списке</string>
+    <string name="one">1</string>
+    <string name="our_screen_mirroring_app_will_help_you_stream_phone_to_tv_screen_in_high_quality_fast_simple_share_screen_and_cast_to_tv_or_other_devices">Наше приложение для трансляции экрана поможет вам транслировать телефон на экран телевизора в высоком качестве. Быстро и просто! Делитесь экраном и транслируйте на телевизор или другие устройства!</string>
+    <string name="paste_your_url_here">Вставьте свой URL здесь</string>
+    <string name="permission_not_granted">Разрешение не предоставлено</string>
+    <string name="photos">Фото</string>
+    <string name="privacy_policy">Политика конфиденциальности</string>
+    <string name="screen_browsing">Транслируйте свои медиа</string>
+    <string name="screen_mirroring">Трансляция экрана</string>
+    <string name="search_by_google_or_enter_your_url">Ищите через Google или введите свой URL</string>
+    <string name="select">Выбрать</string>
+    <string name="settings">Настройки</string>
+    <string name="seven">7</string>
+    <string name="show_devices">Показать устройства</string>
+    <string name="six">6</string>
+    <string name="skip">Далее</string>
+    <string name="soundcloud">Soundcloud</string>
+    <string name="three">3</string>
+    <string name="twitch">Twitch</string>
+    <string name="two">2</string>
+    <string name="universal_remote">Трансляция экрана</string>
+    <string name="videos">Видео</string>
+    <string name="vimeo">Vimeo</string>
+    <string name="wirelessly_transmit_your_media_files_content_from_your_mobile_device_to_smart_tv_">Полный контроль над всеми вашими умными устройствами в одном месте.</string>
+    <string name="yahoo">Yahoo</string>
+    <string name="youtube">Youtube</string>
+    <string name="zero">0</string>
+    <string name="app_settings">Настройки приложения</string>
+
+    <string name="other">Другое</string>
+    <string name="help_support">Как подключиться?</string>
+    <string name="share_with_friends">Поделиться с друзьями</string>
+    <string name="rate_us">Оцените нас</string>
+    <string name="mirroring">Трансляция</string>
+    <string name="high_quality_experience">Опыт высокого качества</string>
+
+    <string name="paste">ВСТАВИТЬ</string>
+    <string name="media_cast">Трансляция медиа</string>
+    <string name="images">Изображения</string>
+
+    <string name="how_to_connect_q">Как подключиться?</string>
+    <string name="how_to_connect">Как подключиться?</string>
+    <string name="back">Назад</string>
+    <string name="start_mirroring">Начать трансляцию</string>
+
+    <string name="step_1_text">Убедитесь, что ваш телевизор и телефон подключены к одной сети Wi-Fi.</string>
+    <string name="step_2_text">Включите \'Беспроводной дисплей\' или \'Трансляцию экрана\' в настройках телевизора.</string>
+    <string name="step_3_text">Нажмите кнопку \'Начать трансляцию\' ниже, чтобы найти своё устройство.</string>
+
+    <string name="language" translatable="false">Язык</string>
+    <string name="ads_are_about_to_be_shown">Реклама скоро будет показана...</string>
+    <string name="please_select_language">Пожалуйста, выберите язык</string>
+    <string name="press_back_again_to_exit">Нажмите назад ещё раз для выхода</string>
+    <string name="get_started">Начать</string>
+    <string name="next">далее</string>
+    <string name="txt_continue">Продолжить</string>
+    <string name="txt_request_record_permission">Запись — это разрешение, необходимое для работы приложения</string>
+    <string name="txt_denie">Для использования этой функции вам нужно разрешение</string>
+    <string name="txt_thanks_you_for_rating">Спасибо за вашу оценку!</string>
+    <string name="txt_later" translatable="false"><u>Позже</u></string>
+    <string name="txt_rate_5_star" translatable="false">Если вам нравится это приложение, оцените наше приложение на 5 звёзд в магазине!</string>
+    <string name="txt_do_you_like_our_app" translatable="false">Вам нравится наше приложение?</string>
+
+    <string name="applying_selected_language" translatable="false">Применение выбранного языка...</string>
+    <string name="text_restart_app">Перезапустить приложение</string>
+    <string name="crash_info_title">Информация о сбое</string>
+    <string name="close">Закрыть</string>
+    <string name="ad_config_invalid_message">Неверная конфигурация рекламы. Пожалуйста, проверьте ad_config.json.</string>
+    <!--    Uninstall-->
+    <string name="content_confirm_uninstall">Почему удалить приложение</string>
+    <string name="try_again">Попробовать снова</string>
+    <string name="still_want_to_uninstall">Всё равно хочу удалить</string>
+    <string name="issues_encountered_during_usage">Проблемы, возникшие при использовании</string>
+    <string name="txt_cancel">Отмена</string>
+    <string name="txt_uninstall">Удалить</string>
+    <string name="survey_1">Функция не работает</string>
+    <string name="survey_2">Слишком много рекламы</string>
+    <string name="survey_3">Мне это не нужно</string>
+    <string name="survey_4">Другое</string>
+    <string name="loading_label">Загрузка</string>
+    <string name="no_internet_title">Нет подключения к интернету</string>
+    <string name="no_internet_message">Пожалуйста, проверьте настройки сети, чтобы продолжить использование приложения.</string>
+    <string name="open_settings">Открыть настройки</string>
+    <string name="force_update_message">Доступна новая версия. Пожалуйста, обновите, чтобы продолжить использование приложения.</string>
+    <string name="update_now">Обновить сейчас</string>
+    <string name="update_later">Может быть, позже</string>
+    <string name="setting">Настройка</string>
+    <string name="rate">Оценить</string>
+    <string name="feedback">Обратная связь</string>
+    <string name="share_with_friend">Поделиться с другом</string>
+    <string name="let_me_recommend">Позвольте порекомендовать</string>
+    <string name="share_to">Поделиться в</string>
+    <string name="we_re_better_than_ever">Мы лучше, чем когда-либо</string>
+    <string name="well_comeback">С возвращением!</string>
+    <string name="start">Старт</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_title_1">Трансляция экрана</string>
+    <string name="onboarding_des_1">Транслируйте экран телефона на телевизор в высоком качестве с ультранизкой задержкой.</string>
+
+    <string name="onboarding_title_2">Умная трансляция экрана</string>
+    <string name="onboarding_des_2">Полный контроль над всеми вашими умными устройствами в одном месте.</string>
+
+    <string name="onboarding_title_3">Транслируйте свои медиа</string>
+    <string name="onboarding_des_3">Смотрите свои фото и видео на большом экране в потрясающем 4K.</string>
+</resources>

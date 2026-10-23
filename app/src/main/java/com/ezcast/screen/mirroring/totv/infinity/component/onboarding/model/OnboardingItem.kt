@@ -3,17 +3,19 @@ package com.ezcast.screen.mirroring.totv.infinity.component.onboarding.model
 import android.os.Parcelable
 import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
-import com.ezcast.screen.mirroring.totv.R
 import kotlinx.parcelize.Parcelize
+
+enum class FullNativeType { NONE, FULL1, FULL2 }
 
 @Parcelize
 data class OnboardingItem(
-    @StringRes val title: Int = R.string.onboarding_title_1,
-    @StringRes val description: Int = R.string.onboarding_title_1,
-    @StringRes val textButton: Int =  R.string.next,
-    @DrawableRes val imageResId: Int = R.drawable.ic_vietnamese,
+    @StringRes val title: Int = 0,
+    @StringRes val description: Int = 0,
+    @StringRes val textButton: Int = 0,
+    @DrawableRes val imageResId: Int = 0,
     val positionIndicator: Int = -1,
     val isHasNativeOnPage1: Boolean = false,
     val isHasNativeOnPage4: Boolean = false,
     val isHasNativeFull: Boolean = false,
-): Parcelable
+    val fullNativeType: FullNativeType = FullNativeType.NONE
+) : Parcelable

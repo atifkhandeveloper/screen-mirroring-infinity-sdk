@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="control_your_smart_tv_using_your_mobile_device_as_a_remote_control_">Cerminkan layar ponsel Anda ke TV dengan kualitas tinggi dan latensi sangat rendah.</string>
+    <string name="browse_and_access_content_on_your_smart_tv_while_mirroring_or_casting_the_screen_">Nikmati foto dan video Anda di layar besar dalam 4K yang memukau.</string>
+    <string name="conform_delete">Apakah Anda yakin ingin menghapus riwayat?</string>
+    <string name="imdb">IMDB</string>
+    <string name="amazon">Amazon</string>
+    <string name="app_name">Pencerminan Layar</string>
+    <string name="audio">Audio</string>
+    <string name="audios">Audio</string>
+    <string name="bing">Bing</string>
+    <string name="choose_language">Bahasa</string>
+    <string name="choose_preferred_language">Pilih bahasa yang Anda sukai</string>
+    <string name="connected">Terhubung</string>
+    <string name="dailymotion">Dailymotion</string>
+    <string name="delete_history">Hapus Riwayat</string>
+    <string name="disconnected">Terputus</string>
+    <string name="dummy">Dummy</string>
+    <string name="eight">8</string>
+    <string name="english">Inggris</string>
+    <string name="google">Google</string>
+    <string name="facebook">Facebook</string>
+    <string name="five">5</string>
+    <string name="four">4</string>
+    <string name="fox">Fox</string>
+    <string name="history">Riwayat</string>
+    <string name="mirroring_and_casting">Pencerminan Layar Pintar</string>
+    <string name="netflix">Netflix</string>
+    <string name="network_connection_not_found">Koneksi jaringan tidak ditemukan</string>
+    <string name="nine">9</string>
+    <string name="no_folder_found">Folder tidak ditemukan</string>
+    <string name="no_item_found">Item tidak ditemukan</string>
+    <string name="not_in_the_list">Tidak ada dalam daftar</string>
+    <string name="one">1</string>
+    <string name="our_screen_mirroring_app_will_help_you_stream_phone_to_tv_screen_in_high_quality_fast_simple_share_screen_and_cast_to_tv_or_other_devices">Aplikasi Pencerminan Layar kami akan membantu Anda streaming ponsel ke layar TV dengan kualitas tinggi. Cepat dan Mudah! Bagikan layar dan cast ke TV atau perangkat lain!</string>
+    <string name="paste_your_url_here">Tempel URL Anda di sini</string>
+    <string name="permission_not_granted">Izin tidak diberikan</string>
+    <string name="photos">Foto</string>
+    <string name="privacy_policy">Kebijakan Privasi</string>
+    <string name="screen_browsing">Cast Media Anda</string>
+    <string name="screen_mirroring">Pencerminan Layar</string>
+    <string name="search_by_google_or_enter_your_url">Cari melalui Google atau masukkan URL Anda</string>
+    <string name="select">Pilih</string>
+    <string name="settings">Pengaturan</string>
+    <string name="seven">7</string>
+    <string name="show_devices">Tampilkan Perangkat</string>
+    <string name="six">6</string>
+    <string name="skip">Berikutnya</string>
+    <string name="soundcloud">Soundcloud</string>
+    <string name="three">3</string>
+    <string name="twitch">Twitch</string>
+    <string name="two">2</string>
+    <string name="universal_remote">Pencerminan Layar</string>
+    <string name="videos">Video</string>
+    <string name="vimeo">Vimeo</string>
+    <string name="wirelessly_transmit_your_media_files_content_from_your_mobile_device_to_smart_tv_">Kontrol penuh untuk semua perangkat pintar Anda di satu tempat.</string>
+    <string name="yahoo">Yahoo</string>
+    <string name="youtube">Youtube</string>
+    <string name="zero">0</string>
+    <string name="app_settings">Pengaturan Aplikasi</string>
+
+    <string name="other">Lainnya</string>
+    <string name="help_support">Bagaimana Cara Terhubung?</string>
+    <string name="share_with_friends">Bagikan dengan Teman</string>
+    <string name="rate_us">Beri Rating Kami</string>
+    <string name="mirroring">Pencerminan</string>
+    <string name="high_quality_experience">Pengalaman Berkualitas Tinggi</string>
+
+    <string name="paste">TEMPEL</string>
+    <string name="media_cast">Cast Media</string>
+    <string name="images">Gambar</string>
+
+    <string name="how_to_connect_q">Bagaimana Cara Terhubung?</string>
+    <string name="how_to_connect">Bagaimana cara terhubung?</string>
+    <string name="back">Kembali</string>
+    <string name="start_mirroring">Mulai Pencerminan</string>
+
+    <string name="step_1_text">Pastikan TV dan ponsel Anda terhubung ke jaringan Wi-Fi yang sama.</string>
+    <string name="step_2_text">Aktifkan \'Tampilan Nirkabel\' atau \'Pencerminan Layar\' di pengaturan TV Anda.</string>
+    <string name="step_3_text">Ketuk tombol \'Mulai Pencerminan\' di bawah untuk menemukan perangkat Anda.</string>
+
+    <string name="language" translatable="false">Bahasa</string>
+    <string name="ads_are_about_to_be_shown">Iklan akan segera ditampilkan...</string>
+    <string name="please_select_language">Silakan pilih bahasa</string>
+    <string name="press_back_again_to_exit">Tekan kembali lagi untuk keluar</string>
+    <string name="get_started">Mulai</string>
+    <string name="next">berikutnya</string>
+    <string name="txt_continue">Lanjutkan</string>
+    <string name="txt_request_record_permission">Perekaman adalah izin yang diperlukan agar aplikasi berfungsi</string>
+    <string name="txt_denie">Untuk menggunakan fitur ini, Anda memerlukan izin</string>
+    <string name="txt_thanks_you_for_rating">Terima kasih atas rating Anda!</string>
+    <string name="txt_later" translatable="false"><u>Nanti</u></string>
+    <string name="txt_rate_5_star" translatable="false">Jika Anda menyukai aplikasi ini, beri rating aplikasi kami 5 bintang di toko!</string>
+    <string name="txt_do_you_like_our_app" translatable="false">Apakah Anda menyukai aplikasi kami?</string>
+
+    <string name="applying_selected_language" translatable="false">Menerapkan bahasa yang dipilih...</string>
+    <string name="text_restart_app">Mulai Ulang Aplikasi</string>
+    <string name="crash_info_title">Informasi Crash</string>
+    <string name="close">Tutup</string>
+    <string name="ad_config_invalid_message">Konfigurasi iklan tidak valid. Harap verifikasi ad_config.json.</string>
+    <!--    Uninstall-->
+    <string name="content_confirm_uninstall">Mengapa menghapus aplikasi</string>
+    <string name="try_again">Coba Lagi</string>
+    <string name="still_want_to_uninstall">Tetap ingin menghapus instalan</string>
+    <string name="issues_encountered_during_usage">Masalah yang dialami saat penggunaan</string>
+    <string name="txt_cancel">Batal</string>
+    <string name="txt_uninstall">Hapus Instalan</string>
+    <string name="survey_1">Fitur tidak berfungsi</string>
+    <string name="survey_2">Terlalu banyak iklan</string>
+    <string name="survey_3">Saya tidak membutuhkannya</string>
+    <string name="survey_4">Lainnya</string>
+    <string name="loading_label">Memuat</string>
+    <string name="no_internet_title">Tidak Ada Koneksi Internet</string>
+    <string name="no_internet_message">Harap periksa pengaturan jaringan Anda untuk terus menggunakan aplikasi.</string>
+    <string name="open_settings">Buka Pengaturan</string>
+    <string name="force_update_message">Versi baru tersedia. Harap perbarui untuk terus menggunakan aplikasi.</string>
+    <string name="update_now">Perbarui Sekarang</string>
+    <string name="update_later">Mungkin Nanti</string>
+    <string name="setting">Pengaturan</string>
+    <string name="rate">Beri Rating</string>
+    <string name="feedback">Umpan Balik</string>
+    <string name="share_with_friend">Bagikan dengan teman</string>
+    <string name="let_me_recommend">Izinkan saya merekomendasikan</string>
+    <string name="share_to">Bagikan ke</string>
+    <string name="we_re_better_than_ever">Kami lebih baik dari sebelumnya</string>
+    <string name="well_comeback">Selamat datang kembali!</string>
+    <string name="start">Mulai</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_title_1">Pencerminan Layar</string>
+    <string name="onboarding_des_1">Cerminkan layar ponsel Anda ke TV dengan kualitas tinggi dan latensi sangat rendah.</string>
+
+    <string name="onboarding_title_2">Pencerminan Layar Pintar</string>
+    <string name="onboarding_des_2">Kontrol penuh untuk semua perangkat pintar Anda di satu tempat.</string>
+
+    <string name="onboarding_title_3">Cast Media Anda</string>
+    <string name="onboarding_des_3">Nikmati foto dan video Anda di layar besar dalam 4K yang memukau.</string>
+</resources>

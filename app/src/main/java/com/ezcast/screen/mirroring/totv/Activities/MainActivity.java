@@ -1,10 +1,8 @@
 package com.ezcast.screen.mirroring.totv.Activities;
 
-import static android.app.PendingIntent.getActivity;
 import static com.ezcast.screen.mirroring.totv.ExtentionKt.edgeToEdge;
 
 import android.Manifest;
-import android.app.Dialog;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.wifi.WifiManager;
@@ -15,6 +13,7 @@ import android.os.Looper;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.PopupMenu;
 import android.widget.RelativeLayout;
@@ -28,8 +27,10 @@ import androidx.appcompat.widget.AppCompatButton;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
+import androidx.lifecycle.LiveData;
 import androidx.viewpager.widget.ViewPager;
 
+import com.ads.module.ads.wrapper.ApNativeAd;
 import com.connectsdk.device.ConnectableDevice;
 import com.connectsdk.device.ConnectableDeviceListener;
 import com.connectsdk.device.DevicePicker;
@@ -37,23 +38,22 @@ import com.connectsdk.discovery.DiscoveryManager;
 import com.connectsdk.discovery.DiscoveryManagerListener;
 import com.connectsdk.service.DeviceService;
 import com.connectsdk.service.command.ServiceCommandError;
+
+import com.ezcast.screen.mirroring.totv.Adapter.NavViewPagerAdapter;
+import com.ezcast.screen.mirroring.totv.Classes.InternetPermission;
+import com.ezcast.screen.mirroring.totv.R;
 import com.ezcast.screen.mirroring.totv.infinity.ads.AdRemoteConfig;
-import com.ezcast.screen.mirroring.totv.infinity.component.main.dialog.ForceUpdateDialog;
-import com.ezcast.screen.mirroring.totv.infinity.component.main.dialog.NoInternetDialog;
+import com.ezcast.screen.mirroring.totv.infinity.ads.AdUnitConfig;
+import com.ezcast.screen.mirroring.totv.infinity.ads.AdsManager;
+import com.ezcast.screen.mirroring.totv.infinity.ads.AdRemoteConfigExtensionsKt;
 import com.ezcast.screen.mirroring.totv.infinity.data.event.EventTracking;
-import com.ezcast.screen.mirroring.totv.infinity.data.model.ForceUpdateConfig;
-import com.ezcast.screen.mirroring.totv.infinity.ui.bases.BannerConfig;
-import com.ezcast.screen.mirroring.totv.infinity.ui.bases.ConsentHandler;
+import com.ezcast.screen.mirroring.totv.infinity.utils.ITGTrackingHelper;
+import com.facebook.shimmer.ShimmerFrameLayout;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.play.core.review.ReviewInfo;
 import com.google.android.play.core.review.ReviewManager;
 import com.google.android.play.core.review.ReviewManagerFactory;
-import com.ezcast.screen.mirroring.totv.Adapter.NavViewPagerAdapter;
-import com.ezcast.screen.mirroring.totv.Classes.InternetPermission;
-import com.ezcast.screen.mirroring.totv.R;
-import com.ezcast.screen.mirroring.totv.infinity.utils.ITGTrackingHelper;
-
 
 import java.util.ArrayList;
 import java.util.List;
@@ -64,6 +64,9 @@ public class MainActivity extends ThemeActivity implements
 
     private static final String TAG = "MainActivity";
     private static final int PERMISSION_REQUEST_CODE = 100;
+
+    /** Banner auto-refresh interval: 60 seconds. */
+    private static final long BANNER_REFRESH_INTERVAL_MS = 60_000L;
 
     public static String castingUrl;
     public static String deviceIpAddress;
@@ -79,28 +82,29 @@ public class MainActivity extends ThemeActivity implements
     private ImageView setting_btn_casting;
     private NavViewPagerAdapter navViewPagerAdapter;
 
-    // ---- New views from the fragment XML ----
     private TextView searching_textview;
     private AppCompatButton search_by_google_btn;
     private RelativeLayout btn_scan_now;
     private ImageView help_icon_toolbar;
 
+    private FrameLayout frBanner;
+    private boolean bannerLoaded = false;
+    private boolean welcomeAdHandled = false;
 
-//    protected BannerConfig getBannerConfig() {
-//        return new BannerConfig(AdRemoteConfig.banner_home, true);
-//    }
+    // ── Banner refresh state ─────────────────────────────────
+    private final Handler bannerRefreshHandler = new Handler(Looper.getMainLooper());
+    private Runnable bannerRefreshRunnable;
 
-    private ConsentHandler consentHandler;
+    // ── Native ad views / state ──────────────────────────────
+    private FrameLayout flNative;
+    private ShimmerFrameLayout shimmerNative;
+    private boolean nativeRequested = false;
+
+    // ── Click interstitial state ─────────────────────────────
+    private boolean clickInterAdReady = false;
+    private boolean clickInterAdLoading = false;
 
     private final Handler delayHandler = new Handler(Looper.getMainLooper());
-    private Runnable delayRunnable;
-
-    private NoInternetDialog noInternetDialog;
-    private ForceUpdateDialog forceUpdateDialog;
-
-    private Dialog forceUpdateDialogHandle;
-    private ForceUpdateConfig cachedForceUpdateConfig;
-//    private TextView tv_connected_status;
 
     AdapterView.OnItemClickListener selectDevice =
             new AdapterView.OnItemClickListener() {
@@ -124,34 +128,307 @@ public class MainActivity extends ThemeActivity implements
         setContentView(R.layout.activity_main);
         edgeToEdge(this, findViewById(R.id.main));
 
+        ITGTrackingHelper.INSTANCE.logEvent(EventTracking.HOME_SCREEN, null);
+
         showGoogleRateDialog();
-
-
 
         initViews();
         setupViewPager();
         setupClicks();
         showDefaultToolbar();
 
+        observeNativeAd();
+        loadNativeHome();
+
         checkPermissions();
+
+        showWelcomeInterstitialOnce();
+
+        loadClickInterstitial();
+    }
+
+    @Override
+    protected void onNewIntent(Intent intent) {
+        super.onNewIntent(intent);
+        setIntent(intent);
+        recreate();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        // Resume banner refresh cycle when the screen becomes visible again
+        if (bannerLoaded) {
+            scheduleBannerRefresh();
+        }
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        // Pause banner refresh while not visible to save battery / data
+        cancelBannerRefresh();
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
+
+        cancelBannerRefresh();
+
         if (multicastLock != null && multicastLock.isHeld()) {
             multicastLock.release();
         }
         if (mDiscoveryManager != null) {
             mDiscoveryManager.stop();
         }
+        if (shimmerNative != null) {
+            shimmerNative.stopShimmer();
+        }
+        if (delayHandler != null) {
+            delayHandler.removeCallbacksAndMessages(null);
+        }
     }
-
-
 
     @Override
     public void onBackPressed() {
         showExitDialog();
+    }
+
+    // =========================================================================
+    // BANNER — load + auto-refresh every 60 seconds
+    // =========================================================================
+    private void loadMainBanner() {
+        if (frBanner == null) return;
+
+        AdUnitConfig bannerConfig =
+                AdRemoteConfigExtensionsKt.getBanner_home(AdRemoteConfig.Companion);
+
+        if (!InternetPermission.isNetworkAvailable(this)) {
+            frBanner.setVisibility(View.GONE);
+            cancelBannerRefresh();
+            return;
+        }
+
+        frBanner.setVisibility(View.VISIBLE);
+
+        AdsManager.INSTANCE.loadBanner(
+                this,
+                bannerConfig,
+                frBanner,
+                true
+        );
+
+        bannerLoaded = true;
+
+        // Schedule the next refresh
+        scheduleBannerRefresh();
+    }
+
+    /**
+     * Schedules a single banner reload after {@link #BANNER_REFRESH_INTERVAL_MS}.
+     * Re-schedules itself after each successful refresh.
+     */
+    private void scheduleBannerRefresh() {
+        cancelBannerRefresh();
+
+        bannerRefreshRunnable = () -> {
+            if (isFinishing() || isDestroyed()) return;
+            if (frBanner == null) return;
+
+            if (!InternetPermission.isNetworkAvailable(this)) {
+                // No network — stop looping until next onResume / manual reload
+                Log.d(TAG, "Banner refresh skipped: no network");
+                return;
+            }
+
+            try {
+                AdUnitConfig bannerConfig =
+                        AdRemoteConfigExtensionsKt.getBanner_home(AdRemoteConfig.Companion);
+
+                if (bannerConfig.isEnable()) {
+                    frBanner.setVisibility(View.VISIBLE);
+                    AdsManager.INSTANCE.loadBanner(
+                            this,
+                            bannerConfig,
+                            frBanner,
+                            true
+                    );
+                    Log.d(TAG, "Banner refreshed");
+                } else {
+                    frBanner.setVisibility(View.GONE);
+                    cancelBannerRefresh();
+                    return;
+                }
+            } catch (Throwable t) {
+                Log.w(TAG, "Banner refresh failed", t);
+            }
+
+            // Re-schedule for the next cycle
+            scheduleBannerRefresh();
+        };
+
+        bannerRefreshHandler.postDelayed(bannerRefreshRunnable, BANNER_REFRESH_INTERVAL_MS);
+    }
+
+    private void cancelBannerRefresh() {
+        if (bannerRefreshRunnable != null) {
+            bannerRefreshHandler.removeCallbacks(bannerRefreshRunnable);
+            bannerRefreshRunnable = null;
+        }
+    }
+
+    // =========================================================================
+    // NATIVE AD
+    //
+    // Mirrors the sample activity:
+    //   load    -> AdsManager.loadNativeLanguageForDashboard(activity, layoutRes)
+    //   result  -> AdsManager.nativeDashboardPreviewLive (LiveData<ApNativeAd>)
+    //   render  -> populateNativeAdView(activity, ad, container, shimmer)
+    //
+    // If your AdsManager has dedicated home methods (for example loadNativeHome
+    // and nativeHomeLive), swap them in at the three marked lines.
+    // =========================================================================
+    private void loadNativeHome() {
+        if (flNative == null || shimmerNative == null) return;
+
+        if (!InternetPermission.isNetworkAvailable(this)) {
+            flNative.setVisibility(View.GONE);
+            shimmerNative.setVisibility(View.GONE);
+            return;
+        }
+
+        try {
+            AdUnitConfig nativeConfig =
+                    AdRemoteConfigExtensionsKt.getNative_home(AdRemoteConfig.Companion);
+
+            if (!nativeConfig.isEnable()) {
+                flNative.setVisibility(View.GONE);
+                shimmerNative.setVisibility(View.GONE);
+                return;
+            }
+
+            nativeRequested = true;
+            flNative.setVisibility(View.GONE);
+            shimmerNative.setVisibility(View.VISIBLE);
+            shimmerNative.startShimmer();
+
+            // <-- CHECK 1: load call
+            AdsManager.INSTANCE.loadNativeLanguageForDashboard(
+                    this, R.layout.layout_native_ad_small);
+        } catch (Throwable t) {
+            Log.w(TAG, "Native load failed", t);
+            hideNative();
+        }
+    }
+
+    private void observeNativeAd() {
+        // <-- CHECK 2: LiveData getter
+        LiveData<ApNativeAd> live = AdsManager.INSTANCE.getNativeDashboardPreviewLive();
+        live.observe(this, ad -> {
+            if (!nativeRequested) return;
+
+            if (ad != null) {
+                showNative(ad);
+            } else {
+                hideNative();
+            }
+        });
+    }
+
+    private void showNative(ApNativeAd ad) {
+        try {
+            flNative.setVisibility(View.VISIBLE);
+            // <-- CHECK 3: populate helper (a Kotlin top-level function). From Java it is
+            // called through its file class, e.g. AdsExtKt.populateNativeAdView(...).
+            // Use the file name your project defines it in.
+//            AdsManager.populateNativeAdView(
+//                    this, ad, flNative, shimmerNative);
+        } catch (Throwable t) {
+            Log.w(TAG, "Native populate failed", t);
+            hideNative();
+        }
+    }
+
+    private void hideNative() {
+        if (shimmerNative != null) {
+            shimmerNative.stopShimmer();
+            shimmerNative.setVisibility(View.GONE);
+        }
+        if (flNative != null) {
+            flNative.setVisibility(View.GONE);
+        }
+    }
+
+    // =========================================================================
+    // CLICK INTERSTITIAL — uses inter_home from remote config
+    // =========================================================================
+    private void loadClickInterstitial() {
+        if (!InternetPermission.isNetworkAvailable(this)) return;
+        if (clickInterAdLoading) return;
+
+        clickInterAdLoading = true;
+        try {
+            AdUnitConfig interConfig =
+                    AdRemoteConfigExtensionsKt.getInter_home(AdRemoteConfig.Companion);
+
+            Log.d(TAG, "inter_home: isEnable=" + interConfig.isEnable()
+                    + ", id=" + interConfig.getId());
+
+            if (!interConfig.isEnable()) {
+                clickInterAdReady = false;
+                return;
+            }
+
+            AdsManager.INSTANCE.loadInterHome(this, true);
+            clickInterAdReady = true;
+            Log.d(TAG, "Click interstitial preloaded via inter_home");
+        } catch (Throwable t) {
+            Log.w(TAG, "Click interstitial load failed", t);
+            clickInterAdReady = false;
+        } finally {
+            clickInterAdLoading = false;
+        }
+    }
+
+    private void showClickInterstitialThen(Runnable action) {
+        if (!clickInterAdReady || !InternetPermission.isNetworkAvailable(this)) {
+            action.run();
+            return;
+        }
+
+        try {
+            AdsManager.INSTANCE.showInterHome(this, true, () -> {
+                clickInterAdReady = false;
+                loadClickInterstitial();
+                action.run();
+                return kotlin.Unit.INSTANCE;
+            });
+        } catch (Throwable t) {
+            Log.w(TAG, "Click interstitial show failed", t);
+            clickInterAdReady = false;
+            action.run();
+        }
+    }
+
+    // =========================================================================
+    // WELCOME INTERSTITIAL
+    // =========================================================================
+    private void showWelcomeInterstitialOnce() {
+        if (welcomeAdHandled) return;
+        welcomeAdHandled = true;
+
+        if (!InternetPermission.isNetworkAvailable(this)) return;
+
+        try {
+            AdsManager.INSTANCE.loadInterWelcome(this, true);
+            AdsManager.INSTANCE.showInterWelcome(this, true, () -> {
+                Log.d(TAG, "Inter Welcome shown or skipped");
+                return kotlin.Unit.INSTANCE;
+            });
+        } catch (Throwable t) {
+            Log.w(TAG, "Inter Welcome failed", t);
+        }
     }
 
     // =========================================================================
@@ -212,9 +489,6 @@ public class MainActivity extends ThemeActivity implements
         multicastLock = wifi.createMulticastLock("connectsdk");
         multicastLock.setReferenceCounted(true);
         multicastLock.acquire();
-
-        Log.d(TAG, "WiFi enabled:       " + wifi.isWifiEnabled());
-        Log.d(TAG, "Multicast lock held: " + multicastLock.isHeld());
     }
 
     private void setupDiscovery() {
@@ -248,23 +522,20 @@ public class MainActivity extends ThemeActivity implements
         setting_btn_casting    = findViewById(R.id.setting_icon_casting_toolbar);
         help_icon_toolbar      = findViewById(R.id.help_icon_toolbar);
 
-        // New views that live inside the fragment layout
         searching_textview     = findViewById(R.id.searching_textview);
         search_by_google_btn   = findViewById(R.id.search_by_google_btn);
         btn_scan_now           = findViewById(R.id.connect_tv_card);
-//        tv_connected_status    = findViewById(R.id.tv_connected_status);
+
+        frBanner               = findViewById(R.id.fr_banner);
+        flNative               = findViewById(R.id.fl_native);
+        shimmerNative          = findViewById(R.id.shimmer_native);
+
+        loadMainBanner();
     }
 
     private void setupViewPager() {
         navViewPagerAdapter = new NavViewPagerAdapter(getSupportFragmentManager(), this);
         viewPager.setAdapter(navViewPagerAdapter);
-
-//        navigationView.setOnNavigationItemSelectedListener(item -> {
-//            if (item.getItemId() == R.id.remote) {
-//                viewPager.setCurrentItem(0);
-//            }
-//            return true;
-//        });
 
         viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override public void onPageScrolled(int p, float o, int px) {}
@@ -277,31 +548,30 @@ public class MainActivity extends ThemeActivity implements
 
     private void setupClicks() {
         setting_btn_casting.setOnClickListener(v ->
-                startActivity(new Intent(MainActivity.this, SettingActivity.class)));
+                showClickInterstitialThen(() ->
+                        startActivity(new Intent(MainActivity.this, SettingActivity.class))));
 
-        casting_btn.setOnClickListener(v -> handleCastButton());
+        casting_btn.setOnClickListener(v ->
+                showClickInterstitialThen(this::handleCastButton));
 
-        // "Scan Now" button on the Connect to TV card
-//        if (btn_scan_now != null) {
-//            btn_scan_now.setOnClickListener(v -> handleCastButton());
-//        }
-
-        // Search bar: tapping it opens the URL input / browser flow
         if (searching_textview != null) {
-            searching_textview.setOnClickListener(v -> openSearchUrl());
+            searching_textview.setOnClickListener(v ->
+                    showClickInterstitialThen(this::openSearchUrl));
         }
 
-        // PASTE button on the search bar
         if (search_by_google_btn != null) {
-            search_by_google_btn.setOnClickListener(v -> pasteFromClipboard());
+            search_by_google_btn.setOnClickListener(v ->
+                    showClickInterstitialThen(this::pasteFromClipboard));
         }
 
-        help_icon_toolbar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, HowToConnectActivity.class));
-            }
-        });
+        help_icon_toolbar.setOnClickListener(v ->
+                showClickInterstitialThen(() ->
+                        startActivity(new Intent(MainActivity.this, HowToConnectActivity.class))));
+
+        if (btn_scan_now != null) {
+            btn_scan_now.setOnClickListener(v ->
+                    showClickInterstitialThen(this::handleCastButton));
+        }
     }
 
     private void handleCastButton() {
@@ -319,8 +589,6 @@ public class MainActivity extends ThemeActivity implements
     }
 
     private void openSearchUrl() {
-        // TODO: replace with the actual URL entry / browser activity
-        // For now, focus an input or start a browser-like screen.
         Toast.makeText(this, R.string.search_by_google_or_enter_your_url,
                 Toast.LENGTH_SHORT).show();
     }
@@ -370,78 +638,53 @@ public class MainActivity extends ThemeActivity implements
     }
 
     // =========================================================================
-    // ConnectableDeviceListener
+    // LISTENERS
     // =========================================================================
-    @Override
-    public void onDeviceReady(ConnectableDevice device) {
+    @Override public void onDeviceReady(ConnectableDevice device) {
         myDevice = device;
         casting_btn.setImageResource(R.drawable.casting_filled_icon);
         updateConnectedPill(true);
         Toast.makeText(this, getString(R.string.connected), Toast.LENGTH_SHORT).show();
-        Log.d(TAG, "Device ready: " + device.getFriendlyName());
     }
 
-    @Override
-    public void onDeviceDisconnected(ConnectableDevice device) {
+    @Override public void onDeviceDisconnected(ConnectableDevice device) {
         myDevice = null;
         casting_btn.setImageResource(R.drawable.cast);
         updateConnectedPill(false);
         Toast.makeText(this, "Disconnected", Toast.LENGTH_SHORT).show();
     }
 
-    @Override
-    public void onPairingRequired(ConnectableDevice device,
-                                  DeviceService service,
-                                  DeviceService.PairingType pairingType) {
+    @Override public void onPairingRequired(ConnectableDevice device,
+                                            DeviceService service,
+                                            DeviceService.PairingType pairingType) {
         Toast.makeText(this, "Pairing Required", Toast.LENGTH_SHORT).show();
     }
 
-    @Override
-    public void onCapabilityUpdated(ConnectableDevice device,
-                                    List<String> added,
-                                    List<String> removed) {}
+    @Override public void onCapabilityUpdated(ConnectableDevice device,
+                                              List<String> added,
+                                              List<String> removed) {}
 
-    @Override
-    public void onConnectionFailed(ConnectableDevice device, ServiceCommandError error) {
+    @Override public void onConnectionFailed(ConnectableDevice device, ServiceCommandError error) {
         Toast.makeText(this, "Connection Failed", Toast.LENGTH_SHORT).show();
         Log.e(TAG, "Connection failed: " + error.getMessage());
     }
 
-    // =========================================================================
-    // DiscoveryManagerListener
-    // =========================================================================
-    @Override
-    public void onDeviceAdded(DiscoveryManager manager, ConnectableDevice device) {
-        Log.d(TAG, "Device found: " + device.getFriendlyName()
-                + " | IP: " + device.getIpAddress()
-                + " | Services: " + device.getServices());
-        Toast.makeText(this, "Found: " + device.getFriendlyName(), Toast.LENGTH_SHORT).show();
+    @Override public void onDeviceAdded(DiscoveryManager manager, ConnectableDevice device) {
+        Log.d(TAG, "Device found: " + device.getFriendlyName());
     }
 
-    @Override
-    public void onDeviceUpdated(DiscoveryManager manager, ConnectableDevice device) {
-        Log.d(TAG, "Device updated: " + device.getFriendlyName());
-    }
+    @Override public void onDeviceUpdated(DiscoveryManager manager, ConnectableDevice device) {}
 
-    @Override
-    public void onDeviceRemoved(DiscoveryManager manager, ConnectableDevice device) {
-        Log.d(TAG, "Device removed: " + device.getFriendlyName());
-    }
+    @Override public void onDeviceRemoved(DiscoveryManager manager, ConnectableDevice device) {}
 
-    @Override
-    public void onDiscoveryFailed(DiscoveryManager manager, ServiceCommandError error) {
+    @Override public void onDiscoveryFailed(DiscoveryManager manager, ServiceCommandError error) {
         Log.e(TAG, "Discovery failed: " + (error != null ? error.getMessage() : "unknown"));
-        Toast.makeText(this, "Discovery Failed", Toast.LENGTH_SHORT).show();
     }
 
     // =========================================================================
     // MISC
     // =========================================================================
-    private void updateConnectedPill(boolean connected) {
-//        if (tv_connected_status == null) return;
-//        tv_connected_status.setText(connected ? R.string.connected : R.string.disconnected);
-        // Optional: change dot / pill color here
-    }
+    private void updateConnectedPill(boolean connected) {}
 
     private void showGoogleRateDialog() {
         ReviewManager manager = ReviewManagerFactory.create(this);
@@ -450,9 +693,7 @@ public class MainActivity extends ThemeActivity implements
             if (task.isSuccessful()) {
                 ReviewInfo reviewInfo = task.getResult();
                 Task<Void> flow = manager.launchReviewFlow(this, reviewInfo);
-                flow.addOnCompleteListener(reviewTask -> {
-                    // Review flow finished
-                });
+                flow.addOnCompleteListener(reviewTask -> {});
             }
         });
     }

@@ -24,6 +24,6 @@ class OnboardingAdapter(
     override fun getItemCount(): Int = items.size
 
     override fun createFragment(position: Int): Fragment {
-        return OnboardingPageFragment.Companion.newInstance(items[position])
+        return OnboardingPageFragment.newInstance(items[position])
     }
 }

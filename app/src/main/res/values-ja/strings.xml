@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="control_your_smart_tv_using_your_mobile_device_as_a_remote_control_">超低遅延で高品質な画面で、スマートフォンの画面をテレビにミラーリングします。</string>
+    <string name="browse_and_access_content_on_your_smart_tv_while_mirroring_or_casting_the_screen_">写真や動画を美しい4Kの大画面でお楽しみください。</string>
+    <string name="conform_delete">履歴を削除してもよろしいですか？</string>
+    <string name="imdb">IMDB</string>
+    <string name="amazon">Amazon</string>
+    <string name="app_name">画面ミラーリング</string>
+    <string name="audio">オーディオ</string>
+    <string name="audios">オーディオ</string>
+    <string name="bing">Bing</string>
+    <string name="choose_language">言語</string>
+    <string name="choose_preferred_language">希望の言語を選択してください</string>
+    <string name="connected">接続済み</string>
+    <string name="dailymotion">Dailymotion</string>
+    <string name="delete_history">履歴を削除</string>
+    <string name="disconnected">切断済み</string>
+    <string name="dummy">ダミー</string>
+    <string name="eight">8</string>
+    <string name="english">英語</string>
+    <string name="google">Google</string>
+    <string name="facebook">Facebook</string>
+    <string name="five">5</string>
+    <string name="four">4</string>
+    <string name="fox">Fox</string>
+    <string name="history">履歴</string>
+    <string name="mirroring_and_casting">スマート画面ミラーリング</string>
+    <string name="netflix">Netflix</string>
+    <string name="network_connection_not_found">ネットワーク接続が見つかりません</string>
+    <string name="nine">9</string>
+    <string name="no_folder_found">フォルダが見つかりません</string>
+    <string name="no_item_found">アイテムが見つかりません</string>
+    <string name="not_in_the_list">リストにありません</string>
+    <string name="one">1</string>
+    <string name="our_screen_mirroring_app_will_help_you_stream_phone_to_tv_screen_in_high_quality_fast_simple_share_screen_and_cast_to_tv_or_other_devices">当社の画面ミラーリングアプリは、スマートフォンをテレビ画面に高品質でストリーミングするお手伝いをします。快速かつ簡単！画面を共有してテレビや他のデバイスにキャストしましょう！</string>
+    <string name="paste_your_url_here">ここにURLを貼り付けてください</string>
+    <string name="permission_not_granted">権限が付与されていません</string>
+    <string name="photos">写真</string>
+    <string name="privacy_policy">プライバシーポリシー</string>
+    <string name="screen_browsing">メディアをキャスト</string>
+    <string name="screen_mirroring">画面ミラーリング</string>
+    <string name="search_by_google_or_enter_your_url">Googleで検索するか、URLを入力してください</string>
+    <string name="select">選択</string>
+    <string name="settings">設定</string>
+    <string name="seven">7</string>
+    <string name="show_devices">デバイスを表示</string>
+    <string name="six">6</string>
+    <string name="skip">次へ</string>
+    <string name="soundcloud">Soundcloud</string>
+    <string name="three">3</string>
+    <string name="twitch">Twitch</string>
+    <string name="two">2</string>
+    <string name="universal_remote">画面ミラーリング</string>
+    <string name="videos">動画</string>
+    <string name="vimeo">Vimeo</string>
+    <string name="wirelessly_transmit_your_media_files_content_from_your_mobile_device_to_smart_tv_">すべてのスマートデバイスを一か所で完全にコントロール。</string>
+    <string name="yahoo">Yahoo</string>
+    <string name="youtube">Youtube</string>
+    <string name="zero">0</string>
+    <string name="app_settings">アプリ設定</string>
+
+    <string name="other">その他</string>
+    <string name="help_support">接続方法は？</string>
+    <string name="share_with_friends">友達と共有</string>
+    <string name="rate_us">評価する</string>
+    <string name="mirroring">ミラーリング</string>
+    <string name="high_quality_experience">高品質な体験</string>
+
+    <string name="paste">貼り付け</string>
+    <string name="media_cast">メディアキャスト</string>
+    <string name="images">画像</string>
+
+    <string name="how_to_connect_q">接続方法は？</string>
+    <string name="how_to_connect">接続方法は？</string>
+    <string name="back">戻る</string>
+    <string name="start_mirroring">ミラーリングを開始</string>
+
+    <string name="step_1_text">テレビとスマートフォンが同じWi-Fiネットワークに接続されていることを確認してください。</string>
+    <string name="step_2_text">テレビの設定で「ワイヤレスディスプレイ」または「画面ミラーリング」を有効にしてください。</string>
+    <string name="step_3_text">下の「ミラーリングを開始」ボタンをタップしてデバイスを見つけてください。</string>
+
+    <string name="language" translatable="false">言語</string>
+    <string name="ads_are_about_to_be_shown">まもなく広告が表示されます...</string>
+    <string name="please_select_language">言語を選択してください</string>
+    <string name="press_back_again_to_exit">もう一度戻るを押して終了します</string>
+    <string name="get_started">はじめる</string>
+    <string name="next">次へ</string>
+    <string name="txt_continue">続ける</string>
+    <string name="txt_request_record_permission">録画はアプリの動作に必要な権限です</string>
+    <string name="txt_denie">この機能を使用するには権限が必要です</string>
+    <string name="txt_thanks_you_for_rating">評価ありがとうございます！</string>
+    <string name="txt_later" translatable="false"><u>後で</u></string>
+    <string name="txt_rate_5_star" translatable="false">このアプリが気に入ったら、ストアで5つ星の評価をお願いします！</string>
+    <string name="txt_do_you_like_our_app" translatable="false">このアプリは気に入りましたか？</string>
+
+    <string name="applying_selected_language" translatable="false">選択した言語を適用しています...</string>
+    <string name="text_restart_app">アプリを再起動</string>
+    <string name="crash_info_title">クラッシュ情報</string>
+    <string name="close">閉じる</string>
+    <string name="ad_config_invalid_message">広告設定が無効です。ad_config.jsonを確認してください。</string>
+    <!--    Uninstall-->
+    <string name="content_confirm_uninstall">アプリを削除する理由</string>
+    <string name="try_again">再試行</string>
+    <string name="still_want_to_uninstall">それでもアンインストールする</string>
+    <string name="issues_encountered_during_usage">使用中に発生した問題</string>
+    <string name="txt_cancel">キャンセル</string>
+    <string name="txt_uninstall">アンインストール</string>
+    <string name="survey_1">機能が動作しない</string>
+    <string name="survey_2">広告が多すぎる</string>
+    <string name="survey_3">必要ない</string>
+    <string name="survey_4">その他</string>
+    <string name="loading_label">読み込み中</string>
+    <string name="no_internet_title">インターネット接続がありません</string>
+    <string name="no_internet_message">アプリの使用を続けるには、ネットワーク設定を確認してください。</string>
+    <string name="open_settings">設定を開く</string>
+    <string name="force_update_message">新しいバージョンが利用可能です。アプリの使用を続けるには更新してください。</string>
+    <string name="update_now">今すぐ更新</string>
+    <string name="update_later">後で</string>
+    <string name="setting">設定</string>
+    <string name="rate">評価</string>
+    <string name="feedback">フィードバック</string>
+    <string name="share_with_friend">友達と共有</string>
+    <string name="let_me_recommend">おすすめを紹介させてください</string>
+    <string name="share_to">共有先</string>
+    <string name="we_re_better_than_ever">以前よりもさらに良くなりました</string>
+    <string name="well_comeback">おかえりなさい！</string>
+    <string name="start">スタート</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_title_1">画面ミラーリング</string>
+    <string name="onboarding_des_1">超低遅延で高品質な画面で、スマートフォンの画面をテレビにミラーリングします。</string>
+
+    <string name="onboarding_title_2">スマート画面ミラーリング</string>
+    <string name="onboarding_des_2">すべてのスマートデバイスを一か所で完全にコントロール。</string>
+
+    <string name="onboarding_title_3">メディアをキャスト</string>
+    <string name="onboarding_des_3">写真や動画を美しい4Kの大画面でお楽しみください。</string>
+</resources>

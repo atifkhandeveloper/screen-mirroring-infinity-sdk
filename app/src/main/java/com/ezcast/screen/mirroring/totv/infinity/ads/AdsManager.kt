@@ -40,6 +40,7 @@ object AdsManager {
     val nativePermissionAdLive = MutableLiveData<ApNativeAd?>()
     val nativeHomeAdLive = MutableLiveData<ApNativeAd?>()
     var interWelcomeAdLive = MutableLiveData<ApInterstitialAd?>()
+    var interHomeAdLive    = MutableLiveData<ApInterstitialAd?>()   // ← NEW
     // Auto-resolve config for each loaded native ad
     private val adConfigMap = mutableMapOf<ApNativeAd, AdUnitConfig>()
     fun getAdConfig(ad: ApNativeAd): AdUnitConfig? = adConfigMap[ad]
@@ -48,6 +49,78 @@ object AdsManager {
     private var interOnboarding: ApInterstitialAd? = null
 
     private var rewardExample :RewardedAd? = null
+
+
+    fun loadInterHome(context: Context, ignoreLimit: Boolean = false) {
+        val cached = interHomeAdLive.value?.takeIf { it.isReady }
+        val request = MutableLiveData<ApInterstitialAd?>()
+        interHomeAdLive = request
+        fun emit(ad: ApInterstitialAd?) { request.value = ad }
+
+        val config = AdRemoteConfig.inter_home
+        if (!config.isEnable
+            || AppPurchase.getInstance().isPurchased(context)
+            || (!ignoreLimit && !ERainAd.getInstance()
+                .getShouldDisplayInterWelcomeBack(config.enableUaCheck))   // ← reuse welcome gate
+        ) {
+            emit(null)
+            return
+        }
+        if (cached != null) { emit(cached); return }
+
+        var loaded: ApInterstitialAd? = null
+        loaded = ERainAd.getInstance().getInterstitialAds(context, config.id, object : AdCallback() {
+            override fun onApInterstitialLoad(apInterstitialAd: ApInterstitialAd?) {
+                super.onApInterstitialLoad(apInterstitialAd)
+                emit(apInterstitialAd ?: loaded)
+            }
+            override fun onAdFailedToLoad(adError: LoadAdError?) {
+                super.onAdFailedToLoad(adError)
+                emit(null)
+            }
+        })
+        if (loaded?.isReady == true) emit(loaded)
+    }
+
+    fun showInterHome(context: Context, ignoreLimit: Boolean = false, onAction: () -> Unit) {
+        val interstitial = interHomeAdLive.value
+        val allowShow = ignoreLimit || ERainAd.getInstance()
+            .getShouldDisplayInterWelcomeBack(AdRemoteConfig.inter_home.enableUaCheck)   // ← reuse welcome gate
+        if (interstitial != null && interstitial.isReady
+            && !AppPurchase.getInstance().isPurchased(context) && allowShow
+        ) {
+            ERainAd.getInstance()
+                .forceShowInterstitial(context, interstitial, object : AdCallback() {
+                    override fun onNextAction() {
+                        super.onNextAction()
+                        interHomeAdLive = MutableLiveData()
+                        onAction()
+                    }
+                }, false)
+        } else {
+            onAction()
+        }
+    }
+
+    fun showInterBack(context: Context, ignoreLimit: Boolean = false, onAction: () -> Unit) {
+        val interstitial = interHomeAdLive.value
+        val allowShow = ignoreLimit || ERainAd.getInstance()
+            .getShouldDisplayInterWelcomeBack(AdRemoteConfig.inter_home.enableUaCheck)   // ← reuse welcome gate
+        if (interstitial != null && interstitial.isReady
+            && !AppPurchase.getInstance().isPurchased(context) && allowShow
+        ) {
+            ERainAd.getInstance()
+                .forceShowInterstitial(context, interstitial, object : AdCallback() {
+                    override fun onNextAction() {
+                        super.onNextAction()
+                        interHomeAdLive = MutableLiveData()
+                        onAction()
+                    }
+                }, false)
+        } else {
+            onAction()
+        }
+    }
 
     private fun loadNativeInternal(
         activity: Activity,
@@ -443,6 +516,7 @@ object AdsManager {
         interWelcomeAdLive = MutableLiveData()
         interSplashAd = null
         interOnboarding = null
+
     }
 
     private fun Context.isNetworkAvailable(): Boolean {
@@ -459,4 +533,6 @@ object AdsManager {
             connectivityManager.activeNetworkInfo?.isConnectedOrConnecting == true
         }
     }
+
+
 }

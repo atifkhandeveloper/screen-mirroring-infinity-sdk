@@ -117,7 +117,9 @@
                     android:layout_marginStart="14dp"
                     android:layout_weight="1"
                     android:fontFamily="@font/nexa"
-                    android:lineSpacingExtra="2dp"
+                    android:lineSpacingExtra="6dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="6dp"
                     android:text="@string/step_1_text"
                     android:textColor="#4B5563"
                     android:textSize="13sp" />
@@ -150,9 +152,11 @@
                     android:layout_marginStart="14dp"
                     android:layout_weight="1"
                     android:fontFamily="@font/nexa"
-                    android:lineSpacingExtra="2dp"
+                    android:lineSpacingExtra="6dp"
                     android:text="@string/step_2_text"
                     android:textColor="#4B5563"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="6dp"
                     android:textSize="13sp" />
             </LinearLayout>
 
@@ -183,7 +187,9 @@
                     android:layout_marginStart="14dp"
                     android:layout_weight="1"
                     android:fontFamily="@font/nexa"
-                    android:lineSpacingExtra="2dp"
+                    android:lineSpacingExtra="6dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="6dp"
                     android:text="@string/step_3_text"
                     android:textColor="#4B5563"
                     android:textSize="13sp" />
@@ -198,7 +204,7 @@
         android:layout_height="52dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
-        android:layout_marginBottom="24dp"
+        android:layout_marginBottom="12dp"
         android:background="@drawable/bg_start_mirroring"
         android:drawablePadding="10dp"
         android:fontFamily="@font/nexa"
@@ -208,8 +214,25 @@
         android:textColor="#FFFFFF"
         android:textSize="15sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/fr_banner"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+
+    <FrameLayout
+        android:id="@+id/fr_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <include
+            android:id="@+id/include_banner"
+            layout="@layout/layout_banner_control"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

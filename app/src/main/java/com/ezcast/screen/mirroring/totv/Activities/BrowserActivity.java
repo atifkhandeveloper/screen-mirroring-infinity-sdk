@@ -19,6 +19,7 @@ import android.webkit.WebResourceResponse;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.EditText;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
@@ -26,8 +27,14 @@ import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 
+
+import com.ezcast.screen.mirroring.totv.Classes.InternetPermission;
 import com.ezcast.screen.mirroring.totv.R;
 import com.ezcast.screen.mirroring.totv.Models.SearchHistoryItem;
+import com.ezcast.screen.mirroring.totv.infinity.ads.AdRemoteConfig;
+import com.ezcast.screen.mirroring.totv.infinity.ads.AdRemoteConfigExtensionsKt;
+import com.ezcast.screen.mirroring.totv.infinity.ads.AdUnitConfig;
+import com.ezcast.screen.mirroring.totv.infinity.ads.AdsManager;
 import com.google.gson.Gson;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -39,7 +46,7 @@ import java.util.Locale;
 public class BrowserActivity extends ThemeActivity {
     public static ImageView webViewBack;
     private Activity activity;
-    
+
     private TextView browserBingBtn;
     private String browserCheck;
     private TextView browserFoxBtn;
@@ -63,9 +70,11 @@ public class BrowserActivity extends ThemeActivity {
     private ImageView webViewReload;
     boolean webView_back_forward = false;
     private ArrayList<SearchHistoryItem> historyList = new ArrayList<>();
+    private FrameLayout frBanner;
+    private boolean bannerLoaded = false;
 
-    
-    @Override 
+
+    @Override
     public void onCreate(Bundle bundle) {
         super.onCreate(bundle);
         EdgeToEdge.enable(this);
@@ -74,7 +83,9 @@ public class BrowserActivity extends ThemeActivity {
 
 
 
+        this.frBanner = findViewById(R.id.fr_banner);
 
+        loadMainBanner();
         initializeFields();
         clickListener();
 
@@ -459,5 +470,28 @@ public class BrowserActivity extends ThemeActivity {
     private void linkReloadOnWebView() {
         this.webView.setVisibility(View.VISIBLE);
         this.browserHomeLayout.setVisibility(View.GONE);
+    }
+
+    private void loadMainBanner() {
+        if (frBanner == null) return;
+
+        AdUnitConfig bannerConfig =
+                AdRemoteConfigExtensionsKt.getBanner_all(AdRemoteConfig.Companion);
+
+        if (!InternetPermission.isNetworkAvailable(this)) {
+            frBanner.setVisibility(View.GONE);
+            return;
+        }
+
+        frBanner.setVisibility(View.VISIBLE);
+
+        AdsManager.INSTANCE.loadBanner(
+                this,
+                bannerConfig,
+                frBanner,
+                false
+        );
+
+        bannerLoaded = true;
     }
 }

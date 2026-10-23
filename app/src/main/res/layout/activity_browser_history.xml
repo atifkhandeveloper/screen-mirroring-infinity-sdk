@@ -46,7 +46,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@+id/bottomLayout"
+        android:layout_above="@+id/fr_banner"
         android:layout_below="@+id/history_header_layout">
 
 
@@ -65,10 +65,19 @@
 
     </RelativeLayout>
 
-    <LinearLayout
-        android:id="@+id/bottomLayout"
+    <FrameLayout
+        android:id="@+id/fr_banner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:orientation="vertical" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <include
+            android:id="@+id/include_banner"
+            layout="@layout/layout_banner_control"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
 </RelativeLayout>

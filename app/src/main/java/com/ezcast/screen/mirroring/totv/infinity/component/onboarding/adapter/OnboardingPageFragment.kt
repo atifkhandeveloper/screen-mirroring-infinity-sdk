@@ -6,10 +6,12 @@ import androidx.lifecycle.MutableLiveData
 import com.ads.module.ads.wrapper.ApNativeAd
 import com.bumptech.glide.Glide
 import com.ezcast.screen.mirroring.totv.R
-
 import com.ezcast.screen.mirroring.totv.databinding.FragmentOnboardingPageBinding
 import com.ezcast.screen.mirroring.totv.infinity.ads.AdsManager
 import com.ezcast.screen.mirroring.totv.infinity.ads.populateNativeAdView
+import com.ezcast.screen.mirroring.totv.infinity.component.onboarding.model.FullNativeType
+import com.ezcast.screen.mirroring.totv.infinity.component.onboarding.model.OnboardingItem
+import com.ezcast.screen.mirroring.totv.infinity.component.onboarding.viewmodel.OnboardingViewModel
 import com.ezcast.screen.mirroring.totv.infinity.ui.bases.BaseFragment
 import com.ezcast.screen.mirroring.totv.infinity.ui.ext.click
 import com.ezcast.screen.mirroring.totv.infinity.ui.ext.goneView
@@ -17,15 +19,13 @@ import com.ezcast.screen.mirroring.totv.infinity.ui.ext.invisibleView
 import com.ezcast.screen.mirroring.totv.infinity.ui.ext.parcelable
 import com.ezcast.screen.mirroring.totv.infinity.ui.ext.visibleView
 
-import com.ezcast.screen.mirroring.totv.infinity.component.onboarding.model.OnboardingItem
-import com.ezcast.screen.mirroring.totv.infinity.component.onboarding.viewmodel.OnboardingViewModel
-
 class OnboardingPageFragment : BaseFragment<FragmentOnboardingPageBinding>() {
 
     override fun getLayoutFragment(): Int = R.layout.fragment_onboarding_page
 
     companion object {
         private const val ARG_ONBOARDING_ITEM = "arg_onboarding_item"
+        private const val TOTAL_INDICATORS = 3
 
         fun newInstance(onboardingItem: OnboardingItem) = OnboardingPageFragment().apply {
             arguments = bundleOf(ARG_ONBOARDING_ITEM to onboardingItem)
@@ -38,14 +38,25 @@ class OnboardingPageFragment : BaseFragment<FragmentOnboardingPageBinding>() {
         title = R.string.onboarding_title_1,
         description = R.string.onboarding_des_1,
         textButton = R.string.next,
-        imageResId = R.drawable.ic_vietnamese,
+        imageResId = R.drawable.onb_one,
         positionIndicator = 0
     )
 
     override fun initViews() {
-        arguments?.parcelable<OnboardingItem>(ARG_ONBOARDING_ITEM)?.let {
-            onboardingItem = it
+        val bundle = arguments
+        if (bundle != null) {
+            val item: OnboardingItem? =
+                if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.TIRAMISU) {
+                    bundle.getParcelable(ARG_ONBOARDING_ITEM, OnboardingItem::class.java)
+                } else {
+                    @Suppress("DEPRECATION")
+                    bundle.getParcelable(ARG_ONBOARDING_ITEM)
+                }
+            if (item != null) {
+                onboardingItem = item
+            }
         }
+
         updateLayout()
         if (onboardingItem.isHasNativeFull) {
             mBinding.layoutAdsFull.visibleView()
@@ -63,21 +74,38 @@ class OnboardingPageFragment : BaseFragment<FragmentOnboardingPageBinding>() {
         mBinding.imgCloseAdsFull.click { onboardingViewModel.onNextClicked() }
     }
 
+    /**
+     * Resolves the correct LiveData channel for this page:
+     *  - Medium native on Page 1            → nativeOnboarding1AdLive
+     *  - Medium native on Page 4            → nativeOnboarding4AdLive
+     *  - Full native (FULL1)                → nativeAdOnBoardingFullLive
+     *  - Full native (FULL2)                → nativeAdOnBoardingFull2Live   ← NEW
+     *  - Otherwise                          → no ad
+     */
     private fun observeAdChannel() {
-        val liveData: MutableLiveData<ApNativeAd?> = when {
-            onboardingItem.isHasNativeOnPage1 -> AdsManager.nativeOnboarding1AdLive
-            onboardingItem.isHasNativeOnPage4 -> AdsManager.nativeOnboarding4AdLive
-            onboardingItem.isHasNativeFull -> AdsManager.nativeAdOnBoardingFullLive
-            else -> {
-                renderNoAd()
-                return
-            }
+        val liveData: MutableLiveData<ApNativeAd?>? = when {
+            onboardingItem.isHasNativeFull && onboardingItem.fullNativeType == FullNativeType.FULL1 ->
+                AdsManager.nativeAdOnBoardingFullLive
+            onboardingItem.isHasNativeFull && onboardingItem.fullNativeType == FullNativeType.FULL2 ->
+                AdsManager.nativeAdOnBoardingFull2Live          // ← NEW channel
+            onboardingItem.isHasNativeOnPage1 ->
+                AdsManager.nativeOnboarding1AdLive
+            onboardingItem.isHasNativeOnPage4 ->
+                AdsManager.nativeOnboarding4AdLive
+            else -> null
+        }
+
+        if (liveData == null) {
+            renderNoAd()
+            return
         }
         liveData.observe(viewLifecycleOwner) { ad -> renderAd(ad) }
     }
 
     private fun renderAd(ad: ApNativeAd?) {
         if (onboardingItem.isHasNativeFull) {
+            // Both FULL1 and FULL2 share the same full-screen layout; only the
+            // LiveData source differs (already resolved in observeAdChannel()).
             if (ad != null) {
                 mBinding.layoutAdsFull.visibleView()
                 mBinding.imgCloseAdsFull.visibleView()
@@ -124,15 +152,25 @@ class OnboardingPageFragment : BaseFragment<FragmentOnboardingPageBinding>() {
         mBinding.tvTitle.text = getString(onboardingItem.title)
         mBinding.tvDes.text = getString(onboardingItem.description)
         mBinding.btnNext.text = getString(onboardingItem.textButton)
-        mBinding.imgIndicator0.setImageResource(R.drawable.ic_onboarding_indicator)
-        mBinding.imgIndicator1.setImageResource(R.drawable.ic_onboarding_indicator)
-        mBinding.imgIndicator2.setImageResource(R.drawable.ic_onboarding_indicator)
-        mBinding.imgIndicator3.setImageResource(R.drawable.ic_onboarding_indicator)
-        when (onboardingItem.positionIndicator) {
-            0 -> mBinding.imgIndicator0.setImageResource(R.drawable.ic_onboarding_indicator_selected)
-            1 -> mBinding.imgIndicator1.setImageResource(R.drawable.ic_onboarding_indicator_selected)
-            2 -> mBinding.imgIndicator2.setImageResource(R.drawable.ic_onboarding_indicator_selected)
-            3 -> mBinding.imgIndicator3.setImageResource(R.drawable.ic_onboarding_indicator_selected)
+
+        val indicators = listOf(
+            mBinding.imgIndicator0,
+            mBinding.imgIndicator1,
+            mBinding.imgIndicator2,
+            mBinding.imgIndicator3
+        )
+
+        indicators.forEachIndexed { index, imageView ->
+            if (index < TOTAL_INDICATORS) {
+                imageView.visibleView()
+                val isSelected = index == onboardingItem.positionIndicator
+                imageView.setImageResource(
+                    if (isSelected) R.drawable.ic_onboarding_indicator_selected
+                    else R.drawable.ic_onboarding_indicator
+                )
+            } else {
+                imageView.goneView()
+            }
         }
     }
 }

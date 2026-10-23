@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="control_your_smart_tv_using_your_mobile_device_as_a_remote_control_">Espelhe a tela do seu celular na TV em alta qualidade com latência ultrabaixa.</string>
+    <string name="browse_and_access_content_on_your_smart_tv_while_mirroring_or_casting_the_screen_">Veja suas fotos e vídeos na tela grande em impressionante 4K.</string>
+    <string name="conform_delete">Tem certeza de que deseja excluir o histórico?</string>
+    <string name="imdb">IMDB</string>
+    <string name="amazon">Amazon</string>
+    <string name="app_name">Espelhamento de tela</string>
+    <string name="audio">Áudio</string>
+    <string name="audios">Áudios</string>
+    <string name="bing">Bing</string>
+    <string name="choose_language">Idiomas</string>
+    <string name="choose_preferred_language">Escolha seu idioma preferido</string>
+    <string name="connected">Conectado</string>
+    <string name="dailymotion">Dailymotion</string>
+    <string name="delete_history">Excluir histórico</string>
+    <string name="disconnected">Desconectado</string>
+    <string name="dummy">Fictício</string>
+    <string name="eight">8</string>
+    <string name="english">Inglês</string>
+    <string name="google">Google</string>
+    <string name="facebook">Facebook</string>
+    <string name="five">5</string>
+    <string name="four">4</string>
+    <string name="fox">Fox</string>
+    <string name="history">Histórico</string>
+    <string name="mirroring_and_casting">Espelhamento de tela inteligente</string>
+    <string name="netflix">Netflix</string>
+    <string name="network_connection_not_found">Conexão de rede não encontrada</string>
+    <string name="nine">9</string>
+    <string name="no_folder_found">Nenhuma pasta encontrada</string>
+    <string name="no_item_found">Nenhum item encontrado</string>
+    <string name="not_in_the_list">Não está na lista</string>
+    <string name="one">1</string>
+    <string name="our_screen_mirroring_app_will_help_you_stream_phone_to_tv_screen_in_high_quality_fast_simple_share_screen_and_cast_to_tv_or_other_devices">Nosso aplicativo de espelhamento de tela ajudará você a transmitir o celular para a tela da TV em alta qualidade. Rápido e simples! Compartilhe a tela e transmita para a TV ou outros dispositivos!</string>
+    <string name="paste_your_url_here">Cole seu URL aqui</string>
+    <string name="permission_not_granted">Permissão não concedida</string>
+    <string name="photos">Fotos</string>
+    <string name="privacy_policy">Política de privacidade</string>
+    <string name="screen_browsing">Transmita suas mídias</string>
+    <string name="screen_mirroring">Espelhamento de tela</string>
+    <string name="search_by_google_or_enter_your_url">Pesquise pelo Google ou insira seu URL</string>
+    <string name="select">Selecionar</string>
+    <string name="settings">Configurações</string>
+    <string name="seven">7</string>
+    <string name="show_devices">Mostrar dispositivos</string>
+    <string name="six">6</string>
+    <string name="skip">Próximo</string>
+    <string name="soundcloud">Soundcloud</string>
+    <string name="three">3</string>
+    <string name="twitch">Twitch</string>
+    <string name="two">2</string>
+    <string name="universal_remote">Espelhamento de tela</string>
+    <string name="videos">Vídeos</string>
+    <string name="vimeo">Vimeo</string>
+    <string name="wirelessly_transmit_your_media_files_content_from_your_mobile_device_to_smart_tv_">Controle completo para todos os seus dispositivos inteligentes em um só lugar.</string>
+    <string name="yahoo">Yahoo</string>
+    <string name="youtube">Youtube</string>
+    <string name="zero">0</string>
+    <string name="app_settings">Configurações do aplicativo</string>
+
+    <string name="other">Outro</string>
+    <string name="help_support">Como conectar?</string>
+    <string name="share_with_friends">Compartilhar com amigos</string>
+    <string name="rate_us">Avalie-nos</string>
+    <string name="mirroring">Espelhamento</string>
+    <string name="high_quality_experience">Experiência de alta qualidade</string>
+
+    <string name="paste">COLAR</string>
+    <string name="media_cast">Transmissão de mídia</string>
+    <string name="images">Imagens</string>
+
+    <string name="how_to_connect_q">Como conectar?</string>
+    <string name="how_to_connect">Como conectar?</string>
+    <string name="back">Voltar</string>
+    <string name="start_mirroring">Iniciar espelhamento</string>
+
+    <string name="step_1_text">Certifique-se de que sua TV e seu celular estejam conectados à mesma rede Wi-Fi.</string>
+    <string name="step_2_text">Ative \'Exibição sem fio\' ou \'Espelhamento de tela\' nas configurações da sua TV.</string>
+    <string name="step_3_text">Toque no botão \'Iniciar espelhamento\' abaixo para encontrar seu dispositivo.</string>
+
+    <string name="language" translatable="false">Idioma</string>
+    <string name="ads_are_about_to_be_shown">Os anúncios estão prestes a ser exibidos...</string>
+    <string name="please_select_language">Selecione um idioma</string>
+    <string name="press_back_again_to_exit">Pressione voltar novamente para sair</string>
+    <string name="get_started">Começar</string>
+    <string name="next">próximo</string>
+    <string name="txt_continue">Continuar</string>
+    <string name="txt_request_record_permission">A gravação é a permissão necessária para o aplicativo funcionar</string>
+    <string name="txt_denie">Para usar este recurso, você precisa de permissão</string>
+    <string name="txt_thanks_you_for_rating">Obrigado pela sua avaliação!</string>
+    <string name="txt_later" translatable="false"><u>Mais tarde</u></string>
+    <string name="txt_rate_5_star" translatable="false">Se você gosta deste aplicativo, avalie nosso aplicativo com 5 estrelas na loja!</string>
+    <string name="txt_do_you_like_our_app" translatable="false">Você gosta do nosso aplicativo?</string>
+
+    <string name="applying_selected_language" translatable="false">Aplicando o idioma selecionado...</string>
+    <string name="text_restart_app">Reiniciar aplicativo</string>
+    <string name="crash_info_title">Informações de falha</string>
+    <string name="close">Fechar</string>
+    <string name="ad_config_invalid_message">Configuração de anúncios inválida. Verifique ad_config.json.</string>
+    <!--    Uninstall-->
+    <string name="content_confirm_uninstall">Por que remover o aplicativo</string>
+    <string name="try_again">Tentar novamente</string>
+    <string name="still_want_to_uninstall">Ainda quero desinstalar</string>
+    <string name="issues_encountered_during_usage">Problemas encontrados durante o uso</string>
+    <string name="txt_cancel">Cancelar</string>
+    <string name="txt_uninstall">Desinstalar</string>
+    <string name="survey_1">O recurso não funciona</string>
+    <string name="survey_2">Muitos anúncios</string>
+    <string name="survey_3">Não preciso dele</string>
+    <string name="survey_4">Outro</string>
+    <string name="loading_label">Carregando</string>
+    <string name="no_internet_title">Sem conexão com a internet</string>
+    <string name="no_internet_message">Verifique as configurações de rede para continuar usando o aplicativo.</string>
+    <string name="open_settings">Abrir configurações</string>
+    <string name="force_update_message">Uma nova versão está disponível. Atualize para continuar usando o aplicativo.</string>
+    <string name="update_now">Atualizar agora</string>
+    <string name="update_later">Talvez mais tarde</string>
+    <string name="setting">Configuração</string>
+    <string name="rate">Avaliar</string>
+    <string name="feedback">Comentários</string>
+    <string name="share_with_friend">Compartilhar com um amigo</string>
+    <string name="let_me_recommend">Deixe-me recomendar</string>
+    <string name="share_to">Compartilhar em</string>
+    <string name="we_re_better_than_ever">Estamos melhores do que nunca</string>
+    <string name="well_comeback">Bem-vindo de volta!</string>
+    <string name="start">Iniciar</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_title_1">Espelhamento de tela</string>
+    <string name="onboarding_des_1">Espelhe a tela do seu celular na TV em alta qualidade com latência ultrabaixa.</string>
+
+    <string name="onboarding_title_2">Espelhamento de tela inteligente</string>
+    <string name="onboarding_des_2">Controle completo para todos os seus dispositivos inteligentes em um só lugar.</string>
+
+    <string name="onboarding_title_3">Transmita suas mídias</string>
+    <string name="onboarding_des_3">Veja suas fotos e vídeos na tela grande em impressionante 4K.</string>
+</resources>

@@ -7,7 +7,9 @@ import android.animation.AnimatorSet;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.View;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -18,10 +20,16 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.ezcast.screen.mirroring.totv.Classes.InternetPermission;
 import com.ezcast.screen.mirroring.totv.R;
 import com.ezcast.screen.mirroring.totv.Adapter.AudiosAdpater;
 import com.ezcast.screen.mirroring.totv.MediaStore.GetAudios;
 import com.ezcast.screen.mirroring.totv.Models.AudioModel;
+import com.ezcast.screen.mirroring.totv.infinity.ads.AdRemoteConfig;
+import com.ezcast.screen.mirroring.totv.infinity.ads.AdRemoteConfigExtensionsKt;
+import com.ezcast.screen.mirroring.totv.infinity.ads.AdUnitConfig;
+import com.ezcast.screen.mirroring.totv.infinity.ads.AdsManager;
+
 import java.util.ArrayList;
 import java.util.Iterator;
 
@@ -42,7 +50,12 @@ public class AudiosActivity extends ThemeActivity {
     String searchText;
     ConstraintLayout search_layout;
     boolean searchable;
+    private FrameLayout frBanner;
+    private boolean bannerLoaded = false;
 
+    private static final String TAG = "AudiosActivity";
+    private boolean backInterReady = false;
+    private boolean backInterLoading = false;
     
     @Override 
     public void onCreate(Bundle bundle) {
@@ -52,6 +65,10 @@ public class AudiosActivity extends ThemeActivity {
         edgeToEdge(this, findViewById(R.id.mainLayout));
 
 
+        this.frBanner = findViewById(R.id.fr_banner);
+
+        loadMainBanner();
+        loadBackInterstitial();
 
 
         this.recyclerView = (RecyclerView) findViewById(R.id.audios_recyclerView);
@@ -121,8 +138,9 @@ public class AudiosActivity extends ThemeActivity {
         onBackPressed();
     }
 
-    @Override 
+    @Override
     public void onBackPressed() {
+        // Closing the search panel is not leaving the screen, so no ad here.
         if (this.searchable) {
             this.audio_layout.setVisibility(View.VISIBLE);
             this.search_layout.setVisibility(View.GONE);
@@ -130,6 +148,72 @@ public class AudiosActivity extends ThemeActivity {
             this.audios_searching_textview.setText("");
             return;
         }
-        super.onBackPressed();
+        showBackInterstitialThen(() -> super.onBackPressed());
+    }
+
+    private void loadBackInterstitial() {
+        if (!InternetPermission.isNetworkAvailable(this)) return;
+        if (backInterLoading) return;
+
+        backInterLoading = true;
+        try {
+            AdUnitConfig interConfig =
+                    AdRemoteConfigExtensionsKt.getInter_home(AdRemoteConfig.Companion);
+
+            if (!interConfig.isEnable()) {
+                backInterReady = false;
+                return;
+            }
+
+            AdsManager.INSTANCE.loadInterHome(this, true);
+            backInterReady = true;
+        } catch (Throwable t) {
+            Log.w(TAG, "Back interstitial load failed", t);
+            backInterReady = false;
+        } finally {
+            backInterLoading = false;
+        }
+    }
+
+    private void showBackInterstitialThen(Runnable action) {
+        if (!backInterReady || !InternetPermission.isNetworkAvailable(this)) {
+            action.run();
+            return;
+        }
+
+        try {
+            AdsManager.INSTANCE.showInterBack(this, true, () -> {
+                backInterReady = false;
+                action.run();
+                return kotlin.Unit.INSTANCE;
+            });
+        } catch (Throwable t) {
+            Log.w(TAG, "Back interstitial show failed", t);
+            backInterReady = false;
+            action.run();
+        }
+    }
+
+    private void loadMainBanner() {
+        if (frBanner == null) return;
+
+        AdUnitConfig bannerConfig =
+                AdRemoteConfigExtensionsKt.getBanner_all(AdRemoteConfig.Companion);
+
+        if (!InternetPermission.isNetworkAvailable(this)) {
+            frBanner.setVisibility(View.GONE);
+            return;
+        }
+
+        frBanner.setVisibility(View.VISIBLE);
+
+        AdsManager.INSTANCE.loadBanner(
+                this,
+                bannerConfig,
+                frBanner,
+                false
+        );
+
+        bannerLoaded = true;
     }
 }

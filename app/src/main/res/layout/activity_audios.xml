@@ -105,29 +105,28 @@
             android:id="@+id/audios_recyclerView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_above="@+id/banner1"
+            android:layout_above="@+id/fr_banner"
             android:layout_marginLeft="@dimen/_10sdp"
             android:layout_marginTop="@dimen/_10sdp"
             android:layout_marginRight="@dimen/_10sdp"
             android:layout_marginBottom="@dimen/_10sdp" />
 
 
-        <RelativeLayout
-            android:id="@+id/banner1"
+        <FrameLayout
+            android:id="@+id/fr_banner"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:gravity="center">
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
 
-            <RelativeLayout
-                android:id="@+id/banner"
+            <include
+                android:id="@+id/include_banner"
+                layout="@layout/layout_banner_control"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:gravity="center" />
+                android:layout_height="wrap_content" />
+        </FrameLayout>
 
-        </RelativeLayout>
     </RelativeLayout>
 </LinearLayout>

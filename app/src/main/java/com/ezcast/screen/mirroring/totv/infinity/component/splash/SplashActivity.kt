@@ -83,7 +83,7 @@ class SplashActivity : BaseActivity<ActivitySplashBinding>(), RemoteConfigUtils.
 
     private fun initVideoSplash() {
         if (isHasVideo) {
-            mBinding.imgSplash.goneView()
+//            mBinding.imgSplash.goneView()
 //            mBinding.playerView.visibleView()
 
             simpleExoPlayer = ExoPlayer.Builder(this).build()

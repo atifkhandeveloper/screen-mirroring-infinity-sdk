@@ -1,0 +1,137 @@
+<resources>
+    <string name="control_your_smart_tv_using_your_mobile_device_as_a_remote_control_">अपने फ़ोन की स्क्रीन को अल्ट्रा-लो लेटेंसी के साथ हाई क्वालिटी में अपने TV पर मिरर करें।</string>
+    <string name="browse_and_access_content_on_your_smart_tv_while_mirroring_or_casting_the_screen_">अपनी फ़ोटो और वीडियो को बड़ी स्क्रीन पर शानदार 4K में देखें।</string>
+    <string name="conform_delete">क्या आप वाकई इतिहास हटाना चाहते हैं?</string>
+    <string name="imdb">IMDB</string>
+    <string name="amazon">Amazon</string>
+    <string name="app_name">स्क्रीन मिररिंग</string>
+    <string name="audio">ऑडियो</string>
+    <string name="audios">ऑडियो</string>
+    <string name="bing">Bing</string>
+    <string name="choose_language">भाषाएँ</string>
+    <string name="choose_preferred_language">अपनी पसंदीदा भाषा चुनें</string>
+    <string name="connected">कनेक्टेड</string>
+    <string name="dailymotion">Dailymotion</string>
+    <string name="delete_history">इतिहास हटाएँ</string>
+    <string name="disconnected">डिस्कनेक्टेड</string>
+    <string name="dummy">डमी</string>
+    <string name="eight">8</string>
+    <string name="english">अंग्रेज़ी</string>
+    <string name="google">Google</string>
+    <string name="facebook">Facebook</string>
+    <string name="five">5</string>
+    <string name="four">4</string>
+    <string name="fox">Fox</string>
+    <string name="history">इतिहास</string>
+    <string name="mirroring_and_casting">स्मार्ट स्क्रीन मिररिंग</string>
+    <string name="netflix">Netflix</string>
+    <string name="network_connection_not_found">नेटवर्क कनेक्शन नहीं मिला</string>
+    <string name="nine">9</string>
+    <string name="no_folder_found">कोई फ़ोल्डर नहीं मिला</string>
+    <string name="no_item_found">कोई आइटम नहीं मिला</string>
+    <string name="not_in_the_list">सूची में नहीं है</string>
+    <string name="one">1</string>
+    <string name="our_screen_mirroring_app_will_help_you_stream_phone_to_tv_screen_in_high_quality_fast_simple_share_screen_and_cast_to_tv_or_other_devices">हमारा स्क्रीन मिररिंग ऐप आपको फ़ोन से TV स्क्रीन पर हाई क्वालिटी में स्ट्रीम करने में मदद करेगा। तेज़ और आसान! स्क्रीन शेयर करें और TV या अन्य डिवाइस पर कास्ट करें!</string>
+    <string name="paste_your_url_here">अपना URL यहाँ पेस्ट करें</string>
+    <string name="permission_not_granted">अनुमति नहीं दी गई</string>
+    <string name="photos">फ़ोटो</string>
+    <string name="privacy_policy">गोपनीयता नीति</string>
+    <string name="screen_browsing">अपना मीडिया कास्ट करें</string>
+    <string name="screen_mirroring">स्क्रीन मिररिंग</string>
+    <string name="search_by_google_or_enter_your_url">Google से खोजें या अपना URL दर्ज करें</string>
+    <string name="select">चुनें</string>
+    <string name="settings">सेटिंग्स</string>
+    <string name="seven">7</string>
+    <string name="show_devices">डिवाइस दिखाएँ</string>
+    <string name="six">6</string>
+    <string name="skip">अगला</string>
+    <string name="soundcloud">Soundcloud</string>
+    <string name="three">3</string>
+    <string name="twitch">Twitch</string>
+    <string name="two">2</string>
+    <string name="universal_remote">स्क्रीन मिररिंग</string>
+    <string name="videos">वीडियो</string>
+    <string name="vimeo">Vimeo</string>
+    <string name="wirelessly_transmit_your_media_files_content_from_your_mobile_device_to_smart_tv_">अपने सभी स्मार्ट डिवाइस के लिए एक ही जगह पर पूर्ण नियंत्रण।</string>
+    <string name="yahoo">Yahoo</string>
+    <string name="youtube">Youtube</string>
+    <string name="zero">0</string>
+    <string name="app_settings">ऐप सेटिंग्स</string>
+
+    <string name="other">अन्य</string>
+    <string name="help_support">कैसे कनेक्ट करें?</string>
+    <string name="share_with_friends">दोस्तों के साथ शेयर करें</string>
+    <string name="rate_us">हमें रेट करें</string>
+    <string name="mirroring">मिररिंग</string>
+    <string name="high_quality_experience">हाई क्वालिटी अनुभव</string>
+
+    <string name="paste">पेस्ट</string>
+    <string name="media_cast">मीडिया कास्ट</string>
+    <string name="images">छवियाँ</string>
+
+    <string name="how_to_connect_q">कैसे कनेक्ट करें?</string>
+    <string name="how_to_connect">कैसे कनेक्ट करें?</string>
+    <string name="back">वापस</string>
+    <string name="start_mirroring">मिररिंग शुरू करें</string>
+
+    <string name="step_1_text">सुनिश्चित करें कि आपका TV और फ़ोन एक ही Wi-Fi नेटवर्क से कनेक्टेड हैं।</string>
+    <string name="step_2_text">अपने TV की सेटिंग्स में \'वायरलेस डिस्प्ले\' या \'स्क्रीन मिररिंग\' चालू करें।</string>
+    <string name="step_3_text">अपना डिवाइस खोजने के लिए नीचे \'मिररिंग शुरू करें\' बटन पर टैप करें।</string>
+
+    <string name="language" translatable="false">भाषा</string>
+    <string name="ads_are_about_to_be_shown">विज्ञापन दिखाए जाने वाले हैं...</string>
+    <string name="please_select_language">कृपया भाषा चुनें</string>
+    <string name="press_back_again_to_exit">बाहर निकलने के लिए फिर से बैक दबाएँ</string>
+    <string name="get_started">शुरू करें</string>
+    <string name="next">अगला</string>
+    <string name="txt_continue">जारी रखें</string>
+    <string name="txt_request_record_permission">ऐप के काम करने के लिए रिकॉर्डिंग की अनुमति आवश्यक है</string>
+    <string name="txt_denie">इस सुविधा का उपयोग करने के लिए, आपको अनुमति चाहिए</string>
+    <string name="txt_thanks_you_for_rating">रेटिंग के लिए धन्यवाद!</string>
+    <string name="txt_later" translatable="false"><u>बाद में</u></string>
+    <string name="txt_rate_5_star" translatable="false">अगर आपको यह ऐप पसंद है, तो कृपया स्टोर में हमारे ऐप को 5 स्टार रेट करें!</string>
+    <string name="txt_do_you_like_our_app" translatable="false">क्या आपको हमारा ऐप पसंद है?</string>
+
+    <string name="applying_selected_language" translatable="false">चयनित भाषा लागू की जा रही है...</string>
+    <string name="text_restart_app">ऐप पुनः आरंभ करें</string>
+    <string name="crash_info_title">क्रैश जानकारी</string>
+    <string name="close">बंद करें</string>
+    <string name="ad_config_invalid_message">अमान्य विज्ञापन कॉन्फ़िगरेशन। कृपया ad_config.json सत्यापित करें।</string>
+    <!--    Uninstall-->
+    <string name="content_confirm_uninstall">ऐप क्यों हटाएँ</string>
+    <string name="try_again">पुनः प्रयास करें</string>
+    <string name="still_want_to_uninstall">फिर भी अनइंस्टॉल करना चाहते हैं</string>
+    <string name="issues_encountered_during_usage">उपयोग के दौरान आई समस्याएँ</string>
+    <string name="txt_cancel">रद्द करें</string>
+    <string name="txt_uninstall">अनइंस्टॉल करें</string>
+    <string name="survey_1">सुविधा काम नहीं कर रही</string>
+    <string name="survey_2">बहुत अधिक विज्ञापन</string>
+    <string name="survey_3">मुझे इसकी आवश्यकता नहीं है</string>
+    <string name="survey_4">अन्य</string>
+    <string name="loading_label">लोड हो रहा है</string>
+    <string name="no_internet_title">कोई इंटरनेट कनेक्शन नहीं</string>
+    <string name="no_internet_message">ऐप का उपयोग जारी रखने के लिए कृपया अपनी नेटवर्क सेटिंग्स जाँचें।</string>
+    <string name="open_settings">सेटिंग्स खोलें</string>
+    <string name="force_update_message">एक नया संस्करण उपलब्ध है। ऐप का उपयोग जारी रखने के लिए कृपया अपडेट करें।</string>
+    <string name="update_now">अभी अपडेट करें</string>
+    <string name="update_later">शायद बाद में</string>
+    <string name="setting">सेटिंग</string>
+    <string name="rate">रेट करें</string>
+    <string name="feedback">फ़ीडबैक</string>
+    <string name="share_with_friend">दोस्त के साथ शेयर करें</string>
+    <string name="let_me_recommend">मुझे अनुशंसा करने दें</string>
+    <string name="share_to">यहाँ शेयर करें</string>
+    <string name="we_re_better_than_ever">हम पहले से बेहतर हैं</string>
+    <string name="well_comeback">वापसी पर स्वागत है!</string>
+    <string name="start">शुरू करें</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_title_1">स्क्रीन मिररिंग</string>
+    <string name="onboarding_des_1">अपने फ़ोन की स्क्रीन को अल्ट्रा-लो लेटेंसी के साथ हाई क्वालिटी में अपने TV पर मिरर करें।</string>
+
+    <string name="onboarding_title_2">स्मार्ट स्क्रीन मिररिंग</string>
+    <string name="onboarding_des_2">अपने सभी स्मार्ट डिवाइस के लिए एक ही जगह पर पूर्ण नियंत्रण।</string>
+
+    <string name="onboarding_title_3">अपना मीडिया कास्ट करें</string>
+    <string name="onboarding_des_3">अपनी फ़ोटो और वीडियो को बड़ी स्क्रीन पर शानदार 4K में देखें।</string>
+</resources>

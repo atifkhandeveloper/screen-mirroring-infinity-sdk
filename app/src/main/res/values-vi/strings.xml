@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="control_your_smart_tv_using_your_mobile_device_as_a_remote_control_">Truyền màn hình điện thoại của bạn lên TV với chất lượng cao và độ trễ cực thấp.</string>
+    <string name="browse_and_access_content_on_your_smart_tv_while_mirroring_or_casting_the_screen_">Trải nghiệm ảnh và video của bạn trên màn hình lớn với chất lượng 4K tuyệt đẹp.</string>
+    <string name="conform_delete">Bạn có chắc chắn muốn xóa lịch sử không?</string>
+    <string name="imdb">IMDB</string>
+    <string name="amazon">Amazon</string>
+    <string name="app_name">Truyền màn hình</string>
+    <string name="audio">Âm thanh</string>
+    <string name="audios">Tệp âm thanh</string>
+    <string name="bing">Bing</string>
+    <string name="choose_language">Ngôn ngữ</string>
+    <string name="choose_preferred_language">Chọn ngôn ngữ bạn muốn</string>
+    <string name="connected">Đã kết nối</string>
+    <string name="dailymotion">Dailymotion</string>
+    <string name="delete_history">Xóa lịch sử</string>
+    <string name="disconnected">Đã ngắt kết nối</string>
+    <string name="dummy">Giả</string>
+    <string name="eight">8</string>
+    <string name="english">Tiếng Anh</string>
+    <string name="google">Google</string>
+    <string name="facebook">Facebook</string>
+    <string name="five">5</string>
+    <string name="four">4</string>
+    <string name="fox">Fox</string>
+    <string name="history">Lịch sử</string>
+    <string name="mirroring_and_casting">Truyền màn hình thông minh</string>
+    <string name="netflix">Netflix</string>
+    <string name="network_connection_not_found">Không tìm thấy kết nối mạng</string>
+    <string name="nine">9</string>
+    <string name="no_folder_found">Không tìm thấy thư mục</string>
+    <string name="no_item_found">Không tìm thấy mục nào</string>
+    <string name="not_in_the_list">Không có trong danh sách</string>
+    <string name="one">1</string>
+    <string name="our_screen_mirroring_app_will_help_you_stream_phone_to_tv_screen_in_high_quality_fast_simple_share_screen_and_cast_to_tv_or_other_devices">Ứng dụng Truyền màn hình của chúng tôi sẽ giúp bạn truyền điện thoại lên màn hình TV với chất lượng cao. Nhanh chóng và đơn giản! Chia sẻ màn hình và truyền lên TV hoặc các thiết bị khác!</string>
+    <string name="paste_your_url_here">Dán URL của bạn vào đây</string>
+    <string name="permission_not_granted">Chưa được cấp quyền</string>
+    <string name="photos">Ảnh</string>
+    <string name="privacy_policy">Chính sách quyền riêng tư</string>
+    <string name="screen_browsing">Truyền phương tiện của bạn</string>
+    <string name="screen_mirroring">Truyền màn hình</string>
+    <string name="search_by_google_or_enter_your_url">Tìm kiếm bằng Google hoặc nhập URL của bạn</string>
+    <string name="select">Chọn</string>
+    <string name="settings">Cài đặt</string>
+    <string name="seven">7</string>
+    <string name="show_devices">Hiển thị thiết bị</string>
+    <string name="six">6</string>
+    <string name="skip">Tiếp theo</string>
+    <string name="soundcloud">Soundcloud</string>
+    <string name="three">3</string>
+    <string name="twitch">Twitch</string>
+    <string name="two">2</string>
+    <string name="universal_remote">Truyền màn hình</string>
+    <string name="videos">Video</string>
+    <string name="vimeo">Vimeo</string>
+    <string name="wirelessly_transmit_your_media_files_content_from_your_mobile_device_to_smart_tv_">Kiểm soát đầy đủ cho tất cả các thiết bị thông minh của bạn ở một nơi.</string>
+    <string name="yahoo">Yahoo</string>
+    <string name="youtube">Youtube</string>
+    <string name="zero">0</string>
+    <string name="app_settings">Cài đặt ứng dụng</string>
+
+    <string name="other">Khác</string>
+    <string name="help_support">Làm thế nào để kết nối?</string>
+    <string name="share_with_friends">Chia sẻ với bạn bè</string>
+    <string name="rate_us">Đánh giá chúng tôi</string>
+    <string name="mirroring">Truyền màn hình</string>
+    <string name="high_quality_experience">Trải nghiệm chất lượng cao</string>
+
+    <string name="paste">DÁN</string>
+    <string name="media_cast">Truyền phương tiện</string>
+    <string name="images">Hình ảnh</string>
+
+    <string name="how_to_connect_q">Làm thế nào để kết nối?</string>
+    <string name="how_to_connect">Làm thế nào để kết nối?</string>
+    <string name="back">Quay lại</string>
+    <string name="start_mirroring">Bắt đầu truyền màn hình</string>
+
+    <string name="step_1_text">Đảm bảo TV và điện thoại của bạn được kết nối với cùng một mạng Wi-Fi.</string>
+    <string name="step_2_text">Bật \'Hiển thị không dây\' hoặc \'Truyền màn hình\' trong cài đặt TV của bạn.</string>
+    <string name="step_3_text">Nhấn vào nút \'Bắt đầu truyền màn hình\' bên dưới để tìm thiết bị của bạn.</string>
+
+    <string name="language" translatable="false">Ngôn ngữ</string>
+    <string name="ads_are_about_to_be_shown">Quảng cáo sắp được hiển thị...</string>
+    <string name="please_select_language">Vui lòng chọn ngôn ngữ</string>
+    <string name="press_back_again_to_exit">Nhấn quay lại lần nữa để thoát</string>
+    <string name="get_started">Bắt đầu</string>
+    <string name="next">tiếp theo</string>
+    <string name="txt_continue">Tiếp tục</string>
+    <string name="txt_request_record_permission">Ghi âm là quyền cần thiết để ứng dụng hoạt động</string>
+    <string name="txt_denie">Để sử dụng tính năng này, bạn cần có quyền</string>
+    <string name="txt_thanks_you_for_rating">Cảm ơn bạn đã đánh giá!</string>
+    <string name="txt_later" translatable="false"><u>Để sau</u></string>
+    <string name="txt_rate_5_star" translatable="false">Nếu bạn thích ứng dụng này, hãy đánh giá ứng dụng của chúng tôi 5 sao trên cửa hàng!</string>
+    <string name="txt_do_you_like_our_app" translatable="false">Bạn có thích ứng dụng của chúng tôi không?</string>
+
+    <string name="applying_selected_language" translatable="false">Đang áp dụng ngôn ngữ đã chọn...</string>
+    <string name="text_restart_app">Khởi động lại ứng dụng</string>
+    <string name="crash_info_title">Thông tin sự cố</string>
+    <string name="close">Đóng</string>
+    <string name="ad_config_invalid_message">Cấu hình quảng cáo không hợp lệ. Vui lòng xác minh ad_config.json.</string>
+    <!--    Uninstall-->
+    <string name="content_confirm_uninstall">Tại sao xóa ứng dụng</string>
+    <string name="try_again">Thử lại</string>
+    <string name="still_want_to_uninstall">Vẫn muốn gỡ cài đặt</string>
+    <string name="issues_encountered_during_usage">Các vấn đề gặp phải trong quá trình sử dụng</string>
+    <string name="txt_cancel">Hủy</string>
+    <string name="txt_uninstall">Gỡ cài đặt</string>
+    <string name="survey_1">Tính năng không hoạt động</string>
+    <string name="survey_2">Quá nhiều quảng cáo</string>
+    <string name="survey_3">Tôi không cần nó</string>
+    <string name="survey_4">Khác</string>
+    <string name="loading_label">Đang tải</string>
+    <string name="no_internet_title">Không có kết nối Internet</string>
+    <string name="no_internet_message">Vui lòng kiểm tra cài đặt mạng của bạn để tiếp tục sử dụng ứng dụng.</string>
+    <string name="open_settings">Mở cài đặt</string>
+    <string name="force_update_message">Đã có phiên bản mới. Vui lòng cập nhật để tiếp tục sử dụng ứng dụng.</string>
+    <string name="update_now">Cập nhật ngay</string>
+    <string name="update_later">Có thể để sau</string>
+    <string name="setting">Cài đặt</string>
+    <string name="rate">Đánh giá</string>
+    <string name="feedback">Phản hồi</string>
+    <string name="share_with_friend">Chia sẻ với bạn bè</string>
+    <string name="let_me_recommend">Để tôi giới thiệu</string>
+    <string name="share_to">Chia sẻ đến</string>
+    <string name="we_re_better_than_ever">Chúng tôi tốt hơn bao giờ hết</string>
+    <string name="well_comeback">Chào mừng trở lại!</string>
+    <string name="start">Bắt đầu</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_title_1">Truyền màn hình</string>
+    <string name="onboarding_des_1">Truyền màn hình điện thoại của bạn lên TV với chất lượng cao và độ trễ cực thấp.</string>
+
+    <string name="onboarding_title_2">Truyền màn hình thông minh</string>
+    <string name="onboarding_des_2">Kiểm soát đầy đủ cho tất cả các thiết bị thông minh của bạn ở một nơi.</string>
+
+    <string name="onboarding_title_3">Truyền phương tiện của bạn</string>
+    <string name="onboarding_des_3">Trải nghiệm ảnh và video của bạn trên màn hình lớn với chất lượng 4K tuyệt đẹp.</string>
+</resources>

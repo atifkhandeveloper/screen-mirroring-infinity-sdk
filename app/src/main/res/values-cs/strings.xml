@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="control_your_smart_tv_using_your_mobile_device_as_a_remote_control_">Zrcaste obrazovku telefonu na TV v vysoké kvalitě s ultranízkou latencí.</string>
+    <string name="browse_and_access_content_on_your_smart_tv_while_mirroring_or_casting_the_screen_">Zažijte své fotky a videa na velké obrazovce v úchvatném 4K rozlišení.</string>
+    <string name="conform_delete">Opravdu chcete smazat historii?</string>
+    <string name="imdb">IMDB</string>
+    <string name="amazon">Amazon</string>
+    <string name="app_name">Zrcadlení obrazovky</string>
+    <string name="audio">Zvuk</string>
+    <string name="audios">Zvukové soubory</string>
+    <string name="bing">Bing</string>
+    <string name="choose_language">Jazyky</string>
+    <string name="choose_preferred_language">Vyberte preferovaný jazyk</string>
+    <string name="connected">Připojeno</string>
+    <string name="dailymotion">Dailymotion</string>
+    <string name="delete_history">Smazat historii</string>
+    <string name="disconnected">Odpojeno</string>
+    <string name="dummy">Fiktivní</string>
+    <string name="eight">8</string>
+    <string name="english">Angličtina</string>
+    <string name="google">Google</string>
+    <string name="facebook">Facebook</string>
+    <string name="five">5</string>
+    <string name="four">4</string>
+    <string name="fox">Fox</string>
+    <string name="history">Historie</string>
+    <string name="mirroring_and_casting">Chytré zrcadlení obrazovky</string>
+    <string name="netflix">Netflix</string>
+    <string name="network_connection_not_found">Síťové připojení nebylo nalezeno</string>
+    <string name="nine">9</string>
+    <string name="no_folder_found">Nebyla nalezena žádná složka</string>
+    <string name="no_item_found">Nebyla nalezena žádná položka</string>
+    <string name="not_in_the_list">Není v seznamu</string>
+    <string name="one">1</string>
+    <string name="our_screen_mirroring_app_will_help_you_stream_phone_to_tv_screen_in_high_quality_fast_simple_share_screen_and_cast_to_tv_or_other_devices">Naše aplikace pro zrcadlení obrazovky vám pomůže streamovat telefon na obrazovku TV v vysoké kvalitě. Rychle a jednoduše! Sdílejte obrazovku a vysílejte na TV nebo jiná zařízení!</string>
+    <string name="paste_your_url_here">Vložte svou URL adresu zde</string>
+    <string name="permission_not_granted">Oprávnění nebylo uděleno</string>
+    <string name="photos">Fotky</string>
+    <string name="privacy_policy">Zásady ochrany osobních údajů</string>
+    <string name="screen_browsing">Vysílejte svá média</string>
+    <string name="screen_mirroring">Zrcadlení obrazovky</string>
+    <string name="search_by_google_or_enter_your_url">Hledejte přes Google nebo zadejte svou URL adresu</string>
+    <string name="select">Vybrat</string>
+    <string name="settings">Nastavení</string>
+    <string name="seven">7</string>
+    <string name="show_devices">Zobrazit zařízení</string>
+    <string name="six">6</string>
+    <string name="skip">Další</string>
+    <string name="soundcloud">Soundcloud</string>
+    <string name="three">3</string>
+    <string name="twitch">Twitch</string>
+    <string name="two">2</string>
+    <string name="universal_remote">Zrcadlení obrazovky</string>
+    <string name="videos">Videa</string>
+    <string name="vimeo">Vimeo</string>
+    <string name="wirelessly_transmit_your_media_files_content_from_your_mobile_device_to_smart_tv_">Plná kontrola nad všemi vašimi chytrými zařízeními na jednom místě.</string>
+    <string name="yahoo">Yahoo</string>
+    <string name="youtube">Youtube</string>
+    <string name="zero">0</string>
+    <string name="app_settings">Nastavení aplikace</string>
+
+    <string name="other">Ostatní</string>
+    <string name="help_support">Jak se připojit?</string>
+    <string name="share_with_friends">Sdílet s přáteli</string>
+    <string name="rate_us">Ohodnoťte nás</string>
+    <string name="mirroring">Zrcadlení</string>
+    <string name="high_quality_experience">Zážitek ve vysoké kvalitě</string>
+
+    <string name="paste">VLOŽIT</string>
+    <string name="media_cast">Vysílání médií</string>
+    <string name="images">Obrázky</string>
+
+    <string name="how_to_connect_q">Jak se připojit?</string>
+    <string name="how_to_connect">Jak se připojit?</string>
+    <string name="back">Zpět</string>
+    <string name="start_mirroring">Spustit zrcadlení</string>
+
+    <string name="step_1_text">Ujistěte se, že váš TV a telefon jsou připojeny ke stejné Wi-Fi síti.</string>
+    <string name="step_2_text">V nastavení TV zapněte \'Bezdrátový displej\' nebo \'Zrcadlení obrazovky\'.</string>
+    <string name="step_3_text">Klepnutím na tlačítko \'Spustit zrcadlení\' níže najděte své zařízení.</string>
+
+    <string name="language" translatable="false">Jazyk</string>
+    <string name="ads_are_about_to_be_shown">Reklamy se brzy zobrazí...</string>
+    <string name="please_select_language">Vyberte prosím jazyk</string>
+    <string name="press_back_again_to_exit">Pro ukončení stiskněte znovu zpět</string>
+    <string name="get_started">Začít</string>
+    <string name="next">další</string>
+    <string name="txt_continue">Pokračovat</string>
+    <string name="txt_request_record_permission">Nahrávání je oprávnění potřebné k tomu, aby aplikace fungovala</string>
+    <string name="txt_denie">Pro použití této funkce potřebujete oprávnění</string>
+    <string name="txt_thanks_you_for_rating">Děkujeme za hodnocení!</string>
+    <string name="txt_later" translatable="false"><u>Později</u></string>
+    <string name="txt_rate_5_star" translatable="false">Pokud se vám tato aplikace líbí, ohodnoťte prosím naši aplikaci 5 hvězdičkami v obchodě!</string>
+    <string name="txt_do_you_like_our_app" translatable="false">Líbí se vám naše aplikace?</string>
+
+    <string name="applying_selected_language" translatable="false">Používá se vybraný jazyk...</string>
+    <string name="text_restart_app">Restartovat aplikaci</string>
+    <string name="crash_info_title">Informace o pádu</string>
+    <string name="close">Zavřít</string>
+    <string name="ad_config_invalid_message">Neplatná konfigurace reklam. Ověřte prosím ad_config.json.</string>
+    <!--    Uninstall-->
+    <string name="content_confirm_uninstall">Proč odebrat aplikaci</string>
+    <string name="try_again">Zkusit znovu</string>
+    <string name="still_want_to_uninstall">Přesto chci odinstalovat</string>
+    <string name="issues_encountered_during_usage">Problémy vzniklé během používání</string>
+    <string name="txt_cancel">Zrušit</string>
+    <string name="txt_uninstall">Odinstalovat</string>
+    <string name="survey_1">Funkce nefunguje</string>
+    <string name="survey_2">Příliš mnoho reklam</string>
+    <string name="survey_3">Nepotřebuji to</string>
+    <string name="survey_4">Ostatní</string>
+    <string name="loading_label">Načítání</string>
+    <string name="no_internet_title">Žádné připojení k internetu</string>
+    <string name="no_internet_message">Zkontrolujte prosím nastavení sítě, abyste mohli pokračovat v používání aplikace.</string>
+    <string name="open_settings">Otevřít nastavení</string>
+    <string name="force_update_message">Je k dispozici nová verze. Aktualizujte prosím, abyste mohli pokračovat v používání aplikace.</string>
+    <string name="update_now">Aktualizovat nyní</string>
+    <string name="update_later">Možná později</string>
+    <string name="setting">Nastavení</string>
+    <string name="rate">Ohodnotit</string>
+    <string name="feedback">Zpětná vazba</string>
+    <string name="share_with_friend">Sdílet s přítelem</string>
+    <string name="let_me_recommend">Dovolte mi doporučit</string>
+    <string name="share_to">Sdílet na</string>
+    <string name="we_re_better_than_ever">Jsme lepší než kdykoli předtím</string>
+    <string name="well_comeback">Vítejte zpět!</string>
+    <string name="start">Start</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_title_1">Zrcadlení obrazovky</string>
+    <string name="onboarding_des_1">Zrcaste obrazovku telefonu na TV v vysoké kvalitě s ultranízkou latencí.</string>
+
+    <string name="onboarding_title_2">Chytré zrcadlení obrazovky</string>
+    <string name="onboarding_des_2">Plná kontrola nad všemi vašimi chytrými zařízeními na jednom místě.</string>
+
+    <string name="onboarding_title_3">Vysílejte svá média</string>
+    <string name="onboarding_des_3">Zažijte své fotky a videa na velké obrazovce v úchvatném 4K rozlišení.</string>
+</resources>

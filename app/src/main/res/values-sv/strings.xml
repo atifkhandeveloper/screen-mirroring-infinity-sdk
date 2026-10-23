@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="control_your_smart_tv_using_your_mobile_device_as_a_remote_control_">Spegla telefonens skärm till din TV i hög kvalitet med ultralåg latens.</string>
+    <string name="browse_and_access_content_on_your_smart_tv_while_mirroring_or_casting_the_screen_">Upplev dina foton och videor på den stora skärmen i fantastisk 4K.</string>
+    <string name="conform_delete">Är du säker på att du vill radera historiken?</string>
+    <string name="imdb">IMDB</string>
+    <string name="amazon">Amazon</string>
+    <string name="app_name">Skärmspegling</string>
+    <string name="audio">Ljud</string>
+    <string name="audios">Ljudfiler</string>
+    <string name="bing">Bing</string>
+    <string name="choose_language">Språk</string>
+    <string name="choose_preferred_language">Välj ditt föredragna språk</string>
+    <string name="connected">Ansluten</string>
+    <string name="dailymotion">Dailymotion</string>
+    <string name="delete_history">Radera historik</string>
+    <string name="disconnected">Frånkopplad</string>
+    <string name="dummy">Platshållare</string>
+    <string name="eight">8</string>
+    <string name="english">Engelska</string>
+    <string name="google">Google</string>
+    <string name="facebook">Facebook</string>
+    <string name="five">5</string>
+    <string name="four">4</string>
+    <string name="fox">Fox</string>
+    <string name="history">Historik</string>
+    <string name="mirroring_and_casting">Smart skärmspegling</string>
+    <string name="netflix">Netflix</string>
+    <string name="network_connection_not_found">Nätverksanslutning hittades inte</string>
+    <string name="nine">9</string>
+    <string name="no_folder_found">Ingen mapp hittades</string>
+    <string name="no_item_found">Inget objekt hittades</string>
+    <string name="not_in_the_list">Inte i listan</string>
+    <string name="one">1</string>
+    <string name="our_screen_mirroring_app_will_help_you_stream_phone_to_tv_screen_in_high_quality_fast_simple_share_screen_and_cast_to_tv_or_other_devices">Vår app för skärmspegling hjälper dig att strömma telefonen till TV-skärmen i hög kvalitet. Snabbt och enkelt! Dela skärmen och casta till TV eller andra enheter!</string>
+    <string name="paste_your_url_here">Klistra in din URL här</string>
+    <string name="permission_not_granted">Behörighet beviljades inte</string>
+    <string name="photos">Foton</string>
+    <string name="privacy_policy">Integritetspolicy</string>
+    <string name="screen_browsing">Casta dina medier</string>
+    <string name="screen_mirroring">Skärmspegling</string>
+    <string name="search_by_google_or_enter_your_url">Sök via Google eller ange din URL</string>
+    <string name="select">Välj</string>
+    <string name="settings">Inställningar</string>
+    <string name="seven">7</string>
+    <string name="show_devices">Visa enheter</string>
+    <string name="six">6</string>
+    <string name="skip">Nästa</string>
+    <string name="soundcloud">Soundcloud</string>
+    <string name="three">3</string>
+    <string name="twitch">Twitch</string>
+    <string name="two">2</string>
+    <string name="universal_remote">Skärmspegling</string>
+    <string name="videos">Videor</string>
+    <string name="vimeo">Vimeo</string>
+    <string name="wirelessly_transmit_your_media_files_content_from_your_mobile_device_to_smart_tv_">Fullständig kontroll för alla dina smarta enheter på ett ställe.</string>
+    <string name="yahoo">Yahoo</string>
+    <string name="youtube">Youtube</string>
+    <string name="zero">0</string>
+    <string name="app_settings">Appinställningar</string>
+
+    <string name="other">Övrigt</string>
+    <string name="help_support">Hur ansluter man?</string>
+    <string name="share_with_friends">Dela med vänner</string>
+    <string name="rate_us">Betygsätt oss</string>
+    <string name="mirroring">Spegling</string>
+    <string name="high_quality_experience">Upplevelse i hög kvalitet</string>
+
+    <string name="paste">KLISTRA IN</string>
+    <string name="media_cast">Mediacast</string>
+    <string name="images">Bilder</string>
+
+    <string name="how_to_connect_q">Hur ansluter man?</string>
+    <string name="how_to_connect">Hur ansluter man?</string>
+    <string name="back">Tillbaka</string>
+    <string name="start_mirroring">Starta spegling</string>
+
+    <string name="step_1_text">Se till att din TV och telefon är anslutna till samma Wi-Fi-nätverk.</string>
+    <string name="step_2_text">Aktivera \'Trådlös bildskärm\' eller \'Skärmspegling\' i TV:ns inställningar.</string>
+    <string name="step_3_text">Tryck på knappen \'Starta spegling\' nedan för att hitta din enhet.</string>
+
+    <string name="language" translatable="false">Språk</string>
+    <string name="ads_are_about_to_be_shown">Annonser kommer snart att visas...</string>
+    <string name="please_select_language">Välj ett språk</string>
+    <string name="press_back_again_to_exit">Tryck tillbaka igen för att avsluta</string>
+    <string name="get_started">Kom igång</string>
+    <string name="next">nästa</string>
+    <string name="txt_continue">Fortsätt</string>
+    <string name="txt_request_record_permission">Inspelning är den behörighet som krävs för att appen ska fungera</string>
+    <string name="txt_denie">För att använda den här funktionen behöver du behörighet</string>
+    <string name="txt_thanks_you_for_rating">Tack för ditt betyg!</string>
+    <string name="txt_later" translatable="false"><u>Senare</u></string>
+    <string name="txt_rate_5_star" translatable="false">Om du gillar den här appen, betygsätt vår app med 5 stjärnor i butiken!</string>
+    <string name="txt_do_you_like_our_app" translatable="false">Gillar du vår app?</string>
+
+    <string name="applying_selected_language" translatable="false">Tillämpar valt språk...</string>
+    <string name="text_restart_app">Starta om appen</string>
+    <string name="crash_info_title">Kraschinformation</string>
+    <string name="close">Stäng</string>
+    <string name="ad_config_invalid_message">Ogiltig annonskonfiguration. Kontrollera ad_config.json.</string>
+    <!--    Uninstall-->
+    <string name="content_confirm_uninstall">Varför ta bort appen</string>
+    <string name="try_again">Försök igen</string>
+    <string name="still_want_to_uninstall">Vill fortfarande avinstallera</string>
+    <string name="issues_encountered_during_usage">Problem som uppstått under användning</string>
+    <string name="txt_cancel">Avbryt</string>
+    <string name="txt_uninstall">Avinstallera</string>
+    <string name="survey_1">Funktionen fungerar inte</string>
+    <string name="survey_2">För många annonser</string>
+    <string name="survey_3">Jag behöver den inte</string>
+    <string name="survey_4">Övrigt</string>
+    <string name="loading_label">Läser in</string>
+    <string name="no_internet_title">Ingen internetanslutning</string>
+    <string name="no_internet_message">Kontrollera dina nätverksinställningar för att fortsätta använda appen.</string>
+    <string name="open_settings">Öppna inställningar</string>
+    <string name="force_update_message">En ny version är tillgänglig. Uppdatera för att fortsätta använda appen.</string>
+    <string name="update_now">Uppdatera nu</string>
+    <string name="update_later">Kanske senare</string>
+    <string name="setting">Inställning</string>
+    <string name="rate">Betygsätt</string>
+    <string name="feedback">Återkoppling</string>
+    <string name="share_with_friend">Dela med en vän</string>
+    <string name="let_me_recommend">Låt mig rekommendera</string>
+    <string name="share_to">Dela till</string>
+    <string name="we_re_better_than_ever">Vi är bättre än någonsin</string>
+    <string name="well_comeback">Välkommen tillbaka!</string>
+    <string name="start">Start</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_title_1">Skärmspegling</string>
+    <string name="onboarding_des_1">Spegla telefonens skärm till din TV i hög kvalitet med ultralåg latens.</string>
+
+    <string name="onboarding_title_2">Smart skärmspegling</string>
+    <string name="onboarding_des_2">Fullständig kontroll för alla dina smarta enheter på ett ställe.</string>
+
+    <string name="onboarding_title_3">Casta dina medier</string>
+    <string name="onboarding_des_3">Upplev dina foton och videor på den stora skärmen i fantastisk 4K.</string>
+</resources>

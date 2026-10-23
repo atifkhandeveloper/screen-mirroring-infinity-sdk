@@ -3,24 +3,36 @@ package com.ezcast.screen.mirroring.totv.Activities
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
+import android.widget.FrameLayout
 import android.widget.ImageView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.AppCompatButton
+import com.ezcast.screen.mirroring.totv.Classes.InternetPermission
 import com.ezcast.screen.mirroring.totv.R
 import com.ezcast.screen.mirroring.totv.edgeToEdge
+import com.ezcast.screen.mirroring.totv.infinity.ads.AdRemoteConfig
+import com.ezcast.screen.mirroring.totv.infinity.ads.AdsManager.loadBanner
+import com.ezcast.screen.mirroring.totv.infinity.ads.banner_all
 
 class HowToConnectActivity : AppCompatActivity() {
 
     private lateinit var backIcon: ImageView
     private lateinit var startMirroringBtn: AppCompatButton
+    private var frBanner: FrameLayout? = null
+    private var bannerLoaded = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         this.enableEdgeToEdge()
         setContentView(R.layout.activity_how_to_connect)
         this.edgeToEdge(findViewById<View?>(R.id.mainLayout))
+
+
+        this.frBanner = findViewById<FrameLayout?>(R.id.fr_banner)
+
+        loadMainBanner()
 
         initViews()
         setupClicks()
@@ -49,5 +61,28 @@ class HowToConnectActivity : AppCompatActivity() {
                     .show()
             }
         }
+    }
+
+    private fun loadMainBanner() {
+        if (frBanner == null) return
+
+        val bannerConfig =
+            AdRemoteConfig.Companion.banner_all
+
+        if (!InternetPermission.isNetworkAvailable(this)) {
+            frBanner!!.setVisibility(View.GONE)
+            return
+        }
+
+        frBanner!!.setVisibility(View.VISIBLE)
+
+        loadBanner(
+            this,
+            bannerConfig,
+            frBanner!!,
+            false
+        )
+
+        bannerLoaded = true
     }
 }

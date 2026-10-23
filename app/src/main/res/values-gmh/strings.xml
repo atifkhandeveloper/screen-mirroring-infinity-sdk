@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="control_your_smart_tv_using_your_mobile_device_as_a_remote_control_">Spiegele deinen Telefonbildschirm in hoher Qualität mit extrem niedriger Latenz auf deinen TV.</string>
+    <string name="browse_and_access_content_on_your_smart_tv_while_mirroring_or_casting_the_screen_">Erlebe deine Fotos und Videos auf dem großen Bildschirm in atemberaubendem 4K.</string>
+    <string name="conform_delete">Bist du sicher, dass du den Verlauf löschen möchtest?</string>
+    <string name="imdb">IMDB</string>
+    <string name="amazon">Amazon</string>
+    <string name="app_name">Bildschirmspiegelung</string>
+    <string name="audio">Audio</string>
+    <string name="audios">Audiodateien</string>
+    <string name="bing">Bing</string>
+    <string name="choose_language">Sprachen</string>
+    <string name="choose_preferred_language">Wähle deine bevorzugte Sprache</string>
+    <string name="connected">Verbunden</string>
+    <string name="dailymotion">Dailymotion</string>
+    <string name="delete_history">Verlauf löschen</string>
+    <string name="disconnected">Getrennt</string>
+    <string name="dummy">Platzhalter</string>
+    <string name="eight">8</string>
+    <string name="english">Englisch</string>
+    <string name="google">Google</string>
+    <string name="facebook">Facebook</string>
+    <string name="five">5</string>
+    <string name="four">4</string>
+    <string name="fox">Fox</string>
+    <string name="history">Verlauf</string>
+    <string name="mirroring_and_casting">Intelligente Bildschirmspiegelung</string>
+    <string name="netflix">Netflix</string>
+    <string name="network_connection_not_found">Netzwerkverbindung nicht gefunden</string>
+    <string name="nine">9</string>
+    <string name="no_folder_found">Kein Ordner gefunden</string>
+    <string name="no_item_found">Kein Element gefunden</string>
+    <string name="not_in_the_list">Nicht in der Liste</string>
+    <string name="one">1</string>
+    <string name="our_screen_mirroring_app_will_help_you_stream_phone_to_tv_screen_in_high_quality_fast_simple_share_screen_and_cast_to_tv_or_other_devices">Unsere Bildschirmspiegelungs-App hilft dir, dein Telefon in hoher Qualität auf den TV-Bildschirm zu streamen. Schnell und einfach! Teile den Bildschirm und caste auf TV oder andere Geräte!</string>
+    <string name="paste_your_url_here">Füge deine URL hier ein</string>
+    <string name="permission_not_granted">Berechtigung nicht erteilt</string>
+    <string name="photos">Fotos</string>
+    <string name="privacy_policy">Datenschutzrichtlinie</string>
+    <string name="screen_browsing">Caste deine Medien</string>
+    <string name="screen_mirroring">Bildschirmspiegelung</string>
+    <string name="search_by_google_or_enter_your_url">Suche über Google oder gib deine URL ein</string>
+    <string name="select">Auswählen</string>
+    <string name="settings">Einstellungen</string>
+    <string name="seven">7</string>
+    <string name="show_devices">Geräte anzeigen</string>
+    <string name="six">6</string>
+    <string name="skip">Weiter</string>
+    <string name="soundcloud">Soundcloud</string>
+    <string name="three">3</string>
+    <string name="twitch">Twitch</string>
+    <string name="two">2</string>
+    <string name="universal_remote">Bildschirmspiegelung</string>
+    <string name="videos">Videos</string>
+    <string name="vimeo">Vimeo</string>
+    <string name="wirelessly_transmit_your_media_files_content_from_your_mobile_device_to_smart_tv_">Vollständige Steuerung für alle deine smarten Geräte an einem Ort.</string>
+    <string name="yahoo">Yahoo</string>
+    <string name="youtube">Youtube</string>
+    <string name="zero">0</string>
+    <string name="app_settings">App-Einstellungen</string>
+
+    <string name="other">Sonstiges</string>
+    <string name="help_support">Wie verbinde ich mich?</string>
+    <string name="share_with_friends">Mit Freunden teilen</string>
+    <string name="rate_us">Bewerte uns</string>
+    <string name="mirroring">Spiegelung</string>
+    <string name="high_quality_experience">Erlebnis in hoher Qualität</string>
+
+    <string name="paste">EINFÜGEN</string>
+    <string name="media_cast">Medien-Cast</string>
+    <string name="images">Bilder</string>
+
+    <string name="how_to_connect_q">Wie verbinde ich mich?</string>
+    <string name="how_to_connect">Wie verbinde ich mich?</string>
+    <string name="back">Zurück</string>
+    <string name="start_mirroring">Spiegelung starten</string>
+
+    <string name="step_1_text">Stelle sicher, dass dein TV und dein Telefon mit demselben Wi-Fi-Netzwerk verbunden sind.</string>
+    <string name="step_2_text">Aktiviere \'Drahtlose Anzeige\' oder \'Bildschirmspiegelung\' in den Einstellungen deines TVs.</string>
+    <string name="step_3_text">Tippe unten auf die Schaltfläche \'Spiegelung starten\', um dein Gerät zu finden.</string>
+
+    <string name="language" translatable="false">Sprache</string>
+    <string name="ads_are_about_to_be_shown">Anzeigen werden gleich angezeigt...</string>
+    <string name="please_select_language">Bitte wähle eine Sprache</string>
+    <string name="press_back_again_to_exit">Drücke erneut Zurück, um zu beenden</string>
+    <string name="get_started">Loslegen</string>
+    <string name="next">weiter</string>
+    <string name="txt_continue">Weiter</string>
+    <string name="txt_request_record_permission">Die Aufnahme ist die Berechtigung, die für die App erforderlich ist</string>
+    <string name="txt_denie">Um diese Funktion zu nutzen, benötigst du eine Berechtigung</string>
+    <string name="txt_thanks_you_for_rating">Danke für deine Bewertung!</string>
+    <string name="txt_later" translatable="false"><u>Später</u></string>
+    <string name="txt_rate_5_star" translatable="false">Wenn dir diese App gefällt, bewerte unsere App bitte mit 5 Sternen im Store!</string>
+    <string name="txt_do_you_like_our_app" translatable="false">Gefällt dir unsere App?</string>
+
+    <string name="applying_selected_language" translatable="false">Ausgewählte Sprache wird angewendet...</string>
+    <string name="text_restart_app">App neu starten</string>
+    <string name="crash_info_title">Absturzinformationen</string>
+    <string name="close">Schließen</string>
+    <string name="ad_config_invalid_message">Ungültige Anzeigenkonfiguration. Bitte überprüfe ad_config.json.</string>
+    <!--    Uninstall-->
+    <string name="content_confirm_uninstall">Warum die App entfernen</string>
+    <string name="try_again">Erneut versuchen</string>
+    <string name="still_want_to_uninstall">Ich möchte trotzdem deinstallieren</string>
+    <string name="issues_encountered_during_usage">Probleme bei der Nutzung</string>
+    <string name="txt_cancel">Abbrechen</string>
+    <string name="txt_uninstall">Deinstallieren</string>
+    <string name="survey_1">Funktion funktioniert nicht</string>
+    <string name="survey_2">Zu viele Anzeigen</string>
+    <string name="survey_3">Ich brauche es nicht</string>
+    <string name="survey_4">Sonstiges</string>
+    <string name="loading_label">Wird geladen</string>
+    <string name="no_internet_title">Keine Internetverbindung</string>
+    <string name="no_internet_message">Bitte überprüfe deine Netzwerkeinstellungen, um die App weiter zu nutzen.</string>
+    <string name="open_settings">Einstellungen öffnen</string>
+    <string name="force_update_message">Eine neue Version ist verfügbar. Bitte aktualisiere, um die App weiter zu nutzen.</string>
+    <string name="update_now">Jetzt aktualisieren</string>
+    <string name="update_later">Vielleicht später</string>
+    <string name="setting">Einstellung</string>
+    <string name="rate">Bewerten</string>
+    <string name="feedback">Feedback</string>
+    <string name="share_with_friend">Mit Freund teilen</string>
+    <string name="let_me_recommend">Lass mich empfehlen</string>
+    <string name="share_to">Teilen auf</string>
+    <string name="we_re_better_than_ever">Wir sind besser als je zuvor</string>
+    <string name="well_comeback">Willkommen zurück!</string>
+    <string name="start">Start</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_title_1">Bildschirmspiegelung</string>
+    <string name="onboarding_des_1">Spiegele deinen Telefonbildschirm in hoher Qualität mit extrem niedriger Latenz auf deinen TV.</string>
+
+    <string name="onboarding_title_2">Intelligente Bildschirmspiegelung</string>
+    <string name="onboarding_des_2">Vollständige Steuerung für alle deine smarten Geräte an einem Ort.</string>
+
+    <string name="onboarding_title_3">Caste deine Medien</string>
+    <string name="onboarding_des_3">Erlebe deine Fotos und Videos auf dem großen Bildschirm in atemberaubendem 4K.</string>
+</resources>

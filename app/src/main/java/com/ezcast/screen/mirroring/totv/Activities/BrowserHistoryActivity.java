@@ -9,16 +9,22 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.view.View;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.ezcast.screen.mirroring.totv.Classes.InternetPermission;
 import com.ezcast.screen.mirroring.totv.R;
 import com.ezcast.screen.mirroring.totv.Adapter.HistoryAdapter;
 import com.ezcast.screen.mirroring.totv.Interfaces.HistoryClickListener;
 import com.ezcast.screen.mirroring.totv.Models.SearchHistoryItem;
+import com.ezcast.screen.mirroring.totv.infinity.ads.AdRemoteConfig;
+import com.ezcast.screen.mirroring.totv.infinity.ads.AdRemoteConfigExtensionsKt;
+import com.ezcast.screen.mirroring.totv.infinity.ads.AdUnitConfig;
+import com.ezcast.screen.mirroring.totv.infinity.ads.AdsManager;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import com.google.common.reflect.TypeToken;
 import com.google.gson.Gson;
@@ -34,6 +40,8 @@ public class BrowserHistoryActivity extends ThemeActivity implements HistoryClic
     private ArrayList<SearchHistoryItem> historyList = new ArrayList<>();
     private RecyclerView historyRecycler;
     ImageView historyViewHome;
+    private FrameLayout frBanner;
+    private boolean bannerLoaded = false;
 
     
     @Override 
@@ -45,6 +53,9 @@ public class BrowserHistoryActivity extends ThemeActivity implements HistoryClic
 
 
 
+        this.frBanner = findViewById(R.id.fr_banner);
+
+        loadMainBanner();
 
 
         initializeFields();
@@ -118,5 +129,28 @@ public class BrowserHistoryActivity extends ThemeActivity implements HistoryClic
             }
         });
         materialAlertDialogBuilder.show();
+    }
+
+    private void loadMainBanner() {
+        if (frBanner == null) return;
+
+        AdUnitConfig bannerConfig =
+                AdRemoteConfigExtensionsKt.getBanner_all(AdRemoteConfig.Companion);
+
+        if (!InternetPermission.isNetworkAvailable(this)) {
+            frBanner.setVisibility(View.GONE);
+            return;
+        }
+
+        frBanner.setVisibility(View.VISIBLE);
+
+        AdsManager.INSTANCE.loadBanner(
+                this,
+                bannerConfig,
+                frBanner,
+                false
+        );
+
+        bannerLoaded = true;
     }
 }

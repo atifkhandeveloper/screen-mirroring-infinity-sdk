@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="control_your_smart_tv_using_your_mobile_device_as_a_remote_control_">Cerminkan skrin telefon anda ke TV dalam kualiti tinggi dengan kependaman ultra-rendah.</string>
+    <string name="browse_and_access_content_on_your_smart_tv_while_mirroring_or_casting_the_screen_">Nikmati foto dan video anda pada skrin besar dalam 4K yang menakjubkan.</string>
+    <string name="conform_delete">Adakah anda pasti mahu memadam sejarah?</string>
+    <string name="imdb">IMDB</string>
+    <string name="amazon">Amazon</string>
+    <string name="app_name">Pencerminan Skrin</string>
+    <string name="audio">Audio</string>
+    <string name="audios">Audio</string>
+    <string name="bing">Bing</string>
+    <string name="choose_language">Bahasa</string>
+    <string name="choose_preferred_language">Pilih bahasa pilihan anda</string>
+    <string name="connected">Disambungkan</string>
+    <string name="dailymotion">Dailymotion</string>
+    <string name="delete_history">Padam Sejarah</string>
+    <string name="disconnected">Terputus</string>
+    <string name="dummy">Dummy</string>
+    <string name="eight">8</string>
+    <string name="english">Bahasa Inggeris</string>
+    <string name="google">Google</string>
+    <string name="facebook">Facebook</string>
+    <string name="five">5</string>
+    <string name="four">4</string>
+    <string name="fox">Fox</string>
+    <string name="history">Sejarah</string>
+    <string name="mirroring_and_casting">Pencerminan Skrin Pintar</string>
+    <string name="netflix">Netflix</string>
+    <string name="network_connection_not_found">Sambungan rangkaian tidak ditemui</string>
+    <string name="nine">9</string>
+    <string name="no_folder_found">Tiada folder ditemui</string>
+    <string name="no_item_found">Tiada item ditemui</string>
+    <string name="not_in_the_list">Tiada dalam senarai</string>
+    <string name="one">1</string>
+    <string name="our_screen_mirroring_app_will_help_you_stream_phone_to_tv_screen_in_high_quality_fast_simple_share_screen_and_cast_to_tv_or_other_devices">Aplikasi Pencerminan Skrin kami akan membantu anda menstrim telefon ke skrin TV dalam kualiti tinggi. Pantas dan Mudah! Kongsi skrin dan cast ke TV atau peranti lain!</string>
+    <string name="paste_your_url_here">Tampal URL anda di sini</string>
+    <string name="permission_not_granted">Kebenaran tidak diberikan</string>
+    <string name="photos">Foto</string>
+    <string name="privacy_policy">Dasar Privasi</string>
+    <string name="screen_browsing">Cast Media Anda</string>
+    <string name="screen_mirroring">Pencerminan Skrin</string>
+    <string name="search_by_google_or_enter_your_url">Cari melalui Google atau masukkan URL anda</string>
+    <string name="select">Pilih</string>
+    <string name="settings">Tetapan</string>
+    <string name="seven">7</string>
+    <string name="show_devices">Tunjukkan Peranti</string>
+    <string name="six">6</string>
+    <string name="skip">Seterusnya</string>
+    <string name="soundcloud">Soundcloud</string>
+    <string name="three">3</string>
+    <string name="twitch">Twitch</string>
+    <string name="two">2</string>
+    <string name="universal_remote">Pencerminan Skrin</string>
+    <string name="videos">Video</string>
+    <string name="vimeo">Vimeo</string>
+    <string name="wirelessly_transmit_your_media_files_content_from_your_mobile_device_to_smart_tv_">Kawalan penuh untuk semua peranti pintar anda di satu tempat.</string>
+    <string name="yahoo">Yahoo</string>
+    <string name="youtube">Youtube</string>
+    <string name="zero">0</string>
+    <string name="app_settings">Tetapan Aplikasi</string>
+
+    <string name="other">Lain-lain</string>
+    <string name="help_support">Bagaimana untuk Menyambung?</string>
+    <string name="share_with_friends">Kongsi dengan Rakan</string>
+    <string name="rate_us">Nilai Kami</string>
+    <string name="mirroring">Pencerminan</string>
+    <string name="high_quality_experience">Pengalaman Berkualiti Tinggi</string>
+
+    <string name="paste">TAMPAL</string>
+    <string name="media_cast">Cast Media</string>
+    <string name="images">Imej</string>
+
+    <string name="how_to_connect_q">Bagaimana untuk Menyambung?</string>
+    <string name="how_to_connect">Bagaimana untuk menyambung?</string>
+    <string name="back">Kembali</string>
+    <string name="start_mirroring">Mulakan Pencerminan</string>
+
+    <string name="step_1_text">Pastikan TV dan telefon anda disambungkan ke rangkaian Wi-Fi yang sama.</string>
+    <string name="step_2_text">Dayakan \'Paparan Wayarles\' atau \'Pencerminan Skrin\' dalam tetapan TV anda.</string>
+    <string name="step_3_text">Ketik butang \'Mulakan Pencerminan\' di bawah untuk mencari peranti anda.</string>
+
+    <string name="language" translatable="false">Bahasa</string>
+    <string name="ads_are_about_to_be_shown">Iklan akan ditunjukkan sebentar lagi...</string>
+    <string name="please_select_language">Sila pilih bahasa</string>
+    <string name="press_back_again_to_exit">Tekan kembali sekali lagi untuk keluar</string>
+    <string name="get_started">Mula</string>
+    <string name="next">seterusnya</string>
+    <string name="txt_continue">Teruskan</string>
+    <string name="txt_request_record_permission">Rakaman ialah kebenaran yang diperlukan untuk aplikasi berfungsi</string>
+    <string name="txt_denie">Untuk menggunakan ciri ini, anda memerlukan kebenaran</string>
+    <string name="txt_thanks_you_for_rating">Terima kasih kerana menilai!</string>
+    <string name="txt_later" translatable="false"><u>Kemudian</u></string>
+    <string name="txt_rate_5_star" translatable="false">Jika anda suka aplikasi ini, sila nilai aplikasi kami 5 bintang di kedai!</string>
+    <string name="txt_do_you_like_our_app" translatable="false">Adakah anda suka aplikasi kami?</string>
+
+    <string name="applying_selected_language" translatable="false">Sedang menggunakan bahasa yang dipilih...</string>
+    <string name="text_restart_app">Mulakan Semula Aplikasi</string>
+    <string name="crash_info_title">Maklumat Ranap</string>
+    <string name="close">Tutup</string>
+    <string name="ad_config_invalid_message">Konfigurasi iklan tidak sah. Sila sahkan ad_config.json.</string>
+    <!--    Uninstall-->
+    <string name="content_confirm_uninstall">Mengapa membuang aplikasi</string>
+    <string name="try_again">Cuba Lagi</string>
+    <string name="still_want_to_uninstall">Masih mahu menyahpasang</string>
+    <string name="issues_encountered_during_usage">Masalah yang dihadapi semasa penggunaan</string>
+    <string name="txt_cancel">Batal</string>
+    <string name="txt_uninstall">Nyahpasang</string>
+    <string name="survey_1">Ciri tidak berfungsi</string>
+    <string name="survey_2">Terlalu banyak iklan</string>
+    <string name="survey_3">Saya tidak memerlukannya</string>
+    <string name="survey_4">Lain-lain</string>
+    <string name="loading_label">Memuatkan</string>
+    <string name="no_internet_title">Tiada Sambungan Internet</string>
+    <string name="no_internet_message">Sila semak tetapan rangkaian anda untuk terus menggunakan aplikasi.</string>
+    <string name="open_settings">Buka Tetapan</string>
+    <string name="force_update_message">Versi baharu tersedia. Sila kemas kini untuk terus menggunakan aplikasi.</string>
+    <string name="update_now">Kemas Kini Sekarang</string>
+    <string name="update_later">Mungkin Kemudian</string>
+    <string name="setting">Tetapan</string>
+    <string name="rate">Nilai</string>
+    <string name="feedback">Maklum Balas</string>
+    <string name="share_with_friend">Kongsi dengan rakan</string>
+    <string name="let_me_recommend">Biar saya syorkan</string>
+    <string name="share_to">Kongsi ke</string>
+    <string name="we_re_better_than_ever">Kami lebih baik daripada sebelumnya</string>
+    <string name="well_comeback">Selamat kembali!</string>
+    <string name="start">Mula</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_title_1">Pencerminan Skrin</string>
+    <string name="onboarding_des_1">Cerminkan skrin telefon anda ke TV dalam kualiti tinggi dengan kependaman ultra-rendah.</string>
+
+    <string name="onboarding_title_2">Pencerminan Skrin Pintar</string>
+    <string name="onboarding_des_2">Kawalan penuh untuk semua peranti pintar anda di satu tempat.</string>
+
+    <string name="onboarding_title_3">Cast Media Anda</string>
+    <string name="onboarding_des_3">Nikmati foto dan video anda pada skrin besar dalam 4K yang menakjubkan.</string>
+</resources>

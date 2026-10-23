@@ -8,23 +8,20 @@ import androidx.viewpager2.widget.MarginPageTransformer
 import androidx.viewpager2.widget.ViewPager2
 import com.ads.module.ads.ERainAd
 import com.ezcast.screen.mirroring.totv.R
-
-import com.ezcast.screen.mirroring.totv.infinity.data.event.EventTracking
 import com.ezcast.screen.mirroring.totv.databinding.ActivityOnboardingBinding
 import com.ezcast.screen.mirroring.totv.infinity.ads.AdRemoteConfig
 import com.ezcast.screen.mirroring.totv.infinity.ads.AdsManager
 import com.ezcast.screen.mirroring.totv.infinity.ads.RemoteConfigUtils
 import com.ezcast.screen.mirroring.totv.infinity.ads.native_onboarding_fullscreen_1_3
-
 import com.ezcast.screen.mirroring.totv.infinity.component.onboarding.adapter.OnboardingAdapter
 import com.ezcast.screen.mirroring.totv.infinity.component.onboarding.model.OnboardingItem
+import com.ezcast.screen.mirroring.totv.infinity.component.onboarding.viewmodel.OnboardingViewModel
+import com.ezcast.screen.mirroring.totv.infinity.component.uninstall.ShortcutManager
+import com.ezcast.screen.mirroring.totv.infinity.data.event.EventTracking
 import com.ezcast.screen.mirroring.totv.infinity.ui.bases.BaseActivity
 import com.ezcast.screen.mirroring.totv.infinity.ui.ext.isNetwork
 import com.ezcast.screen.mirroring.totv.infinity.utils.ITGTrackingHelper
 import com.ezcast.screen.mirroring.totv.infinity.utils.Routes
-import com.ezcast.screen.mirroring.totv.infinity.component.onboarding.viewmodel.OnboardingViewModel
-import com.ezcast.screen.mirroring.totv.infinity.component.uninstall.ShortcutManager
-
 import dagger.hilt.android.AndroidEntryPoint
 import kotlin.math.abs
 
@@ -113,54 +110,55 @@ class OnBoardingActivity : BaseActivity<ActivityOnboardingBinding>() {
 
     private fun initOnboardingItems() {
         onboardingItems.clear()
+
+        // ── Page 1 ─────────────────────────────────────────────
         onboardingItems.add(
             OnboardingItem(
                 title = R.string.onboarding_title_1,
-                description = R.string.onboarding_title_1,
+                description = R.string.onboarding_des_1,
                 textButton = R.string.next,
-                imageResId = R.drawable.icon,
+                imageResId = R.drawable.onb_one,
                 positionIndicator = 0,
                 isHasNativeOnPage1 = true
             )
         )
+
+        // ── Page 2 ─────────────────────────────────────────────
         onboardingItems.add(
             OnboardingItem(
                 title = R.string.onboarding_title_2,
-                description = R.string.onboarding_title_2,
+                description = R.string.onboarding_des_2,
                 textButton = R.string.next,
-                imageResId = R.drawable.icon,
+                imageResId = R.drawable.onb_two,
                 positionIndicator = 1
             )
         )
-        onboardingItems.add(
-            OnboardingItem(
-                title = R.string.onboarding_title_3,
-                description = R.string.onboarding_title_3,
-                textButton = R.string.next,
-                imageResId = R.drawable.icon,
-                positionIndicator = 2,
-            )
-        )
 
-        if (isNetwork(this@OnBoardingActivity) && ERainAd.getInstance().getShouldDisplayNativeOnboardingFull1(
-                AdRemoteConfig.native_onboarding_fullscreen_1_3.enableUaCheck))
+        // ── FULL-SCREEN NATIVE (between Page 2 and Page 3) ─────
+        if (isNetwork(this@OnBoardingActivity) &&
+            ERainAd.getInstance().getShouldDisplayNativeOnboardingFull1(
+                AdRemoteConfig.native_onboarding_fullscreen_1_3.enableUaCheck)
+        ) {
             onboardingItems.add(
                 OnboardingItem(
                     isHasNativeFull = true
                 )
             )
+        }
 
-
+        // ── Page 3 (last real page) ────────────────────────────
         onboardingItems.add(
             OnboardingItem(
-                title = R.string.onboarding_title_4,
-                description = R.string.onboarding_title_4,
+                title = R.string.onboarding_title_3,
+                description = R.string.onboarding_des_3,
                 textButton = R.string.next,
-                imageResId = R.drawable.icon,
-                positionIndicator = 3,
-                isHasNativeOnPage4 = true
+                imageResId = R.drawable.onb_three,
+                positionIndicator = 2,
+                isHasNativeOnPage1 = true
+
             )
         )
+
         onboardingAdapter.submitData(onboardingItems)
     }
 

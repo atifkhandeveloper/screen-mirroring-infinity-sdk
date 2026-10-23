@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="control_your_smart_tv_using_your_mobile_device_as_a_remote_control_">Przesyłaj obraz z ekranu telefonu na telewizor w wysokiej jakości i z ultra-niskim opóźnieniem.</string>
+    <string name="browse_and_access_content_on_your_smart_tv_while_mirroring_or_casting_the_screen_">Oglądaj swoje zdjęcia i filmy na dużym ekranie w zachwycającej jakości 4K.</string>
+    <string name="conform_delete">Czy na pewno chcesz usunąć historię?</string>
+    <string name="imdb">IMDB</string>
+    <string name="amazon">Amazon</string>
+    <string name="app_name">Przesyłanie ekranu</string>
+    <string name="audio">Audio</string>
+    <string name="audios">Pliki audio</string>
+    <string name="bing">Bing</string>
+    <string name="choose_language">Języki</string>
+    <string name="choose_preferred_language">Wybierz preferowany język</string>
+    <string name="connected">Połączono</string>
+    <string name="dailymotion">Dailymotion</string>
+    <string name="delete_history">Usuń historię</string>
+    <string name="disconnected">Rozłączono</string>
+    <string name="dummy">Zastępczy</string>
+    <string name="eight">8</string>
+    <string name="english">Angielski</string>
+    <string name="google">Google</string>
+    <string name="facebook">Facebook</string>
+    <string name="five">5</string>
+    <string name="four">4</string>
+    <string name="fox">Fox</string>
+    <string name="history">Historia</string>
+    <string name="mirroring_and_casting">Inteligentne przesyłanie ekranu</string>
+    <string name="netflix">Netflix</string>
+    <string name="network_connection_not_found">Nie znaleziono połączenia sieciowego</string>
+    <string name="nine">9</string>
+    <string name="no_folder_found">Nie znaleziono folderu</string>
+    <string name="no_item_found">Nie znaleziono elementu</string>
+    <string name="not_in_the_list">Brak na liście</string>
+    <string name="one">1</string>
+    <string name="our_screen_mirroring_app_will_help_you_stream_phone_to_tv_screen_in_high_quality_fast_simple_share_screen_and_cast_to_tv_or_other_devices">Nasza aplikacja do przesyłania ekranu pomoże Ci przesyłać obraz z telefonu na ekran telewizora w wysokiej jakości. Szybko i prosto! Udostępniaj ekran i przesyłaj na telewizor lub inne urządzenia!</string>
+    <string name="paste_your_url_here">Wklej tutaj swój adres URL</string>
+    <string name="permission_not_granted">Nie udzielono uprawnienia</string>
+    <string name="photos">Zdjęcia</string>
+    <string name="privacy_policy">Polityka prywatności</string>
+    <string name="screen_browsing">Przesyłaj swoje multimedia</string>
+    <string name="screen_mirroring">Przesyłanie ekranu</string>
+    <string name="search_by_google_or_enter_your_url">Szukaj w Google lub wpisz swój adres URL</string>
+    <string name="select">Wybierz</string>
+    <string name="settings">Ustawienia</string>
+    <string name="seven">7</string>
+    <string name="show_devices">Pokaż urządzenia</string>
+    <string name="six">6</string>
+    <string name="skip">Dalej</string>
+    <string name="soundcloud">Soundcloud</string>
+    <string name="three">3</string>
+    <string name="twitch">Twitch</string>
+    <string name="two">2</string>
+    <string name="universal_remote">Przesyłanie ekranu</string>
+    <string name="videos">Filmy</string>
+    <string name="vimeo">Vimeo</string>
+    <string name="wirelessly_transmit_your_media_files_content_from_your_mobile_device_to_smart_tv_">Pełna kontrola nad wszystkimi inteligentnymi urządzeniami w jednym miejscu.</string>
+    <string name="yahoo">Yahoo</string>
+    <string name="youtube">Youtube</string>
+    <string name="zero">0</string>
+    <string name="app_settings">Ustawienia aplikacji</string>
+
+    <string name="other">Inne</string>
+    <string name="help_support">Jak się połączyć?</string>
+    <string name="share_with_friends">Udostępnij znajomym</string>
+    <string name="rate_us">Oceń nas</string>
+    <string name="mirroring">Przesyłanie</string>
+    <string name="high_quality_experience">Doświadczenie w wysokiej jakości</string>
+
+    <string name="paste">WKLEJ</string>
+    <string name="media_cast">Przesyłanie multimediów</string>
+    <string name="images">Obrazy</string>
+
+    <string name="how_to_connect_q">Jak się połączyć?</string>
+    <string name="how_to_connect">Jak się połączyć?</string>
+    <string name="back">Wstecz</string>
+    <string name="start_mirroring">Rozpocznij przesyłanie</string>
+
+    <string name="step_1_text">Upewnij się, że telewizor i telefon są połączone z tą samą siecią Wi-Fi.</string>
+    <string name="step_2_text">Włącz \'Wyświetlanie bezprzewodowe\' lub \'Przesyłanie ekranu\' w ustawieniach telewizora.</string>
+    <string name="step_3_text">Dotknij przycisku \'Rozpocznij przesyłanie\' poniżej, aby znaleźć swoje urządzenie.</string>
+
+    <string name="language" translatable="false">Język</string>
+    <string name="ads_are_about_to_be_shown">Reklamy wkrótce zostaną wyświetlone...</string>
+    <string name="please_select_language">Wybierz język</string>
+    <string name="press_back_again_to_exit">Naciśnij ponownie wstecz, aby wyjść</string>
+    <string name="get_started">Rozpocznij</string>
+    <string name="next">dalej</string>
+    <string name="txt_continue">Kontynuuj</string>
+    <string name="txt_request_record_permission">Nagrywanie to uprawnienie wymagane do działania aplikacji</string>
+    <string name="txt_denie">Aby korzystać z tej funkcji, potrzebujesz uprawnienia</string>
+    <string name="txt_thanks_you_for_rating">Dziękujemy za ocenę!</string>
+    <string name="txt_later" translatable="false"><u>Później</u></string>
+    <string name="txt_rate_5_star" translatable="false">Jeśli lubisz tę aplikację, oceń naszą aplikację na 5 gwiazdek w sklepie!</string>
+    <string name="txt_do_you_like_our_app" translatable="false">Czy lubisz naszą aplikację?</string>
+
+    <string name="applying_selected_language" translatable="false">Stosowanie wybranego języka...</string>
+    <string name="text_restart_app">Uruchom ponownie aplikację</string>
+    <string name="crash_info_title">Informacje o awarii</string>
+    <string name="close">Zamknij</string>
+    <string name="ad_config_invalid_message">Nieprawidłowa konfiguracja reklam. Sprawdź ad_config.json.</string>
+    <!--    Uninstall-->
+    <string name="content_confirm_uninstall">Dlaczego usunąć aplikację</string>
+    <string name="try_again">Spróbuj ponownie</string>
+    <string name="still_want_to_uninstall">Nadal chcę odinstalować</string>
+    <string name="issues_encountered_during_usage">Problemy napotkane podczas użytkowania</string>
+    <string name="txt_cancel">Anuluj</string>
+    <string name="txt_uninstall">Odinstaluj</string>
+    <string name="survey_1">Funkcja nie działa</string>
+    <string name="survey_2">Zbyt wiele reklam</string>
+    <string name="survey_3">Nie potrzebuję jej</string>
+    <string name="survey_4">Inne</string>
+    <string name="loading_label">Ładowanie</string>
+    <string name="no_internet_title">Brak połączenia z internetem</string>
+    <string name="no_internet_message">Sprawdź ustawienia sieci, aby kontynuować korzystanie z aplikacji.</string>
+    <string name="open_settings">Otwórz ustawienia</string>
+    <string name="force_update_message">Dostępna jest nowa wersja. Zaktualizuj, aby kontynuować korzystanie z aplikacji.</string>
+    <string name="update_now">Zaktualizuj teraz</string>
+    <string name="update_later">Może później</string>
+    <string name="setting">Ustawienie</string>
+    <string name="rate">Oceń</string>
+    <string name="feedback">Opinie</string>
+    <string name="share_with_friend">Udostępnij znajomemu</string>
+    <string name="let_me_recommend">Pozwól, że polecę</string>
+    <string name="share_to">Udostępnij w</string>
+    <string name="we_re_better_than_ever">Jesteśmy lepsi niż kiedykolwiek</string>
+    <string name="well_comeback">Witaj ponownie!</string>
+    <string name="start">Start</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_title_1">Przesyłanie ekranu</string>
+    <string name="onboarding_des_1">Przesyłaj obraz z ekranu telefonu na telewizor w wysokiej jakości i z ultra-niskim opóźnieniem.</string>
+
+    <string name="onboarding_title_2">Inteligentne przesyłanie ekranu</string>
+    <string name="onboarding_des_2">Pełna kontrola nad wszystkimi inteligentnymi urządzeniami w jednym miejscu.</string>
+
+    <string name="onboarding_title_3">Przesyłaj swoje multimedia</string>
+    <string name="onboarding_des_3">Oglądaj swoje zdjęcia i filmy na dużym ekranie w zachwycającej jakości 4K.</string>
+</resources>

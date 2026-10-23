@@ -4,7 +4,7 @@ import android.content.res.Resources
 import android.os.Build
 import com.ezcast.screen.mirroring.totv.R
 
-object LanguageData {
+object  LanguageData {
 
     private val _languages = mutableListOf(
         LanguageModel(name = "English", iso = "en", imageResId = R.drawable.ic_english),
